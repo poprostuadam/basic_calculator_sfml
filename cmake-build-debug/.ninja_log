@@ -1,7 +1,20 @@
 # ninja log v6
-1	177	1736325128963205330	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o.ddi	fde9bea0242cc2c7
-177	183	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/CXX.dd	3cefe5d539b892cf
-177	183	1736325129146535904	/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/basic_calculator_sfml.dir/CXXModules.json	3cefe5d539b892cf
-177	183	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o.modmap	3cefe5d539b892cf
-183	808	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o	1d392b7909936575
-809	907	1736325129773193162	basic_calculator_sfml	355c0bcfca4f3f82
+173	867	1736326704389548491	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o	bdf7214b0588183f
+867	1000	1736326705082880167	basic_calculator_sfml	d6ac67efbc3300e9
+167	173	1736326704389548491	/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/basic_calculator_sfml.dir/CXXModules.json	4e394bb282c52224
+167	173	1736326704389548491	CMakeFiles/basic_calculator_sfml.dir/CXX.dd	4e394bb282c52224
+167	173	1736326704389548491	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.modmap	4e394bb282c52224
+2	57	1736327488894304291	build.ninja	ff185eb5972756a8
+4	167	1736326704219548898	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi	8c76573e6c77be99
+3	44	1736327492424319703	CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o.ddi	a89d4af75ffd0eb
+7	45	1736327492424319703	CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o.ddi	cea4794e9ac130df
+8	198	1736327492427653051	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi	306486d8402c4a9d
+198	209	1736327492617653881	CMakeFiles/basic_calculator_sfml.dir/CXX.dd	b7be4c2c53d32509
+198	209	1736327492617653881	/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/basic_calculator_sfml.dir/CXXModules.json	b7be4c2c53d32509
+198	209	1736327492617653881	CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o.modmap	b7be4c2c53d32509
+198	209	1736327492617653881	CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o.modmap	b7be4c2c53d32509
+198	209	1736327492617653881	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.modmap	b7be4c2c53d32509
+209	238	1736327492627653926	CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o	491dec6f695e9ec
+209	244	1736327492627653926	CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o	f7c8be185c32bb43
+211	894	1736327492630987273	CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o	d306f04f88e1217c
+894	1006	1736327493314323596	basic_calculator_sfml	d27a205bf4763a22

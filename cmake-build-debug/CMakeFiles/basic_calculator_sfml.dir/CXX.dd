@@ -1,3 +1,7 @@
 ninja_dyndep_version = 1.0
-build CMakeFiles/basic_calculator_sfml.dir/main.cpp.o: dyndep
+build CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o: dyndep
+
+build CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o: dyndep
+
+build CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o: dyndep
 

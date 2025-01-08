@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.12.4-1-MANJARO")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-
+include("/home/adam/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake")
 
 set(CMAKE_SYSTEM "Linux-6.12.4-1-MANJARO")
 set(CMAKE_SYSTEM_NAME "Linux")
