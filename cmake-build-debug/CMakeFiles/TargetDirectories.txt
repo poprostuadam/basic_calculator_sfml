@@ -1,0 +1,3 @@
+/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/basic_calculator_sfml.dir
+/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/rebuild_cache.dir

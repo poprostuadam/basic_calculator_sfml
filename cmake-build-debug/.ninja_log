@@ -1,0 +1,7 @@
+# ninja log v6
+1	177	1736325128963205330	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o.ddi	fde9bea0242cc2c7
+177	183	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/CXX.dd	3cefe5d539b892cf
+177	183	1736325129146535904	/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug/CMakeFiles/basic_calculator_sfml.dir/CXXModules.json	3cefe5d539b892cf
+177	183	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o.modmap	3cefe5d539b892cf
+183	808	1736325129146535904	CMakeFiles/basic_calculator_sfml.dir/main.cpp.o	1d392b7909936575
+809	907	1736325129773193162	basic_calculator_sfml	355c0bcfca4f3f82
