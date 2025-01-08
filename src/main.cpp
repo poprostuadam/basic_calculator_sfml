@@ -1,6 +1,9 @@
 #include <iostream>
-
+#include <App.h>
 
 int main() {
-    return 0;
+    App app;
+    app.run();
+
+    return EXIT_SUCCESS;
 }
