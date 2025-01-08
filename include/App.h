@@ -5,11 +5,12 @@
 #ifndef APP_H
 #define APP_H
 
-#include <Config.h>
-#include <Button.h>
-
 #include <vector>
 #include <memory>
+
+#include <Config.h>
+#include <Button.h>
+#include <Display.h>
 
 class App {
 public:
@@ -29,6 +30,8 @@ private:
     sf::Font mFont;
 
     std::vector<std::unique_ptr<Button>> mButtons;
+
+    std::unique_ptr<Display> mDisplay;
 };
 
 

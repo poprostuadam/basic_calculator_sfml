@@ -5,7 +5,8 @@
 #include "../include/App.h"
 
 App::App(): mWindow(sf::VideoMode(Config::windowWidth, Config::windowHeight),
-        Config::windowTitle, sf::Style::Close | sf::Style::Titlebar)
+        Config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
+        mDisplay(nullptr)
 {
         // Set frame rate limit
         mWindow.setFramerateLimit(Config::frameLimit);
@@ -17,6 +18,7 @@ App::App(): mWindow(sf::VideoMode(Config::windowWidth, Config::windowHeight),
 
         initButtons();
 
+        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, Config::DisplayFontSize);
 }
 
 void App::run() {
@@ -48,6 +50,8 @@ void App::render() {
         // Clear window and set background color
         mWindow.clear(Config::BackgroundColor);
 
+        mDisplay->render(mWindow);
+
         for (const auto& button: mButtons) {
                 button->render(mWindow);
         }
@@ -57,6 +61,7 @@ void App::render() {
 }
 
 void App::initButtons() {
+
         const sf::Vector2f buttonSize{100,100};
         const float padding = 24.0f;
         const sf::Vector2f startingPosition{24.0f, 200.0f};

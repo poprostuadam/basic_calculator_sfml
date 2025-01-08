@@ -169,6 +169,53 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/ostream.tcc /usr/include/c++/14.2.0/istream \
  /usr/include/c++/14.2.0/bits/istream.tcc \
  /home/adam/CLionProjects/basic-calculator-sfml/include/App.h \
+ /usr/include/c++/14.2.0/vector \
+ /usr/include/c++/14.2.0/bits/stl_uninitialized.h \
+ /usr/include/c++/14.2.0/bits/stl_vector.h \
+ /usr/include/c++/14.2.0/bits/stl_bvector.h \
+ /usr/include/c++/14.2.0/bits/vector.tcc /usr/include/c++/14.2.0/memory \
+ /usr/include/c++/14.2.0/bits/stl_tempbuf.h \
+ /usr/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14.2.0/bits/align.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14.2.0/bits/unique_ptr.h \
+ /usr/include/c++/14.2.0/bits/shared_ptr.h \
+ /usr/include/c++/14.2.0/bits/shared_ptr_base.h \
+ /usr/include/c++/14.2.0/bits/allocated_ptr.h \
+ /usr/include/c++/14.2.0/ext/aligned_buffer.h \
+ /usr/include/c++/14.2.0/ext/concurrence.h \
+ /usr/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14.2.0/bits/atomic_base.h \
+ /usr/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/14.2.0/bits/atomic_wait.h \
+ /usr/include/c++/14.2.0/cstdint /usr/include/c++/14.2.0/climits \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/limits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/include/c++/14.2.0/bits/std_mutex.h \
+ /usr/include/c++/14.2.0/backward/auto_ptr.h \
+ /usr/include/c++/14.2.0/bits/ranges_uninitialized.h \
+ /usr/include/c++/14.2.0/bits/ranges_algobase.h \
+ /usr/include/c++/14.2.0/pstl/glue_memory_defs.h \
+ /usr/include/c++/14.2.0/pstl/execution_defs.h \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Config.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window.hpp \
@@ -192,11 +239,8 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/algorithmfwd.h \
  /usr/include/c++/14.2.0/bits/stl_heap.h \
  /usr/include/c++/14.2.0/bits/uniform_int_dist.h \
- /usr/include/c++/14.2.0/bits/stl_tempbuf.h \
  /usr/include/c++/14.2.0/bits/ranges_algo.h \
- /usr/include/c++/14.2.0/bits/ranges_algobase.h \
  /usr/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- /usr/include/c++/14.2.0/pstl/execution_defs.h \
  /usr/include/c++/14.2.0/locale \
  /usr/include/c++/14.2.0/bits/locale_facets_nonio.h \
  /usr/include/c++/14.2.0/ctime \
@@ -231,18 +275,10 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/Sensor.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/Touch.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/VideoMode.hpp \
- /usr/include/c++/14.2.0/vector \
- /usr/include/c++/14.2.0/bits/stl_uninitialized.h \
- /usr/include/c++/14.2.0/bits/stl_vector.h \
- /usr/include/c++/14.2.0/bits/stl_bvector.h \
- /usr/include/c++/14.2.0/bits/vector.tcc \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/Window.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/WindowBase.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/Vulkan.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/WindowHandle.hpp \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window/WindowStyle.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/BlendMode.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Export.hpp \
@@ -264,7 +300,6 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Texture.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Image.hpp \
  /usr/include/c++/14.2.0/map /usr/include/c++/14.2.0/bits/stl_tree.h \
- /usr/include/c++/14.2.0/ext/aligned_buffer.h \
  /usr/include/c++/14.2.0/bits/node_handle.h \
  /usr/include/c++/14.2.0/bits/stl_map.h \
  /usr/include/c++/14.2.0/bits/stl_multimap.h \
@@ -281,39 +316,4 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Text.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Button.h \
- /usr/include/c++/14.2.0/memory \
- /usr/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14.2.0/bits/align.h \
- /usr/include/c++/14.2.0/bits/unique_ptr.h \
- /usr/include/c++/14.2.0/bits/shared_ptr.h \
- /usr/include/c++/14.2.0/bits/shared_ptr_base.h \
- /usr/include/c++/14.2.0/bits/allocated_ptr.h \
- /usr/include/c++/14.2.0/ext/concurrence.h \
- /usr/include/c++/14.2.0/bits/shared_ptr_atomic.h \
- /usr/include/c++/14.2.0/bits/atomic_base.h \
- /usr/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14.2.0/bits/atomic_wait.h \
- /usr/include/c++/14.2.0/cstdint /usr/include/c++/14.2.0/climits \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/limits.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/include/x86_64-linux-gnu/asm/unistd.h \
- /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /usr/include/c++/14.2.0/bits/std_mutex.h \
- /usr/include/c++/14.2.0/backward/auto_ptr.h \
- /usr/include/c++/14.2.0/bits/ranges_uninitialized.h \
- /usr/include/c++/14.2.0/pstl/glue_memory_defs.h
+ /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h

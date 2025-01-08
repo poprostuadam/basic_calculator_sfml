@@ -3,5 +3,7 @@ build CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o: dyndep
 
 build CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o: dyndep
 
+build CMakeFiles/basic_calculator_sfml.dir/src/Display.cpp.o: dyndep
+
 build CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o: dyndep
 

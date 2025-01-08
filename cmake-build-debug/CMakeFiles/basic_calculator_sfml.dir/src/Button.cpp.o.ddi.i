@@ -72618,7 +72618,7 @@ struct Config {
     static constexpr int windowWidth = 520;
     static constexpr int windowHeight = 820;
     static constexpr const char* windowTitle = "Calculator";
-    static constexpr int frameLimit = 60;
+    static constexpr int frameLimit = 144;
 
 
     static constexpr const char* fontPath = "../assets/fonts/DejaVuSans-Bold.ttf";
