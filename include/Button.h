@@ -5,7 +5,7 @@
 #ifndef BUTTON_H
 #define BUTTON_H
 
-#include <Config.h>
+#include <config.h>
 
 class Button {
 public:

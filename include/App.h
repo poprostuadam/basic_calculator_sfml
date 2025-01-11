@@ -8,7 +8,7 @@
 #include <vector>
 #include <memory>
 
-#include <Config.h>
+#include <config.h>
 #include <Button.h>
 #include <Display.h>
 

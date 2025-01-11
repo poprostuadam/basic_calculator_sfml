@@ -8,9 +8,9 @@
 Button::Button(const std::string &label, const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font,
     int fontSize) :
     bShape(size),
-    bNormalColor(Config::NormalColor),
-    bHoverColor(Config::HoverColor),
-    bActiveColor(Config::ActiveColor),
+    bNormalColor(config::NormalColor),
+    bHoverColor(config::HoverColor),
+    bActiveColor(config::ActiveColor),
     isActive(false)
 {
     // Set button properties
@@ -21,7 +21,7 @@ Button::Button(const std::string &label, const sf::Vector2f &position, const sf:
     bText.setFont(font);
     bText.setString(label);
     bText.setCharacterSize(fontSize);
-    bText.setFillColor(Config::TextColor);
+    bText.setFillColor(config::TextColor);
 
     sf::FloatRect textRect = bText.getLocalBounds();
     bText.setOrigin(

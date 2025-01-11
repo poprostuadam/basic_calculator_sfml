@@ -5,7 +5,7 @@
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
-#include <Config.h>
+#include <config.h>
 
 constexpr const char* error_message = "ERROR";
 

@@ -4,21 +4,21 @@
 
 #include "../include/App.h"
 
-App::App(): mWindow(sf::VideoMode(Config::windowWidth, Config::windowHeight),
-        Config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
+App::App(): mWindow(sf::VideoMode(config::windowWidth, config::windowHeight),
+        config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
         mDisplay(nullptr)
 {
         // Set frame rate limit
-        mWindow.setFramerateLimit(Config::frameLimit);
+        mWindow.setFramerateLimit(config::frameLimit);
 
         // Load font
-        if (!mFont.loadFromFile(Config::fontPath)) {
+        if (!mFont.loadFromFile(config::fontPath)) {
                 throw std::runtime_error("Error loading font");
         }
 
         initButtons();
 
-        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, Config::DisplayFontSize, 15);
+        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, config::DisplayFontSize, 15);
 }
 
 void App::run() {
@@ -50,7 +50,7 @@ void App::update() {
 
 void App::render() {
         // Clear window and set background color
-        mWindow.clear(Config::BackgroundColor);
+        mWindow.clear(config::BackgroundColor);
 
         mDisplay->render(mWindow);
 
@@ -87,26 +87,26 @@ void App::initButtons() {
 
                         sf::Vector2f size{buttonSize.x * 3 + padding * 2, buttonSize.y};
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), size, mFont, Config::ButtonFontSize);
-                        button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), size, mFont, config::ButtonFontSize);
+                        button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         mButtons.push_back(std::move(button));
                 } else if (labels[i] == "<-") {
                         float x = startingPosition.x + (buttonSize.x * 3 + padding * 3);
                         float y = startingPosition.y + (row * (buttonSize.y + padding));
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, Config::ButtonFontSize);
-                        button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, config::ButtonFontSize);
+                        button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         mButtons.push_back(std::move(button));
 
                 } else {
                         float x = startingPosition.x + (col * (buttonSize.x + padding));
                         float y = startingPosition.y + (row * (buttonSize.y + padding));
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, Config::ButtonFontSize);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, config::ButtonFontSize);
 
                         if (labels[i] == "/" || labels[i] == "*"  || labels[i] == "-" ||
                             labels[i] == "AC" || labels[i] == "." || labels[i] == "+" || labels[i] == "AC") {
-                                button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                                button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         }
 
                         mButtons.push_back(std::move(button));

@@ -9,7 +9,7 @@
 #include <string>
 
 
-struct Config {
+struct config {
     // Window settings
     static constexpr int windowWidth = 520;
     static constexpr int windowHeight = 820;
