@@ -84176,7 +84176,10 @@ struct Config {
     inline static const sf::Color GreenNormalColor{179,242,124};
     inline static const sf::Color GreenHoverColor{222,255,192};
     inline static const sf::Color GreenActiveColor{115, 165, 70};
+
     inline static const sf::Color TextColor{35,35,35};
+    inline static const sf::Color DisplayTextColor{179,242,124};
+
 };
 # 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/App.h" 2
 # 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Button.h" 1
@@ -84194,6 +84197,8 @@ public:
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
     void render(sf::RenderWindow& window);
 
+    void setActive(bool isActive);
+
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -84209,20 +84214,35 @@ private:
 # 13 "/home/adam/CLionProjects/basic-calculator-sfml/include/App.h" 2
 # 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h" 1
 # 10 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h"
+constexpr const char* error_message = "ERROR*************";
+
 class Display {
 public:
     Display(
         const sf::Vector2f& position,
         const sf::Vector2f& size,
         const sf::Font& font,
-        int fontSize);
+        int fontSize,
+        int char_limit);
 
+    void addChar(char c);
+    void deleteLastChar();
     void setText(const std::string& text);
     void render(sf::RenderWindow& window);
+    void clear();
+    void showError();
 
 private:
     sf::RectangleShape dShape;
     sf::Text dText;
+
+    sf::Color DisplayColor;
+    sf::Color DisplayTextColor;
+
+    int maxFontSize;
+    int charLimit;
+
+    void adjustFontSize();
 };
 # 14 "/home/adam/CLionProjects/basic-calculator-sfml/include/App.h" 2
 

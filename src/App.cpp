@@ -18,7 +18,7 @@ App::App(): mWindow(sf::VideoMode(Config::windowWidth, Config::windowHeight),
 
         initButtons();
 
-        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, Config::DisplayFontSize);
+        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, Config::DisplayFontSize, 15);
 }
 
 void App::run() {
@@ -39,6 +39,8 @@ void App::processEvents() {
                 for (auto& button: mButtons) {
                         button->processEvents(mEvent, mWindow);
                 }
+
+                mDisplay->showError();
 
         }
 }

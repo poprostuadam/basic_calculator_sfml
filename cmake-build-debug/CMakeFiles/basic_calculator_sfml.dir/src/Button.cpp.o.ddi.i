@@ -72633,7 +72633,10 @@ struct Config {
     inline static const sf::Color GreenNormalColor{179,242,124};
     inline static const sf::Color GreenHoverColor{222,255,192};
     inline static const sf::Color GreenActiveColor{115, 165, 70};
+
     inline static const sf::Color TextColor{35,35,35};
+    inline static const sf::Color DisplayTextColor{179,242,124};
+
 };
 # 9 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/Button.h" 2
 
@@ -72650,6 +72653,8 @@ public:
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
     void render(sf::RenderWindow& window);
 
+    void setActive(bool isActive);
+
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -72663,6 +72668,7 @@ private:
     bool isActive;
 };
 # 6 "/home/adam/CLionProjects/basic-calculator-sfml/src/Button.cpp" 2
+
 
 Button::Button(const std::string &label, const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font,
     int fontSize) :
@@ -72724,6 +72730,14 @@ void Button::processEvents(const sf::Event &event, const sf::RenderWindow& windo
 void Button::render(sf::RenderWindow &window) {
     window.draw(bShape);
     window.draw(bText);
+}
+
+void Button::setActive(bool isActive) {
+    if (isActive) {
+        bShape.setFillColor(bActiveColor);
+    } else {
+        bShape.setFillColor(bNormalColor);
+    }
 }
 
 bool Button::isHovered(const sf::RenderWindow &window) const {

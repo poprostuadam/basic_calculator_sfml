@@ -20,6 +20,8 @@ public:
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
     void render(sf::RenderWindow& window);
 
+    void setActive(bool isActive);
+
 private:
     sf::RectangleShape bShape;
     sf::Text bText;

@@ -4,6 +4,7 @@
 
 #include "../include/Button.h"
 
+
 Button::Button(const std::string &label, const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font,
     int fontSize) :
     bShape(size),
@@ -64,6 +65,14 @@ void Button::processEvents(const sf::Event &event, const sf::RenderWindow& windo
 void Button::render(sf::RenderWindow &window) {
     window.draw(bShape);
     window.draw(bText);
+}
+
+void Button::setActive(bool isActive) {
+    if (isActive) {
+        bShape.setFillColor(bActiveColor);
+    } else {
+        bShape.setFillColor(bNormalColor);
+    }
 }
 
 bool Button::isHovered(const sf::RenderWindow &window) const {

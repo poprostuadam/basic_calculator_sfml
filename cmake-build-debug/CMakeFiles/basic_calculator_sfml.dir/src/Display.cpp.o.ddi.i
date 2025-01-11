@@ -72633,9 +72633,14 @@ struct Config {
     inline static const sf::Color GreenNormalColor{179,242,124};
     inline static const sf::Color GreenHoverColor{222,255,192};
     inline static const sf::Color GreenActiveColor{115, 165, 70};
+
     inline static const sf::Color TextColor{35,35,35};
+    inline static const sf::Color DisplayTextColor{179,242,124};
+
 };
 # 9 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/Display.h" 2
+
+constexpr const char* error_message = "ERROR*************";
 
 class Display {
 public:
@@ -72643,36 +72648,88 @@ public:
         const sf::Vector2f& position,
         const sf::Vector2f& size,
         const sf::Font& font,
-        int fontSize);
+        int fontSize,
+        int char_limit);
 
+    void addChar(char c);
+    void deleteLastChar();
     void setText(const std::string& text);
     void render(sf::RenderWindow& window);
+    void clear();
+    void showError();
 
 private:
     sf::RectangleShape dShape;
     sf::Text dText;
+
+    sf::Color DisplayColor;
+    sf::Color DisplayTextColor;
+
+    int maxFontSize;
+    int charLimit;
+
+    void adjustFontSize();
 };
 # 6 "/home/adam/CLionProjects/basic-calculator-sfml/src/Display.cpp" 2
 
-Display::Display(const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font, int fontSize):
-dShape(size)
+Display::Display(const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font, int fontSize, int char_limit)
+: dShape(size), DisplayColor(Config::TextColor), DisplayTextColor(Config::DisplayTextColor), maxFontSize(fontSize), charLimit(char_limit)
 {
 
     dShape.setPosition(position);
-    dShape.setFillColor(Config::GreenNormalColor);
+    dShape.setFillColor(DisplayColor);
 
 
     dText.setFont(font);
     dText.setCharacterSize(fontSize);
-    dText.setFillColor(Config::TextColor);
+    dText.setFillColor(DisplayTextColor);
     dText.setPosition(position.x + 14, position.y + 14);
+
+}
+
+void Display::addChar(char c) {
+    if (dText.getString().getSize() < static_cast<size_t>(charLimit)) {
+        dText.setString(dText.getString() + c);
+        adjustFontSize();
+    }
+}
+
+void Display::deleteLastChar() {
+    sf::String currentString = dText.getString();
+    if (!currentString.isEmpty()) {
+        currentString.erase(currentString.getSize() - 1);
+        dText.setString(currentString);
+        adjustFontSize();
+    }
 }
 
 void Display::setText(const std::string &text) {
     dText.setString(text);
+    adjustFontSize();
 }
 
 void Display::render(sf::RenderWindow &window) {
     window.draw(dShape);
     window.draw(dText);
+}
+
+void Display::clear() {
+    dText.setString("0");
+    dText.setCharacterSize(maxFontSize);
+}
+
+void Display::showError() {
+    dText.setString(error_message);
+    dText.setCharacterSize(maxFontSize);
+    adjustFontSize();
+}
+
+void Display::adjustFontSize() {
+    dText.setCharacterSize(maxFontSize);
+
+    while ((dText.getLocalBounds().width +
+            dText.getFont()->getGlyph(' ', dText.getCharacterSize(), false).advance) > dShape.getSize().x
+            && dText.getCharacterSize() > 10) {
+        dText.setCharacterSize(dText.getCharacterSize() - 1);
+    }
 }
