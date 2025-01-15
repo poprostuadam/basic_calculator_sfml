@@ -82636,6 +82636,6608 @@ private:
 };
 # 14 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/App.h" 2
 
+# 1 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 1 3 4
+# 37 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+# 1 "/usr/include/c++/14.2.0/cstring" 1 3 4
+# 39 "/usr/include/c++/14.2.0/cstring" 3 4
+       
+# 40 "/usr/include/c++/14.2.0/cstring" 3
+
+
+# 1 "/usr/include/c++/14.2.0/bits/version.h" 1 3
+# 47 "/usr/include/c++/14.2.0/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14.2.0/bits/version.h" 3
+# 43 "/usr/include/c++/14.2.0/cstring" 2 3
+# 1 "/usr/include/string.h" 1 3 4
+# 26 "/usr/include/string.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/string.h" 2 3 4
+
+
+# 28 "/usr/include/string.h" 3 4
+extern "C" {
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h" 1 3 4
+# 34 "/usr/include/string.h" 2 3 4
+# 43 "/usr/include/string.h" 3 4
+extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+       size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memmove (void *__dest, const void *__src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
+        int __c, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 4)));
+
+
+
+
+extern void *memset (void *__s, int __c, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern int memcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 80 "/usr/include/string.h" 3 4
+extern int __memcmpeq (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern "C++"
+{
+extern void *memchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const void *memchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 105 "/usr/include/string.h" 3 4
+}
+# 115 "/usr/include/string.h" 3 4
+extern "C++" void *rawmemchr (void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const void *rawmemchr (const void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern "C++" void *memrchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+extern "C++" const void *memrchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+# 141 "/usr/include/string.h" 3 4
+extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncat (char *__restrict __dest, const char *__restrict __src,
+        size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcoll (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern size_t strxfrm (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+
+
+
+extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+    locale_t __l) noexcept (true) __attribute__ ((__nonnull__ (2, 4)))
+     __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+
+
+extern char *strdup (const char *__s)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern char *strndup (const char *__string, size_t __n)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+# 224 "/usr/include/string.h" 3 4
+extern "C++"
+{
+extern char *strchr (char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strchr (const char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 244 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strrchr (char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strrchr (const char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 271 "/usr/include/string.h" 3 4
+}
+# 281 "/usr/include/string.h" 3 4
+extern "C++" char *strchrnul (char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *strchrnul (const char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 293 "/usr/include/string.h" 3 4
+extern size_t strcspn (const char *__s, const char *__reject)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern size_t strspn (const char *__s, const char *__accept)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern "C++"
+{
+extern char *strpbrk (char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strpbrk (const char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 321 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strstr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strstr (const char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 348 "/usr/include/string.h" 3 4
+}
+
+
+
+
+
+
+
+extern char *strtok (char *__restrict __s, const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (2)));
+
+
+
+extern char *__strtok_r (char *__restrict __s,
+    const char *__restrict __delim,
+    char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
+         char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+
+
+
+
+extern "C++" char *strcasestr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern "C++" const char *strcasestr (const char *__haystack,
+         const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 389 "/usr/include/string.h" 3 4
+extern void *memmem (const void *__haystack, size_t __haystacklen,
+       const void *__needle, size_t __needlelen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 3)))
+    __attribute__ ((__access__ (__read_only__, 1, 2)))
+    __attribute__ ((__access__ (__read_only__, 3, 4)));
+
+
+
+extern void *__mempcpy (void *__restrict __dest,
+   const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern void *mempcpy (void *__restrict __dest,
+        const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlen (const char *__s)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern size_t strnlen (const char *__string, size_t __maxlen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern char *strerror (int __errnum) noexcept (true);
+# 444 "/usr/include/string.h" 3 4
+extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
+     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
+
+
+
+
+extern const char *strerrordesc_np (int __err) noexcept (true);
+
+extern const char *strerrorname_np (int __err) noexcept (true);
+
+
+
+
+
+extern char *strerror_l (int __errnum, locale_t __l) noexcept (true);
+
+
+
+# 1 "/usr/include/strings.h" 1 3 4
+# 23 "/usr/include/strings.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h" 1 3 4
+# 24 "/usr/include/strings.h" 2 3 4
+
+
+
+
+
+
+extern "C" {
+
+
+
+extern int bcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern "C++"
+{
+extern char *index (char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *index (const char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 66 "/usr/include/strings.h" 3 4
+}
+
+
+
+
+
+
+
+extern "C++"
+{
+extern char *rindex (char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *rindex (const char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 94 "/usr/include/strings.h" 3 4
+}
+# 104 "/usr/include/strings.h" 3 4
+extern int ffs (int __i) noexcept (true) __attribute__ ((__const__));
+
+
+
+
+
+extern int ffsl (long int __l) noexcept (true) __attribute__ ((__const__));
+__extension__ extern int ffsll (long long int __ll)
+     noexcept (true) __attribute__ ((__const__));
+
+
+
+extern int strcasecmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+
+extern int strncasecmp_l (const char *__s1, const char *__s2,
+     size_t __n, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 4)));
+
+
+}
+# 463 "/usr/include/string.h" 2 3 4
+
+
+
+extern void explicit_bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__write_only__, 1, 2)));
+
+
+
+extern char *strsep (char **__restrict __stringp,
+       const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern char *strsignal (int __sig) noexcept (true);
+
+
+
+extern const char *sigabbrev_np (int __sig) noexcept (true);
+
+
+extern const char *sigdescr_np (int __sig) noexcept (true);
+
+
+
+extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern char *__stpncpy (char *__restrict __dest,
+   const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlcpy (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+extern size_t strlcat (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__read_write__, 1, 3)));
+
+
+
+
+extern int strverscmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strfry (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern void *memfrob (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__read_write__, 1, 2)));
+
+
+
+
+
+
+
+extern "C++" char *basename (char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *basename (const char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+# 552 "/usr/include/string.h" 3 4
+}
+# 44 "/usr/include/c++/14.2.0/cstring" 2 3
+# 72 "/usr/include/c++/14.2.0/cstring" 3
+extern "C++"
+{
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  using ::memchr;
+  using ::memcmp;
+  using ::memcpy;
+  using ::memmove;
+  using ::memset;
+  using ::strcat;
+  using ::strcmp;
+  using ::strcoll;
+  using ::strcpy;
+  using ::strcspn;
+  using ::strerror;
+  using ::strlen;
+  using ::strncat;
+  using ::strncmp;
+  using ::strncpy;
+  using ::strspn;
+
+  using ::strtok;
+
+  using ::strxfrm;
+  using ::strchr;
+  using ::strpbrk;
+  using ::strrchr;
+  using ::strstr;
+# 125 "/usr/include/c++/14.2.0/cstring" 3
+
+}
+}
+# 38 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 2 3 4
+# 1 "/usr/include/c++/14.2.0/limits" 1 3 4
+# 40 "/usr/include/c++/14.2.0/limits" 3 4
+       
+# 41 "/usr/include/c++/14.2.0/limits" 3
+# 158 "/usr/include/c++/14.2.0/limits" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+  enum float_round_style
+  {
+    round_indeterminate = -1,
+    round_toward_zero = 0,
+    round_to_nearest = 1,
+    round_toward_infinity = 2,
+    round_toward_neg_infinity = 3
+  };
+
+
+
+
+
+
+
+  enum float_denorm_style
+  {
+
+    denorm_indeterminate = -1,
+
+    denorm_absent = 0,
+
+    denorm_present = 1
+  };
+# 202 "/usr/include/c++/14.2.0/limits" 3
+  struct __numeric_limits_base
+  {
+
+
+    static constexpr bool is_specialized = false;
+
+
+
+
+    static constexpr int digits = 0;
+
+
+    static constexpr int digits10 = 0;
+
+
+
+
+    static constexpr int max_digits10 = 0;
+
+
+
+    static constexpr bool is_signed = false;
+
+
+    static constexpr bool is_integer = false;
+
+
+
+
+    static constexpr bool is_exact = false;
+
+
+
+    static constexpr int radix = 0;
+
+
+
+    static constexpr int min_exponent = 0;
+
+
+
+    static constexpr int min_exponent10 = 0;
+
+
+
+
+    static constexpr int max_exponent = 0;
+
+
+
+    static constexpr int max_exponent10 = 0;
+
+
+    static constexpr bool has_infinity = false;
+
+
+
+    static constexpr bool has_quiet_NaN = false;
+
+
+
+    static constexpr bool has_signaling_NaN = false;
+
+
+    static constexpr float_denorm_style has_denorm = denorm_absent;
+
+
+
+    static constexpr bool has_denorm_loss = false;
+
+
+
+    static constexpr bool is_iec559 = false;
+
+
+
+
+    static constexpr bool is_bounded = false;
+# 288 "/usr/include/c++/14.2.0/limits" 3
+    static constexpr bool is_modulo = false;
+
+
+    static constexpr bool traps = false;
+
+
+    static constexpr bool tinyness_before = false;
+
+
+
+
+    static constexpr float_round_style round_style =
+          round_toward_zero;
+  };
+# 311 "/usr/include/c++/14.2.0/limits" 3
+  template<typename _Tp>
+    struct numeric_limits : public __numeric_limits_base
+    {
+
+
+      static constexpr _Tp
+      min() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      max() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      lowest() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      epsilon() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      round_error() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      infinity() noexcept { return _Tp(); }
+
+
+
+      static constexpr _Tp
+      quiet_NaN() noexcept { return _Tp(); }
+
+
+
+      static constexpr _Tp
+      signaling_NaN() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      denorm_min() noexcept { return _Tp(); }
+    };
+
+
+
+
+  template<typename _Tp>
+    struct numeric_limits<const _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<volatile _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<const volatile _Tp>
+    : public numeric_limits<_Tp> { };
+# 383 "/usr/include/c++/14.2.0/limits" 3
+  template<>
+    struct numeric_limits<bool>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr bool
+      min() noexcept { return false; }
+
+      static constexpr bool
+      max() noexcept { return true; }
+
+
+      static constexpr bool
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = 1;
+      static constexpr int digits10 = 0;
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr bool
+      epsilon() noexcept { return false; }
+
+      static constexpr bool
+      round_error() noexcept { return false; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr bool
+      infinity() noexcept { return false; }
+
+      static constexpr bool
+      quiet_NaN() noexcept { return false; }
+
+      static constexpr bool
+      signaling_NaN() noexcept { return false; }
+
+      static constexpr bool
+      denorm_min() noexcept { return false; }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+
+
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char
+      min() noexcept { return (((char)(-1) < 0) ? -(((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0) - 1 : (char)0); }
+
+      static constexpr char
+      max() noexcept { return (((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0); }
+
+
+      static constexpr char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(char) * 8 - ((char)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char) * 8 - ((char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = ((char)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char
+      epsilon() noexcept { return 0; }
+
+      static constexpr char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr
+      char infinity() noexcept { return char(); }
+
+      static constexpr char
+      quiet_NaN() noexcept { return char(); }
+
+      static constexpr char
+      signaling_NaN() noexcept { return char(); }
+
+      static constexpr char
+      denorm_min() noexcept { return static_cast<char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<signed char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr signed char
+      min() noexcept { return -0x7f - 1; }
+
+      static constexpr signed char
+      max() noexcept { return 0x7f; }
+
+
+      static constexpr signed char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(signed char) * 8 - ((signed char)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(signed char) * 8 - ((signed char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr signed char
+      epsilon() noexcept { return 0; }
+
+      static constexpr signed char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr signed char
+      infinity() noexcept { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      quiet_NaN() noexcept { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      signaling_NaN() noexcept
+      { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      denorm_min() noexcept
+      { return static_cast<signed char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned char
+      min() noexcept { return 0; }
+
+      static constexpr unsigned char
+      max() noexcept { return 0x7f * 2U + 1; }
+
+
+      static constexpr unsigned char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned char
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned char
+      infinity() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      quiet_NaN() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      signaling_NaN() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      denorm_min() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<wchar_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr wchar_t
+      min() noexcept { return (((wchar_t)(-1) < 0) ? -(((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0) - 1 : (wchar_t)0); }
+
+      static constexpr wchar_t
+      max() noexcept { return (((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0); }
+
+
+      static constexpr wchar_t
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = ((wchar_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr wchar_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr wchar_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr wchar_t
+      infinity() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      quiet_NaN() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      signaling_NaN() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      denorm_min() noexcept { return wchar_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+
+  template<>
+    struct numeric_limits<char8_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char8_t
+      min() noexcept { return (((char8_t)(-1) < 0) ? -(((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0) - 1 : (char8_t)0); }
+
+      static constexpr char8_t
+      max() noexcept { return (((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0); }
+
+      static constexpr char8_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char8_t) * 8 - ((char8_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char8_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char8_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char8_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+ = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char8_t
+      infinity() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      quiet_NaN() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      signaling_NaN() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      denorm_min() noexcept { return char8_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+ = round_toward_zero;
+    };
+
+
+
+
+  template<>
+    struct numeric_limits<char16_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char16_t
+      min() noexcept { return (((char16_t)(-1) < 0) ? -(((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0) - 1 : (char16_t)0); }
+
+      static constexpr char16_t
+      max() noexcept { return (((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0); }
+
+      static constexpr char16_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char16_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char16_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char16_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char16_t
+      infinity() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      quiet_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      signaling_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      denorm_min() noexcept { return char16_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<char32_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char32_t
+      min() noexcept { return (((char32_t)(-1) < 0) ? -(((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0) - 1 : (char32_t)0); }
+
+      static constexpr char32_t
+      max() noexcept { return (((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0); }
+
+      static constexpr char32_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char32_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char32_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char32_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char32_t
+      infinity() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      quiet_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      signaling_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      denorm_min() noexcept { return char32_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+
+
+
+  template<>
+    struct numeric_limits<short>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr short
+      min() noexcept { return -0x7fff - 1; }
+
+      static constexpr short
+      max() noexcept { return 0x7fff; }
+
+
+      static constexpr short
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(short) * 8 - ((short)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(short) * 8 - ((short)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr short
+      epsilon() noexcept { return 0; }
+
+      static constexpr short
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr short
+      infinity() noexcept { return short(); }
+
+      static constexpr short
+      quiet_NaN() noexcept { return short(); }
+
+      static constexpr short
+      signaling_NaN() noexcept { return short(); }
+
+      static constexpr short
+      denorm_min() noexcept { return short(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned short>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned short
+      min() noexcept { return 0; }
+
+      static constexpr unsigned short
+      max() noexcept { return 0x7fff * 2U + 1; }
+
+
+      static constexpr unsigned short
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned short
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned short
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned short
+      infinity() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      quiet_NaN() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      signaling_NaN() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      denorm_min() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<int>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr int
+      min() noexcept { return -0x7fffffff - 1; }
+
+      static constexpr int
+      max() noexcept { return 0x7fffffff; }
+
+
+      static constexpr int
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(int) * 8 - ((int)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(int) * 8 - ((int)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr int
+      epsilon() noexcept { return 0; }
+
+      static constexpr int
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr int
+      infinity() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      quiet_NaN() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      signaling_NaN() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      denorm_min() noexcept { return static_cast<int>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned int>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned int
+      min() noexcept { return 0; }
+
+      static constexpr unsigned int
+      max() noexcept { return 0x7fffffff * 2U + 1; }
+
+
+      static constexpr unsigned int
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned int
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned int
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned int
+      infinity() noexcept { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      quiet_NaN() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      signaling_NaN() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      denorm_min() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long
+      min() noexcept { return -0x7fffffffffffffffL - 1; }
+
+      static constexpr long
+      max() noexcept { return 0x7fffffffffffffffL; }
+
+
+      static constexpr long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(long) * 8 - ((long)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(long) * 8 - ((long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr long
+      epsilon() noexcept { return 0; }
+
+      static constexpr long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr long
+      infinity() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      quiet_NaN() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      signaling_NaN() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      denorm_min() noexcept { return static_cast<long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned long
+      min() noexcept { return 0; }
+
+      static constexpr unsigned long
+      max() noexcept { return 0x7fffffffffffffffL * 2UL + 1; }
+
+
+      static constexpr unsigned long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned long
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned long
+      infinity() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      quiet_NaN() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      signaling_NaN() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      denorm_min() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<long long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long long
+      min() noexcept { return -0x7fffffffffffffffLL - 1; }
+
+      static constexpr long long
+      max() noexcept { return 0x7fffffffffffffffLL; }
+
+
+      static constexpr long long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(long long) * 8 - ((long long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(long long) * 8 - ((long long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr long long
+      epsilon() noexcept { return 0; }
+
+      static constexpr long long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr long long
+      infinity() noexcept { return static_cast<long long>(0); }
+
+      static constexpr long long
+      quiet_NaN() noexcept { return static_cast<long long>(0); }
+
+      static constexpr long long
+      signaling_NaN() noexcept
+      { return static_cast<long long>(0); }
+
+      static constexpr long long
+      denorm_min() noexcept { return static_cast<long long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned long long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned long long
+      min() noexcept { return 0; }
+
+      static constexpr unsigned long long
+      max() noexcept { return 0x7fffffffffffffffLL * 2ULL + 1; }
+
+
+      static constexpr unsigned long long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned long long
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned long long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned long long
+      infinity() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      quiet_NaN() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      signaling_NaN() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      denorm_min() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+# 1637 "/usr/include/c++/14.2.0/limits" 3
+  __extension__ template<> struct numeric_limits<__int128> { static constexpr bool is_specialized = true; static constexpr __int128 min() noexcept { return (((__int128)(-1) < 0) ? -(((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0) - 1 : (__int128)0); } static constexpr __int128 max() noexcept { return (((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0); } static constexpr int digits = 128 - 1; static constexpr int digits10 = (128 - 1) * 643L / 2136; static constexpr bool is_signed = true; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr __int128 epsilon() noexcept { return 0; } static constexpr __int128 round_error() noexcept { return 0; } static constexpr __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr __int128 infinity() noexcept { return static_cast<__int128>(0); } static constexpr __int128 quiet_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 signaling_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 denorm_min() noexcept { return static_cast<__int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; }; __extension__ template<> struct numeric_limits<unsigned __int128> { static constexpr bool is_specialized = true; static constexpr unsigned __int128 min() noexcept { return 0; } static constexpr unsigned __int128 max() noexcept { return (((unsigned __int128)(-1) < 0) ? (((((unsigned __int128)1 << ((128 - ((unsigned __int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(unsigned __int128)0); } static constexpr unsigned __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int digits = 128; static constexpr int digits10 = 128 * 643L / 2136; static constexpr bool is_signed = false; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr unsigned __int128 epsilon() noexcept { return 0; } static constexpr unsigned __int128 round_error() noexcept { return 0; } static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr unsigned __int128 infinity() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 quiet_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 signaling_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 denorm_min() noexcept { return static_cast<unsigned __int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = true; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; };
+# 1669 "/usr/include/c++/14.2.0/limits" 3
+  template<>
+    struct numeric_limits<float>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr float
+      min() noexcept { return 1.17549435082228750796873653722224568e-38F; }
+
+      static constexpr float
+      max() noexcept { return 3.40282346638528859811704183484516925e+38F; }
+
+
+      static constexpr float
+      lowest() noexcept { return -3.40282346638528859811704183484516925e+38F; }
+
+
+      static constexpr int digits = 24;
+      static constexpr int digits10 = 6;
+
+      static constexpr int max_digits10
+  = (2 + (24) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr float
+      epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F; }
+
+      static constexpr float
+      round_error() noexcept { return 0.5F; }
+
+      static constexpr int min_exponent = (-125);
+      static constexpr int min_exponent10 = (-37);
+      static constexpr int max_exponent = 128;
+      static constexpr int max_exponent10 = 38;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+       = false;
+
+      static constexpr float
+      infinity() noexcept { return __builtin_huge_valf(); }
+
+      static constexpr float
+      quiet_NaN() noexcept { return __builtin_nanf(""); }
+
+      static constexpr float
+      signaling_NaN() noexcept { return __builtin_nansf(""); }
+
+      static constexpr float
+      denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F; }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before
+       = false;
+      static constexpr float_round_style round_style
+       = round_to_nearest;
+    };
+
+
+
+
+
+
+  template<>
+    struct numeric_limits<double>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr double
+      min() noexcept { return double(2.22507385850720138309023271733240406e-308L); }
+
+      static constexpr double
+      max() noexcept { return double(1.79769313486231570814527423731704357e+308L); }
+
+
+      static constexpr double
+      lowest() noexcept { return -double(1.79769313486231570814527423731704357e+308L); }
+
+
+      static constexpr int digits = 53;
+      static constexpr int digits10 = 15;
+
+      static constexpr int max_digits10
+  = (2 + (53) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr double
+      epsilon() noexcept { return double(2.22044604925031308084726333618164062e-16L); }
+
+      static constexpr double
+      round_error() noexcept { return 0.5; }
+
+      static constexpr int min_exponent = (-1021);
+      static constexpr int min_exponent10 = (-307);
+      static constexpr int max_exponent = 1024;
+      static constexpr int max_exponent10 = 308;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+        = false;
+
+      static constexpr double
+      infinity() noexcept { return __builtin_huge_val(); }
+
+      static constexpr double
+      quiet_NaN() noexcept { return __builtin_nan(""); }
+
+      static constexpr double
+      signaling_NaN() noexcept { return __builtin_nans(""); }
+
+      static constexpr double
+      denorm_min() noexcept { return double(4.94065645841246544176568792868221372e-324L); }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before
+       = false;
+      static constexpr float_round_style round_style
+       = round_to_nearest;
+    };
+
+
+
+
+
+
+  template<>
+    struct numeric_limits<long double>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long double
+      min() noexcept { return 3.36210314311209350626267781732175260e-4932L; }
+
+      static constexpr long double
+      max() noexcept { return 1.18973149535723176502126385303097021e+4932L; }
+
+
+      static constexpr long double
+      lowest() noexcept { return -1.18973149535723176502126385303097021e+4932L; }
+
+
+      static constexpr int digits = 64;
+      static constexpr int digits10 = 18;
+
+      static constexpr int max_digits10
+  = (2 + (64) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr long double
+      epsilon() noexcept { return 1.08420217248550443400745280086994171e-19L; }
+
+      static constexpr long double
+      round_error() noexcept { return 0.5L; }
+
+      static constexpr int min_exponent = (-16381);
+      static constexpr int min_exponent10 = (-4931);
+      static constexpr int max_exponent = 16384;
+      static constexpr int max_exponent10 = 4932;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+ = false;
+
+      static constexpr long double
+      infinity() noexcept { return __builtin_huge_vall(); }
+
+      static constexpr long double
+      quiet_NaN() noexcept { return __builtin_nanl(""); }
+
+      static constexpr long double
+      signaling_NaN() noexcept { return __builtin_nansl(""); }
+
+      static constexpr long double
+      denorm_min() noexcept { return 3.64519953188247460252840593361941982e-4951L; }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before =
+      false;
+      static constexpr float_round_style round_style =
+            round_to_nearest;
+    };
+# 1989 "/usr/include/c++/14.2.0/limits" 3
+__extension__ template<> struct numeric_limits<_Float32> { static constexpr bool is_specialized = true; static constexpr _Float32 min() noexcept { return 1.17549435082228750796873653722224568e-38F32; } static constexpr _Float32 max() noexcept { return 3.40282346638528859811704183484516925e+38F32; } static constexpr _Float32 lowest() noexcept { return -3.40282346638528859811704183484516925e+38F32; } static constexpr int digits = 24; static constexpr int digits10 = 6; static constexpr int max_digits10 = (2 + (24) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float32 epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F32; } static constexpr _Float32 round_error() noexcept { return 0.5F32; } static constexpr int min_exponent = (-125); static constexpr int min_exponent10 = (-37); static constexpr int max_exponent = 128; static constexpr int max_exponent10 = 38; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float32 infinity() noexcept { return __builtin_huge_valf32(); } static constexpr _Float32 quiet_NaN() noexcept { return __builtin_nanf32(""); } static constexpr _Float32 signaling_NaN() noexcept { return __builtin_nansf32(""); } static constexpr _Float32 denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F32; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+
+
+__extension__ template<> struct numeric_limits<_Float64> { static constexpr bool is_specialized = true; static constexpr _Float64 min() noexcept { return 2.22507385850720138309023271733240406e-308F64; } static constexpr _Float64 max() noexcept { return 1.79769313486231570814527423731704357e+308F64; } static constexpr _Float64 lowest() noexcept { return -1.79769313486231570814527423731704357e+308F64; } static constexpr int digits = 53; static constexpr int digits10 = 15; static constexpr int max_digits10 = (2 + (53) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float64 epsilon() noexcept { return 2.22044604925031308084726333618164062e-16F64; } static constexpr _Float64 round_error() noexcept { return 0.5F64; } static constexpr int min_exponent = (-1021); static constexpr int min_exponent10 = (-307); static constexpr int max_exponent = 1024; static constexpr int max_exponent10 = 308; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float64 infinity() noexcept { return __builtin_huge_valf64(); } static constexpr _Float64 quiet_NaN() noexcept { return __builtin_nanf64(""); } static constexpr _Float64 signaling_NaN() noexcept { return __builtin_nansf64(""); } static constexpr _Float64 denorm_min() noexcept { return 4.94065645841246544176568792868221372e-324F64; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+
+
+__extension__ template<> struct numeric_limits<_Float128> { static constexpr bool is_specialized = true; static constexpr _Float128 min() noexcept { return 3.36210314311209350626267781732175260e-4932F128; } static constexpr _Float128 max() noexcept { return 1.18973149535723176508575932662800702e+4932F128; } static constexpr _Float128 lowest() noexcept { return -1.18973149535723176508575932662800702e+4932F128; } static constexpr int digits = 113; static constexpr int digits10 = 33; static constexpr int max_digits10 = (2 + (113) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float128 epsilon() noexcept { return 1.92592994438723585305597794258492732e-34F128; } static constexpr _Float128 round_error() noexcept { return 0.5F128; } static constexpr int min_exponent = (-16381); static constexpr int min_exponent10 = (-4931); static constexpr int max_exponent = 16384; static constexpr int max_exponent10 = 4932; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float128 infinity() noexcept { return __builtin_huge_valf128(); } static constexpr _Float128 quiet_NaN() noexcept { return __builtin_nanf128(""); } static constexpr _Float128 signaling_NaN() noexcept { return __builtin_nansf128(""); } static constexpr _Float128 denorm_min() noexcept { return 6.47517511943802511092443895822764655e-4966F128; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+# 2087 "/usr/include/c++/14.2.0/limits" 3
+  __extension__
+  template<>
+    struct numeric_limits<__float128>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr __float128
+      min() noexcept
+      {
+
+
+
+
+ return __extension__ 0x1.0p-16382Q;
+
+      }
+
+      static constexpr __float128
+      max() noexcept
+      {
+
+
+
+
+
+
+
+ return __extension__ 0x1.ffffffffffffffffffffffffffffp+16383Q;
+
+      }
+
+      static constexpr __float128
+      lowest() noexcept
+      { return -max(); }
+
+      static constexpr int digits = 113;
+      static constexpr int digits10 = 33;
+
+      static constexpr int max_digits10 = 35;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr __float128
+      epsilon() noexcept
+      { return double(1.9259299443872359e-34); }
+
+      static constexpr __float128
+      round_error() noexcept { return 0.5; }
+
+      static constexpr int min_exponent = -16381;
+      static constexpr int min_exponent10 = -4931;
+      static constexpr int max_exponent = 16384;
+      static constexpr int max_exponent10 = 4932;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+
+
+      static constexpr bool has_signaling_NaN = true;
+
+
+
+      static constexpr float_denorm_style has_denorm
+ = denorm_present;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr __float128
+      infinity() noexcept
+      { return __builtin_huge_val(); }
+
+      static constexpr __float128
+      quiet_NaN() noexcept
+      { return __builtin_nan(""); }
+
+      static constexpr __float128
+      signaling_NaN() noexcept
+      {
+
+ return __builtin_nansq("");
+
+
+
+
+
+      }
+
+      static constexpr __float128
+      denorm_min() noexcept
+      {
+
+
+
+
+ return __extension__ 0x1.0p-16494Q;
+
+      }
+
+      static constexpr bool is_iec559 = has_signaling_NaN;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+ = round_to_nearest;
+# 2218 "/usr/include/c++/14.2.0/limits" 3
+    };
+
+
+
+
+}
+# 39 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 2 3 4
+# 1 "/usr/include/c++/14.2.0/utility" 1 3 4
+# 58 "/usr/include/c++/14.2.0/utility" 3 4
+       
+# 59 "/usr/include/c++/14.2.0/utility" 3
+# 68 "/usr/include/c++/14.2.0/utility" 3
+# 1 "/usr/include/c++/14.2.0/bits/stl_relops.h" 1 3
+# 62 "/usr/include/c++/14.2.0/bits/stl_relops.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  namespace rel_ops
+  {
+# 86 "/usr/include/c++/14.2.0/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator!=(const _Tp& __x, const _Tp& __y)
+      { return !(__x == __y); }
+# 99 "/usr/include/c++/14.2.0/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator>(const _Tp& __x, const _Tp& __y)
+      { return __y < __x; }
+# 112 "/usr/include/c++/14.2.0/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator<=(const _Tp& __x, const _Tp& __y)
+      { return !(__y < __x); }
+# 125 "/usr/include/c++/14.2.0/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator>=(const _Tp& __x, const _Tp& __y)
+      { return !(__x < __y); }
+  }
+
+
+}
+# 69 "/usr/include/c++/14.2.0/utility" 2 3
+# 96 "/usr/include/c++/14.2.0/utility" 3
+# 1 "/usr/include/c++/14.2.0/bits/version.h" 1 3
+# 47 "/usr/include/c++/14.2.0/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14.2.0/bits/version.h" 3
+# 97 "/usr/include/c++/14.2.0/utility" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+  template <typename _Tp, typename _Up = _Tp>
+    constexpr
+    inline _Tp
+    exchange(_Tp& __obj, _Up&& __new_val)
+    noexcept(__and_<is_nothrow_move_constructible<_Tp>,
+      is_nothrow_assignable<_Tp&, _Up>>::value)
+    { return std::__exchange(__obj, std::forward<_Up>(__new_val)); }
+
+
+
+  template<typename _Tp>
+    [[nodiscard]]
+    constexpr add_const_t<_Tp>&
+    as_const(_Tp& __t) noexcept
+    { return __t; }
+
+  template<typename _Tp>
+    void as_const(const _Tp&&) = delete;
+
+
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_equal(_Tp __t, _Up __u) noexcept
+    {
+      static_assert(__is_standard_integer<_Tp>::value);
+      static_assert(__is_standard_integer<_Up>::value);
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
+ return __t == __u;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t >= 0 && make_unsigned_t<_Tp>(__t) == __u;
+      else
+ return __u >= 0 && __t == make_unsigned_t<_Up>(__u);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_not_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_equal(__t, __u); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_less(_Tp __t, _Up __u) noexcept
+    {
+      static_assert(__is_standard_integer<_Tp>::value);
+      static_assert(__is_standard_integer<_Up>::value);
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
+ return __t < __u;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t < 0 || make_unsigned_t<_Tp>(__t) < __u;
+      else
+ return __u >= 0 && __t < make_unsigned_t<_Up>(__u);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_greater(_Tp __t, _Up __u) noexcept
+    { return std::cmp_less(__u, __t); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_less_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_less(__u, __t); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_greater_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_less(__t, __u); }
+
+  template<typename _Res, typename _Tp>
+    constexpr bool
+    in_range(_Tp __t) noexcept
+    {
+      static_assert(__is_standard_integer<_Res>::value);
+      static_assert(__is_standard_integer<_Tp>::value);
+      using __gnu_cxx::__int_traits;
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Res>)
+ return __int_traits<_Res>::__min <= __t
+   && __t <= __int_traits<_Res>::__max;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t >= 0
+   && make_unsigned_t<_Tp>(__t) <= __int_traits<_Res>::__max;
+      else
+ return __t <= make_unsigned_t<_Res>(__int_traits<_Res>::__max);
+    }
+# 230 "/usr/include/c++/14.2.0/utility" 3
+
+}
+# 40 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 2 3 4
+
+
+
+# 1 "/usr/include/c++/14.2.0/cfloat" 1 3 4
+# 39 "/usr/include/c++/14.2.0/cfloat" 3 4
+       
+# 40 "/usr/include/c++/14.2.0/cfloat" 3
+
+
+# 1 "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/float.h" 1 3 4
+# 43 "/usr/include/c++/14.2.0/cfloat" 2 3
+# 44 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 2 3 4
+# 1 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 1 3 4
+# 36 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+# 1 "/usr/include/c++/14.2.0/cstdio" 1 3 4
+# 39 "/usr/include/c++/14.2.0/cstdio" 3 4
+       
+# 40 "/usr/include/c++/14.2.0/cstdio" 3
+# 37 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 2 3 4
+# 56 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h" 1 3 4
+# 57 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 2 3 4
+# 1 "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/limits.h" 1 3 4
+# 58 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 2 3 4
+# 142 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+typedef unsigned long int mp_limb_t;
+typedef long int mp_limb_signed_t;
+
+
+typedef unsigned long int mp_bitcnt_t;
+
+
+
+
+typedef struct
+{
+  int _mp_alloc;
+
+  int _mp_size;
+
+
+  mp_limb_t *_mp_d;
+} __mpz_struct;
+
+
+
+
+typedef __mpz_struct MP_INT;
+typedef __mpz_struct mpz_t[1];
+
+typedef mp_limb_t * mp_ptr;
+typedef const mp_limb_t * mp_srcptr;
+
+
+
+
+
+
+
+typedef long int mp_size_t;
+typedef long int mp_exp_t;
+
+
+typedef struct
+{
+  __mpz_struct _mp_num;
+  __mpz_struct _mp_den;
+} __mpq_struct;
+
+typedef __mpq_struct MP_RAT;
+typedef __mpq_struct mpq_t[1];
+
+typedef struct
+{
+  int _mp_prec;
+
+
+
+  int _mp_size;
+
+
+  mp_exp_t _mp_exp;
+  mp_limb_t *_mp_d;
+} __mpf_struct;
+
+
+typedef __mpf_struct mpf_t[1];
+
+
+typedef enum
+{
+  GMP_RAND_ALG_DEFAULT = 0,
+  GMP_RAND_ALG_LC = GMP_RAND_ALG_DEFAULT
+} gmp_randalg_t;
+
+
+typedef struct
+{
+  mpz_t _mp_seed;
+  gmp_randalg_t _mp_alg;
+  union {
+    void *_mp_lc;
+  } _mp_algdata;
+} __gmp_randstate_struct;
+typedef __gmp_randstate_struct gmp_randstate_t[1];
+
+
+
+typedef const __mpz_struct *mpz_srcptr;
+typedef __mpz_struct *mpz_ptr;
+typedef const __mpf_struct *mpf_srcptr;
+typedef __mpf_struct *mpf_ptr;
+typedef const __mpq_struct *mpq_srcptr;
+typedef __mpq_struct *mpq_ptr;
+typedef __gmp_randstate_struct *gmp_randstate_ptr;
+typedef const __gmp_randstate_struct *gmp_randstate_srcptr;
+# 476 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+extern "C" {
+using std::FILE;
+
+
+
+ void __gmp_set_memory_functions (void *(*) (size_t),
+          void *(*) (void *, size_t, size_t),
+          void (*) (void *, size_t)) noexcept;
+
+
+ void __gmp_get_memory_functions (void *(**) (size_t),
+          void *(**) (void *, size_t, size_t),
+          void (**) (void *, size_t)) noexcept;
+
+
+ extern const int __gmp_bits_per_limb;
+
+
+ extern int __gmp_errno;
+
+
+ extern const char * const __gmp_version;
+
+
+
+
+
+
+ void __gmp_randinit (gmp_randstate_ptr, gmp_randalg_t, ...);
+
+
+ void __gmp_randinit_default (gmp_randstate_ptr);
+
+
+ void __gmp_randinit_lc_2exp (gmp_randstate_ptr, mpz_srcptr, unsigned long int, mp_bitcnt_t);
+
+
+ int __gmp_randinit_lc_2exp_size (gmp_randstate_ptr, mp_bitcnt_t);
+
+
+ void __gmp_randinit_mt (gmp_randstate_ptr);
+
+
+ void __gmp_randinit_set (gmp_randstate_ptr, gmp_randstate_srcptr);
+
+
+ void __gmp_randseed (gmp_randstate_ptr, mpz_srcptr);
+
+
+ void __gmp_randseed_ui (gmp_randstate_ptr, unsigned long int);
+
+
+ void __gmp_randclear (gmp_randstate_ptr);
+
+
+ unsigned long __gmp_urandomb_ui (gmp_randstate_ptr, unsigned long);
+
+
+ unsigned long __gmp_urandomm_ui (gmp_randstate_ptr, unsigned long);
+
+
+
+
+
+ int __gmp_asprintf (char **, const char *, ...);
+
+
+
+ int __gmp_fprintf (FILE *, const char *, ...);
+# 558 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+ int __gmp_printf (const char *, ...);
+
+
+ int __gmp_snprintf (char *, size_t, const char *, ...);
+
+
+ int __gmp_sprintf (char *, const char *, ...);
+# 596 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+ int __gmp_fscanf (FILE *, const char *, ...);
+
+
+
+ int __gmp_scanf (const char *, ...);
+
+
+ int __gmp_sscanf (const char *, const char *, ...);
+# 625 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+ void *__gmpz_realloc (mpz_ptr, mp_size_t);
+
+
+
+ void __gmpz_abs (mpz_ptr, mpz_srcptr);
+
+
+
+ void __gmpz_add (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_add_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_addmul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_addmul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_and (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_array_init (mpz_ptr, mp_size_t, mp_size_t);
+
+
+ void __gmpz_bin_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_bin_uiui (mpz_ptr, unsigned long int, unsigned long int);
+
+
+ void __gmpz_cdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_cdiv_q_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_cdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_cdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ unsigned long int __gmpz_cdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_cdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_cdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_cdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ unsigned long int __gmpz_cdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+ void __gmpz_clear (mpz_ptr);
+
+
+ void __gmpz_clears (mpz_ptr, ...);
+
+
+ void __gmpz_clrbit (mpz_ptr, mp_bitcnt_t);
+
+
+ int __gmpz_cmp (mpz_srcptr, mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_cmp_d (mpz_srcptr, double) __attribute__ ((__pure__));
+
+
+ int __gmpz_cmp_si (mpz_srcptr, signed long int) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_cmp_ui (mpz_srcptr, unsigned long int) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_cmpabs (mpz_srcptr, mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_cmpabs_d (mpz_srcptr, double) __attribute__ ((__pure__));
+
+
+ int __gmpz_cmpabs_ui (mpz_srcptr, unsigned long int) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_com (mpz_ptr, mpz_srcptr);
+
+
+ void __gmpz_combit (mpz_ptr, mp_bitcnt_t);
+
+
+ int __gmpz_congruent_p (mpz_srcptr, mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+ int __gmpz_congruent_2exp_p (mpz_srcptr, mpz_srcptr, mp_bitcnt_t) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_congruent_ui_p (mpz_srcptr, unsigned long, unsigned long) __attribute__ ((__pure__));
+
+
+ void __gmpz_divexact (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_divexact_ui (mpz_ptr, mpz_srcptr, unsigned long);
+
+
+ int __gmpz_divisible_p (mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+ int __gmpz_divisible_ui_p (mpz_srcptr, unsigned long) __attribute__ ((__pure__));
+
+
+ int __gmpz_divisible_2exp_p (mpz_srcptr, mp_bitcnt_t) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_dump (mpz_srcptr);
+
+
+ void *__gmpz_export (void *, size_t *, int, size_t, int, size_t, mpz_srcptr);
+
+
+ void __gmpz_fac_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_2fac_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_mfac_uiui (mpz_ptr, unsigned long int, unsigned long int);
+
+
+ void __gmpz_primorial_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_fdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_fdiv_q_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_fdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_fdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ unsigned long int __gmpz_fdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_fdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_fdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_fdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ unsigned long int __gmpz_fdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+ void __gmpz_fib_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_fib2_ui (mpz_ptr, mpz_ptr, unsigned long int);
+
+
+ int __gmpz_fits_sint_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_fits_slong_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpz_fits_sshort_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+ int __gmpz_fits_uint_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+
+ int __gmpz_fits_ulong_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+
+ int __gmpz_fits_ushort_p (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+ void __gmpz_gcd (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ unsigned long int __gmpz_gcd_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_gcdext (mpz_ptr, mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ double __gmpz_get_d (mpz_srcptr) __attribute__ ((__pure__));
+
+
+ double __gmpz_get_d_2exp (signed long int *, mpz_srcptr);
+
+
+ long int __gmpz_get_si (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ char *__gmpz_get_str (char *, int, mpz_srcptr);
+
+
+
+ unsigned long int __gmpz_get_ui (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+
+ mp_limb_t __gmpz_getlimbn (mpz_srcptr, mp_size_t) noexcept __attribute__ ((__pure__));
+
+
+
+ mp_bitcnt_t __gmpz_hamdist (mpz_srcptr, mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_import (mpz_ptr, size_t, int, size_t, int, size_t, const void *);
+
+
+ void __gmpz_init (mpz_ptr) noexcept;
+
+
+ void __gmpz_init2 (mpz_ptr, mp_bitcnt_t);
+
+
+ void __gmpz_inits (mpz_ptr, ...) noexcept;
+
+
+ void __gmpz_init_set (mpz_ptr, mpz_srcptr);
+
+
+ void __gmpz_init_set_d (mpz_ptr, double);
+
+
+ void __gmpz_init_set_si (mpz_ptr, signed long int);
+
+
+ int __gmpz_init_set_str (mpz_ptr, const char *, int);
+
+
+ void __gmpz_init_set_ui (mpz_ptr, unsigned long int);
+
+
+
+ size_t __gmpz_inp_raw (mpz_ptr, FILE *);
+
+
+
+
+ size_t __gmpz_inp_str (mpz_ptr, FILE *, int);
+
+
+
+ int __gmpz_invert (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_ior (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ int __gmpz_jacobi (mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+
+ int __gmpz_kronecker_si (mpz_srcptr, long) __attribute__ ((__pure__));
+
+
+ int __gmpz_kronecker_ui (mpz_srcptr, unsigned long) __attribute__ ((__pure__));
+
+
+ int __gmpz_si_kronecker (long, mpz_srcptr) __attribute__ ((__pure__));
+
+
+ int __gmpz_ui_kronecker (unsigned long, mpz_srcptr) __attribute__ ((__pure__));
+
+
+ void __gmpz_lcm (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_lcm_ui (mpz_ptr, mpz_srcptr, unsigned long);
+
+
+
+
+ void __gmpz_lucnum_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_lucnum2_ui (mpz_ptr, mpz_ptr, unsigned long int);
+
+
+ int __gmpz_millerrabin (mpz_srcptr, int) __attribute__ ((__pure__));
+
+
+ void __gmpz_mod (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+
+
+ void __gmpz_mul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_mul_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ void __gmpz_mul_si (mpz_ptr, mpz_srcptr, long int);
+
+
+ void __gmpz_mul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+
+ void __gmpz_neg (mpz_ptr, mpz_srcptr);
+
+
+
+ void __gmpz_nextprime (mpz_ptr, mpz_srcptr);
+
+
+ int __gmpz_prevprime (mpz_ptr, mpz_srcptr);
+
+
+
+ size_t __gmpz_out_raw (FILE *, mpz_srcptr);
+
+
+
+
+ size_t __gmpz_out_str (FILE *, int, mpz_srcptr);
+
+
+
+ int __gmpz_perfect_power_p (mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+ int __gmpz_perfect_square_p (mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+
+ mp_bitcnt_t __gmpz_popcount (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+ void __gmpz_pow_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_powm (mpz_ptr, mpz_srcptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_powm_sec (mpz_ptr, mpz_srcptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_powm_ui (mpz_ptr, mpz_srcptr, unsigned long int, mpz_srcptr);
+
+
+ int __gmpz_probab_prime_p (mpz_srcptr, int) __attribute__ ((__pure__));
+
+
+ void __gmpz_random (mpz_ptr, mp_size_t);
+
+
+ void __gmpz_random2 (mpz_ptr, mp_size_t);
+
+
+ void __gmpz_realloc2 (mpz_ptr, mp_bitcnt_t);
+
+
+ mp_bitcnt_t __gmpz_remove (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ int __gmpz_root (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_rootrem (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_rrandomb (mpz_ptr, gmp_randstate_ptr, mp_bitcnt_t);
+
+
+ mp_bitcnt_t __gmpz_scan0 (mpz_srcptr, mp_bitcnt_t) noexcept __attribute__ ((__pure__));
+
+
+ mp_bitcnt_t __gmpz_scan1 (mpz_srcptr, mp_bitcnt_t) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_set (mpz_ptr, mpz_srcptr);
+
+
+ void __gmpz_set_d (mpz_ptr, double);
+
+
+ void __gmpz_set_f (mpz_ptr, mpf_srcptr);
+
+
+
+ void __gmpz_set_q (mpz_ptr, mpq_srcptr);
+
+
+
+ void __gmpz_set_si (mpz_ptr, signed long int);
+
+
+ int __gmpz_set_str (mpz_ptr, const char *, int);
+
+
+ void __gmpz_set_ui (mpz_ptr, unsigned long int);
+
+
+ void __gmpz_setbit (mpz_ptr, mp_bitcnt_t);
+
+
+
+ size_t __gmpz_size (mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+
+ size_t __gmpz_sizeinbase (mpz_srcptr, int) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_sqrt (mpz_ptr, mpz_srcptr);
+
+
+ void __gmpz_sqrtrem (mpz_ptr, mpz_ptr, mpz_srcptr);
+
+
+ void __gmpz_sub (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_sub_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_ui_sub (mpz_ptr, unsigned long int, mpz_srcptr);
+
+
+ void __gmpz_submul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_submul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_swap (mpz_ptr, mpz_ptr) noexcept;
+
+
+ unsigned long int __gmpz_tdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+ void __gmpz_tdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_tdiv_q_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_tdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_tdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ unsigned long int __gmpz_tdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ void __gmpz_tdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ void __gmpz_tdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+ unsigned long int __gmpz_tdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+ int __gmpz_tstbit (mpz_srcptr, mp_bitcnt_t) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpz_ui_pow_ui (mpz_ptr, unsigned long int, unsigned long int);
+
+
+ void __gmpz_urandomb (mpz_ptr, gmp_randstate_ptr, mp_bitcnt_t);
+
+
+ void __gmpz_urandomm (mpz_ptr, gmp_randstate_ptr, mpz_srcptr);
+
+
+
+ void __gmpz_xor (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+ mp_srcptr __gmpz_limbs_read (mpz_srcptr);
+
+
+ mp_ptr __gmpz_limbs_write (mpz_ptr, mp_size_t);
+
+
+ mp_ptr __gmpz_limbs_modify (mpz_ptr, mp_size_t);
+
+
+ void __gmpz_limbs_finish (mpz_ptr, mp_size_t);
+
+
+ mpz_srcptr __gmpz_roinit_n (mpz_ptr, mp_srcptr, mp_size_t);
+
+
+
+
+
+
+
+ void __gmpq_abs (mpq_ptr, mpq_srcptr);
+
+
+
+ void __gmpq_add (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+ void __gmpq_canonicalize (mpq_ptr);
+
+
+ void __gmpq_clear (mpq_ptr);
+
+
+ void __gmpq_clears (mpq_ptr, ...);
+
+
+ int __gmpq_cmp (mpq_srcptr, mpq_srcptr) __attribute__ ((__pure__));
+
+
+ int __gmpq_cmp_si (mpq_srcptr, long, unsigned long) __attribute__ ((__pure__));
+
+
+ int __gmpq_cmp_ui (mpq_srcptr, unsigned long int, unsigned long int) __attribute__ ((__pure__));
+
+
+ int __gmpq_cmp_z (mpq_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+ void __gmpq_div (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+ void __gmpq_div_2exp (mpq_ptr, mpq_srcptr, mp_bitcnt_t);
+
+
+ int __gmpq_equal (mpq_srcptr, mpq_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpq_get_num (mpz_ptr, mpq_srcptr);
+
+
+ void __gmpq_get_den (mpz_ptr, mpq_srcptr);
+
+
+ double __gmpq_get_d (mpq_srcptr) __attribute__ ((__pure__));
+
+
+ char *__gmpq_get_str (char *, int, mpq_srcptr);
+
+
+ void __gmpq_init (mpq_ptr);
+
+
+ void __gmpq_inits (mpq_ptr, ...);
+
+
+
+ size_t __gmpq_inp_str (mpq_ptr, FILE *, int);
+
+
+
+ void __gmpq_inv (mpq_ptr, mpq_srcptr);
+
+
+ void __gmpq_mul (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+ void __gmpq_mul_2exp (mpq_ptr, mpq_srcptr, mp_bitcnt_t);
+
+
+
+ void __gmpq_neg (mpq_ptr, mpq_srcptr);
+
+
+
+
+ size_t __gmpq_out_str (FILE *, int, mpq_srcptr);
+
+
+
+ void __gmpq_set (mpq_ptr, mpq_srcptr);
+
+
+ void __gmpq_set_d (mpq_ptr, double);
+
+
+ void __gmpq_set_den (mpq_ptr, mpz_srcptr);
+
+
+ void __gmpq_set_f (mpq_ptr, mpf_srcptr);
+
+
+ void __gmpq_set_num (mpq_ptr, mpz_srcptr);
+
+
+ void __gmpq_set_si (mpq_ptr, signed long int, unsigned long int);
+
+
+ int __gmpq_set_str (mpq_ptr, const char *, int);
+
+
+ void __gmpq_set_ui (mpq_ptr, unsigned long int, unsigned long int);
+
+
+ void __gmpq_set_z (mpq_ptr, mpz_srcptr);
+
+
+ void __gmpq_sub (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+ void __gmpq_swap (mpq_ptr, mpq_ptr) noexcept;
+
+
+
+
+
+ void __gmpf_abs (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_add (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+ void __gmpf_add_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+ void __gmpf_ceil (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_clear (mpf_ptr);
+
+
+ void __gmpf_clears (mpf_ptr, ...);
+
+
+ int __gmpf_cmp (mpf_srcptr, mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_cmp_z (mpf_srcptr, mpz_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_cmp_d (mpf_srcptr, double) __attribute__ ((__pure__));
+
+
+ int __gmpf_cmp_si (mpf_srcptr, signed long int) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_cmp_ui (mpf_srcptr, unsigned long int) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpf_div (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+ void __gmpf_div_2exp (mpf_ptr, mpf_srcptr, mp_bitcnt_t);
+
+
+ void __gmpf_div_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+ void __gmpf_dump (mpf_srcptr);
+
+
+ int __gmpf_eq (mpf_srcptr, mpf_srcptr, mp_bitcnt_t) __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_sint_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_slong_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_sshort_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_uint_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_ulong_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ int __gmpf_fits_ushort_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpf_floor (mpf_ptr, mpf_srcptr);
+
+
+ double __gmpf_get_d (mpf_srcptr) __attribute__ ((__pure__));
+
+
+ double __gmpf_get_d_2exp (signed long int *, mpf_srcptr);
+
+
+ mp_bitcnt_t __gmpf_get_default_prec (void) noexcept __attribute__ ((__pure__));
+
+
+ mp_bitcnt_t __gmpf_get_prec (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ long __gmpf_get_si (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ char *__gmpf_get_str (char *, mp_exp_t *, int, size_t, mpf_srcptr);
+
+
+ unsigned long __gmpf_get_ui (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpf_init (mpf_ptr);
+
+
+ void __gmpf_init2 (mpf_ptr, mp_bitcnt_t);
+
+
+ void __gmpf_inits (mpf_ptr, ...);
+
+
+ void __gmpf_init_set (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_init_set_d (mpf_ptr, double);
+
+
+ void __gmpf_init_set_si (mpf_ptr, signed long int);
+
+
+ int __gmpf_init_set_str (mpf_ptr, const char *, int);
+
+
+ void __gmpf_init_set_ui (mpf_ptr, unsigned long int);
+
+
+
+ size_t __gmpf_inp_str (mpf_ptr, FILE *, int);
+
+
+
+ int __gmpf_integer_p (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpf_mul (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+ void __gmpf_mul_2exp (mpf_ptr, mpf_srcptr, mp_bitcnt_t);
+
+
+ void __gmpf_mul_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+ void __gmpf_neg (mpf_ptr, mpf_srcptr);
+
+
+
+ size_t __gmpf_out_str (FILE *, int, size_t, mpf_srcptr);
+
+
+
+ void __gmpf_pow_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+ void __gmpf_random2 (mpf_ptr, mp_size_t, mp_exp_t);
+
+
+ void __gmpf_reldiff (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+ void __gmpf_set (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_set_d (mpf_ptr, double);
+
+
+ void __gmpf_set_default_prec (mp_bitcnt_t) noexcept;
+
+
+ void __gmpf_set_prec (mpf_ptr, mp_bitcnt_t);
+
+
+ void __gmpf_set_prec_raw (mpf_ptr, mp_bitcnt_t) noexcept;
+
+
+ void __gmpf_set_q (mpf_ptr, mpq_srcptr);
+
+
+ void __gmpf_set_si (mpf_ptr, signed long int);
+
+
+ int __gmpf_set_str (mpf_ptr, const char *, int);
+
+
+ void __gmpf_set_ui (mpf_ptr, unsigned long int);
+
+
+ void __gmpf_set_z (mpf_ptr, mpz_srcptr);
+
+
+ size_t __gmpf_size (mpf_srcptr) noexcept __attribute__ ((__pure__));
+
+
+ void __gmpf_sqrt (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_sqrt_ui (mpf_ptr, unsigned long int);
+
+
+ void __gmpf_sub (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+ void __gmpf_sub_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+ void __gmpf_swap (mpf_ptr, mpf_ptr) noexcept;
+
+
+ void __gmpf_trunc (mpf_ptr, mpf_srcptr);
+
+
+ void __gmpf_ui_div (mpf_ptr, unsigned long int, mpf_srcptr);
+
+
+ void __gmpf_ui_sub (mpf_ptr, unsigned long int, mpf_srcptr);
+
+
+ void __gmpf_urandomb (mpf_ptr, gmp_randstate_ptr, mp_bitcnt_t);
+# 1472 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+ mp_limb_t __gmpn_add (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+
+
+ mp_limb_t __gmpn_add_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t) noexcept;
+
+
+
+ mp_limb_t __gmpn_add_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_addmul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+
+ int __gmpn_cmp (mp_srcptr, mp_srcptr, mp_size_t) noexcept __attribute__ ((__pure__));
+
+
+
+
+ int __gmpn_zero_p (mp_srcptr, mp_size_t) noexcept __attribute__ ((__pure__));
+
+
+
+ void __gmpn_divexact_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+
+
+
+ mp_limb_t __gmpn_divexact_by3c (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+
+
+
+ mp_limb_t __gmpn_divrem (mp_ptr, mp_size_t, mp_ptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_divrem_1 (mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+ mp_limb_t __gmpn_divrem_2 (mp_ptr, mp_size_t, mp_ptr, mp_size_t, mp_srcptr);
+
+
+ mp_limb_t __gmpn_div_qr_1 (mp_ptr, mp_limb_t *, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+ mp_limb_t __gmpn_div_qr_2 (mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_srcptr);
+
+
+ mp_size_t __gmpn_gcd (mp_ptr, mp_ptr, mp_size_t, mp_ptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_gcd_11 (mp_limb_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+ mp_limb_t __gmpn_gcd_1 (mp_srcptr, mp_size_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+ mp_limb_t __gmpn_gcdext_1 (mp_limb_signed_t *, mp_limb_signed_t *, mp_limb_t, mp_limb_t);
+
+
+ mp_size_t __gmpn_gcdext (mp_ptr, mp_ptr, mp_size_t *, mp_ptr, mp_size_t, mp_ptr, mp_size_t);
+
+
+ size_t __gmpn_get_str (unsigned char *, int, mp_ptr, mp_size_t);
+
+
+ mp_bitcnt_t __gmpn_hamdist (mp_srcptr, mp_srcptr, mp_size_t) noexcept __attribute__ ((__pure__));
+
+
+ mp_limb_t __gmpn_lshift (mp_ptr, mp_srcptr, mp_size_t, unsigned int);
+
+
+ mp_limb_t __gmpn_mod_1 (mp_srcptr, mp_size_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+ mp_limb_t __gmpn_mul (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_mul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+ void __gmpn_mul_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+ void __gmpn_sqr (mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+ mp_limb_t __gmpn_neg (mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+ void __gmpn_com (mp_ptr, mp_srcptr, mp_size_t);
+
+
+ int __gmpn_perfect_square_p (mp_srcptr, mp_size_t) __attribute__ ((__pure__));
+
+
+ int __gmpn_perfect_power_p (mp_srcptr, mp_size_t) __attribute__ ((__pure__));
+
+
+ mp_bitcnt_t __gmpn_popcount (mp_srcptr, mp_size_t) noexcept __attribute__ ((__pure__));
+
+
+ mp_size_t __gmpn_pow_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr);
+
+
+
+ mp_limb_t __gmpn_preinv_mod_1 (mp_srcptr, mp_size_t, mp_limb_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+ void __gmpn_random (mp_ptr, mp_size_t);
+
+
+ void __gmpn_random2 (mp_ptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_rshift (mp_ptr, mp_srcptr, mp_size_t, unsigned int);
+
+
+ mp_bitcnt_t __gmpn_scan0 (mp_srcptr, mp_bitcnt_t) __attribute__ ((__pure__));
+
+
+ mp_bitcnt_t __gmpn_scan1 (mp_srcptr, mp_bitcnt_t) __attribute__ ((__pure__));
+
+
+ mp_size_t __gmpn_set_str (mp_ptr, const unsigned char *, size_t, int);
+
+
+ size_t __gmpn_sizeinbase (mp_srcptr, mp_size_t, int);
+
+
+ mp_size_t __gmpn_sqrtrem (mp_ptr, mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+ mp_limb_t __gmpn_sub (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+
+
+ mp_limb_t __gmpn_sub_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t) noexcept;
+
+
+
+ mp_limb_t __gmpn_sub_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_submul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+ void __gmpn_tdiv_qr (mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+ void __gmpn_and_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_andn_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_nand_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_ior_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_iorn_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_nior_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_xor_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_xnor_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+ void __gmpn_copyi (mp_ptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_copyd (mp_ptr, mp_srcptr, mp_size_t);
+
+ void __gmpn_zero (mp_ptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_cnd_add_n (mp_limb_t, mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+ mp_limb_t __gmpn_cnd_sub_n (mp_limb_t, mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+ mp_limb_t __gmpn_sec_add_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_add_1_itch (mp_size_t) __attribute__ ((__pure__));
+
+
+ mp_limb_t __gmpn_sec_sub_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_sub_1_itch (mp_size_t) __attribute__ ((__pure__));
+
+
+ void __gmpn_cnd_swap (mp_limb_t, volatile mp_limb_t *, volatile mp_limb_t *, mp_size_t);
+
+
+ void __gmpn_sec_mul (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_mul_itch (mp_size_t, mp_size_t) __attribute__ ((__pure__));
+
+
+ void __gmpn_sec_sqr (mp_ptr, mp_srcptr, mp_size_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_sqr_itch (mp_size_t) __attribute__ ((__pure__));
+
+
+ void __gmpn_sec_powm (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_bitcnt_t, mp_srcptr, mp_size_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_powm_itch (mp_size_t, mp_bitcnt_t, mp_size_t) __attribute__ ((__pure__));
+
+
+ void __gmpn_sec_tabselect (volatile mp_limb_t *, volatile const mp_limb_t *, mp_size_t, mp_size_t, mp_size_t);
+
+
+ mp_limb_t __gmpn_sec_div_qr (mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_div_qr_itch (mp_size_t, mp_size_t) __attribute__ ((__pure__));
+
+ void __gmpn_sec_div_r (mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_div_r_itch (mp_size_t, mp_size_t) __attribute__ ((__pure__));
+
+
+ int __gmpn_sec_invert (mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_bitcnt_t, mp_ptr);
+
+ mp_size_t __gmpn_sec_invert_itch (mp_size_t) __attribute__ ((__pure__));
+# 1721 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+extern __inline__ __attribute__ ((__gnu_inline__)) void
+__gmpz_abs (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpz_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_size = ((__gmp_w->_mp_size) >= 0 ? (__gmp_w->_mp_size) : -(__gmp_w->_mp_size));
+}
+# 1745 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpz_fits_uint_p (mpz_srcptr __gmp_z) noexcept
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= (0x7fffffff * 2U + 1U)));;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpz_fits_ulong_p (mpz_srcptr __gmp_z) noexcept
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= (0x7fffffffffffffffL * 2UL + 1UL)));;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpz_fits_ushort_p (mpz_srcptr __gmp_z) noexcept
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= (0x7fff * 2 + 1)));;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+unsigned long
+__gmpz_get_ui (mpz_srcptr __gmp_z) noexcept
+{
+  mp_ptr __gmp_p = __gmp_z->_mp_d;
+  mp_size_t __gmp_n = __gmp_z->_mp_size;
+  mp_limb_t __gmp_l = __gmp_p[0];
+
+
+
+
+
+
+  return (__gmp_n != 0 ? __gmp_l : 0);
+# 1801 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpz_getlimbn (mpz_srcptr __gmp_z, mp_size_t __gmp_n) noexcept
+{
+  mp_limb_t __gmp_result = 0;
+  if (__builtin_expect ((__gmp_n >= 0 && __gmp_n < ((__gmp_z->_mp_size) >= 0 ? (__gmp_z->_mp_size) : -(__gmp_z->_mp_size))) != 0, 1))
+    __gmp_result = __gmp_z->_mp_d[__gmp_n];
+  return __gmp_result;
+}
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__)) void
+__gmpz_neg (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpz_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_size = - __gmp_w->_mp_size;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpz_perfect_square_p (mpz_srcptr __gmp_a)
+{
+  mp_size_t __gmp_asize;
+  int __gmp_result;
+
+  __gmp_asize = __gmp_a->_mp_size;
+  __gmp_result = (__gmp_asize >= 0);
+  if (__builtin_expect ((__gmp_asize > 0) != 0, 1))
+    __gmp_result = __gmpn_perfect_square_p (__gmp_a->_mp_d, __gmp_asize);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_bitcnt_t
+__gmpz_popcount (mpz_srcptr __gmp_u) noexcept
+{
+  mp_size_t __gmp_usize;
+  mp_bitcnt_t __gmp_result;
+
+  __gmp_usize = __gmp_u->_mp_size;
+  __gmp_result = (__gmp_usize < 0 ? ~ (static_cast<mp_bitcnt_t> (0)) : (static_cast<mp_bitcnt_t> (0)));
+  if (__builtin_expect ((__gmp_usize > 0) != 0, 1))
+    __gmp_result = __gmpn_popcount (__gmp_u->_mp_d, __gmp_usize);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+void
+__gmpz_set_q (mpz_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  __gmpz_tdiv_q (__gmp_w, (&((__gmp_u)->_mp_num)), (&((__gmp_u)->_mp_den)));
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+size_t
+__gmpz_size (mpz_srcptr __gmp_z) noexcept
+{
+  return ((__gmp_z->_mp_size) >= 0 ? (__gmp_z->_mp_size) : -(__gmp_z->_mp_size));
+}
+
+
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__)) void
+__gmpq_abs (mpq_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpq_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_num._mp_size = ((__gmp_w->_mp_num._mp_size) >= 0 ? (__gmp_w->_mp_num._mp_size) : -(__gmp_w->_mp_num._mp_size));
+}
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__)) void
+__gmpq_neg (mpq_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpq_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_num._mp_size = - __gmp_w->_mp_num._mp_size;
+}
+# 2143 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpn_add (mp_ptr __gmp_wp, mp_srcptr __gmp_xp, mp_size_t __gmp_xsize, mp_srcptr __gmp_yp, mp_size_t __gmp_ysize)
+{
+  mp_limb_t __gmp_c;
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; ; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpn_add_1 (mp_ptr __gmp_dst, mp_srcptr __gmp_src, mp_size_t __gmp_size, mp_limb_t __gmp_n) noexcept
+{
+  mp_limb_t __gmp_c;
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_r; __gmp_x = (__gmp_src)[0]; __gmp_r = __gmp_x + (__gmp_n); (__gmp_dst)[0] = __gmp_r; if (((__gmp_r) < ((__gmp_n)))) { (__gmp_c) = 1; for (__gmp_i = 1; __gmp_i < (__gmp_size);) { __gmp_x = (__gmp_src)[__gmp_i]; __gmp_r = __gmp_x + 1; (__gmp_dst)[__gmp_i] = __gmp_r; ++__gmp_i; if (!((__gmp_r) < (1))) { if ((__gmp_src) != (__gmp_dst)) do { mp_size_t __gmp_j; ; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; break; } } } else { if ((__gmp_src) != (__gmp_dst)) do { mp_size_t __gmp_j; ; for (__gmp_j = (1); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; } } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpn_cmp (mp_srcptr __gmp_xp, mp_srcptr __gmp_yp, mp_size_t __gmp_size) noexcept
+{
+  int __gmp_result;
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_y; (__gmp_result) = 0; __gmp_i = (__gmp_size); while (--__gmp_i >= 0) { __gmp_x = (__gmp_xp)[__gmp_i]; __gmp_y = (__gmp_yp)[__gmp_i]; if (__gmp_x != __gmp_y) { (__gmp_result) = (__gmp_x > __gmp_y ? 1 : -1); break; } } } while (0);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+int
+__gmpn_zero_p (mp_srcptr __gmp_p, mp_size_t __gmp_n) noexcept
+{
+
+    do {
+      if (__gmp_p[--__gmp_n] != 0)
+ return 0;
+    } while (__gmp_n != 0);
+  return 1;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpn_sub (mp_ptr __gmp_wp, mp_srcptr __gmp_xp, mp_size_t __gmp_xsize, mp_srcptr __gmp_yp, mp_size_t __gmp_ysize)
+{
+  mp_limb_t __gmp_c;
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_sub_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x - 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)), __gmp_x == 0)); } } if ((__gmp_wp) != (__gmp_xp)) do { mp_size_t __gmp_j; ; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpn_sub_1 (mp_ptr __gmp_dst, mp_srcptr __gmp_src, mp_size_t __gmp_size, mp_limb_t __gmp_n) noexcept
+{
+  mp_limb_t __gmp_c;
+  do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_r; __gmp_x = (__gmp_src)[0]; __gmp_r = __gmp_x - (__gmp_n); (__gmp_dst)[0] = __gmp_r; if (((__gmp_x) < ((__gmp_n)))) { (__gmp_c) = 1; for (__gmp_i = 1; __gmp_i < (__gmp_size);) { __gmp_x = (__gmp_src)[__gmp_i]; __gmp_r = __gmp_x - 1; (__gmp_dst)[__gmp_i] = __gmp_r; ++__gmp_i; if (!((__gmp_x) < (1))) { if ((__gmp_src) != (__gmp_dst)) do { mp_size_t __gmp_j; ; for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; break; } } } else { if ((__gmp_src) != (__gmp_dst)) do { mp_size_t __gmp_j; ; for (__gmp_j = (1); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; } } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__ ((__gnu_inline__))
+
+mp_limb_t
+__gmpn_neg (mp_ptr __gmp_rp, mp_srcptr __gmp_up, mp_size_t __gmp_n)
+{
+  while (*__gmp_up == 0)
+    {
+      *__gmp_rp = 0;
+      if (!--__gmp_n)
+ return 0;
+      ++__gmp_up; ++__gmp_rp;
+    }
+
+  *__gmp_rp = (- *__gmp_up) & ((~ (static_cast<mp_limb_t> (0))) >> 0);
+
+  if (--__gmp_n)
+    __gmpn_com (++__gmp_rp, ++__gmp_up, __gmp_n);
+
+  return 1;
+}
+
+
+
+}
+# 2292 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+ std::ostream& operator<< (std::ostream &, mpz_srcptr);
+ std::ostream& operator<< (std::ostream &, mpq_srcptr);
+ std::ostream& operator<< (std::ostream &, mpf_srcptr);
+ std::istream& operator>> (std::istream &, mpz_ptr);
+ std::istream& operator>> (std::istream &, mpq_ptr);
+ std::istream& operator>> (std::istream &, mpf_ptr);
+# 2323 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h" 3 4
+enum
+{
+  GMP_ERROR_NONE = 0,
+  GMP_ERROR_UNSUPPORTED_ARGUMENT = 1,
+  GMP_ERROR_DIVISION_BY_ZERO = 2,
+  GMP_ERROR_SQRT_OF_NEGATIVE = 4,
+  GMP_ERROR_INVALID_ARGUMENT = 8,
+  GMP_ERROR_MPZ_OVERFLOW = 16
+};
+# 45 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 2 3 4
+# 86 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+inline void __mpz_set_ui_safe(mpz_ptr p, unsigned long l)
+{
+  p->_mp_size = (l != 0);
+  p->_mp_d[0] = l & ((~ (static_cast<mp_limb_t> (0))) >> 0);
+
+
+
+
+
+}
+
+inline void __mpz_set_si_safe(mpz_ptr p, long l)
+{
+  if(l < 0)
+  {
+    __mpz_set_ui_safe(p, -static_cast<unsigned long>(l));
+    __gmpz_neg(p, p);
+  }
+  else
+    __mpz_set_ui_safe(p, l);
+
+}
+# 152 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+inline unsigned long __gmpxx_abs_ui (signed long l)
+{
+  return l >= 0 ? static_cast<unsigned long>(l)
+   : -static_cast<unsigned long>(l);
+}
+
+
+
+
+
+
+
+struct __gmp_unary_plus
+{
+  static void eval(mpz_ptr z, mpz_srcptr w) { __gmpz_set(z, w); }
+  static void eval(mpq_ptr q, mpq_srcptr r) { __gmpq_set(q, r); }
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_set(f, g); }
+};
+
+struct __gmp_unary_minus
+{
+  static void eval(mpz_ptr z, mpz_srcptr w) { __gmpz_neg(z, w); }
+  static void eval(mpq_ptr q, mpq_srcptr r) { __gmpq_neg(q, r); }
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_neg(f, g); }
+};
+
+struct __gmp_unary_com
+{
+  static void eval(mpz_ptr z, mpz_srcptr w) { __gmpz_com(z, w); }
+};
+
+struct __gmp_binary_plus
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_add(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  {
+
+
+    if (__builtin_constant_p(l) && l == 0)
+    {
+      if (z != w) __gmpz_set(z, w);
+    }
+    else
+      __gmpz_add_ui(z, w, l);
+  }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  {
+    if (l >= 0)
+      eval(z, w, static_cast<unsigned long>(l));
+    else
+      __gmpz_sub_ui(z, w, -static_cast<unsigned long>(l));
+  }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_add (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpq_srcptr s)
+  { __gmpq_add(q, r, s); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, unsigned long int l)
+  {
+    if (__builtin_constant_p(l) && l == 0)
+    {
+      if (q != r) __gmpq_set(q, r);
+    }
+    else if (__builtin_constant_p(l) && l == 1)
+    {
+      __gmpz_add ((&((q)->_mp_num)), (&((r)->_mp_num)), (&((r)->_mp_den)));
+      if (q != r) __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+    }
+    else
+    {
+      if (q == r)
+        __gmpz_addmul_ui((&((q)->_mp_num)), (&((q)->_mp_den)), l);
+      else
+      {
+        __gmpz_mul_ui((&((q)->_mp_num)), (&((r)->_mp_den)), l);
+        __gmpz_add((&((q)->_mp_num)), (&((q)->_mp_num)), (&((r)->_mp_num)));
+        __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+      }
+    }
+  }
+  static void eval(mpq_ptr q, unsigned long int l, mpq_srcptr r)
+  { eval(q, r, l); }
+  static inline void eval(mpq_ptr q, mpq_srcptr r, signed long int l);
+
+  static void eval(mpq_ptr q, signed long int l, mpq_srcptr r)
+  { eval(q, r, l); }
+  static void eval(mpq_ptr q, mpq_srcptr r, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_add (q, r, temp); }
+  static void eval(mpq_ptr q, double d, mpq_srcptr r)
+  { eval(q, r, d); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpz_srcptr z)
+  {
+    if (q == r)
+      __gmpz_addmul((&((q)->_mp_num)), (&((q)->_mp_den)), z);
+    else
+    {
+      __gmpz_mul((&((q)->_mp_num)), (&((r)->_mp_den)), z);
+      __gmpz_add((&((q)->_mp_num)), (&((q)->_mp_num)), (&((r)->_mp_num)));
+      __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+    }
+  }
+  static void eval(mpq_ptr q, mpz_srcptr z, mpq_srcptr r)
+  { eval(q, r, z); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, mpf_srcptr h)
+  { __gmpf_add(f, g, h); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, unsigned long int l)
+  { __gmpf_add_ui(f, g, l); }
+  static void eval(mpf_ptr f, unsigned long int l, mpf_srcptr g)
+  { __gmpf_add_ui(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, signed long int l)
+  {
+    if (l >= 0)
+      __gmpf_add_ui(f, g, l);
+    else
+      __gmpf_sub_ui(f, g, -static_cast<unsigned long>(l));
+  }
+  static void eval(mpf_ptr f, signed long int l, mpf_srcptr g)
+  { eval(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, double d)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_add(f, g, temp);
+    __gmpf_clear(temp);
+  }
+  static void eval(mpf_ptr f, double d, mpf_srcptr g)
+  { eval(f, g, d); }
+};
+
+struct __gmp_binary_minus
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_sub(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  {
+    if (__builtin_constant_p(l) && l == 0)
+    {
+      if (z != w) __gmpz_set(z, w);
+    }
+    else
+      __gmpz_sub_ui(z, w, l);
+  }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  {
+    if (__builtin_constant_p(l) && l == 0)
+    {
+      __gmpz_neg(z, w);
+    }
+    else
+      __gmpz_ui_sub(z, l, w);
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  {
+    if (l >= 0)
+      eval(z, w, static_cast<unsigned long>(l));
+    else
+      __gmpz_add_ui(z, w, -static_cast<unsigned long>(l));
+  }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  {
+    if (l >= 0)
+      eval(z, static_cast<unsigned long>(l), w);
+    else
+      {
+        __gmpz_add_ui(z, w, -static_cast<unsigned long>(l));
+        __gmpz_neg(z, z);
+      }
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_sub (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_sub (z, temp, w); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpq_srcptr s)
+  { __gmpq_sub(q, r, s); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, unsigned long int l)
+  {
+    if (__builtin_constant_p(l) && l == 0)
+    {
+      if (q != r) __gmpq_set(q, r);
+    }
+    else if (__builtin_constant_p(l) && l == 1)
+    {
+      __gmpz_sub ((&((q)->_mp_num)), (&((r)->_mp_num)), (&((r)->_mp_den)));
+      if (q != r) __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+    }
+    else
+    {
+      if (q == r)
+        __gmpz_submul_ui((&((q)->_mp_num)), (&((q)->_mp_den)), l);
+      else
+      {
+        __gmpz_mul_ui((&((q)->_mp_num)), (&((r)->_mp_den)), l);
+        __gmpz_sub((&((q)->_mp_num)), (&((r)->_mp_num)), (&((q)->_mp_num)));
+        __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+      }
+    }
+  }
+  static void eval(mpq_ptr q, unsigned long int l, mpq_srcptr r)
+  { eval(q, r, l); __gmpq_neg(q, q); }
+  static void eval(mpq_ptr q, mpq_srcptr r, signed long int l)
+  {
+    if (l >= 0)
+      eval(q, r, static_cast<unsigned long>(l));
+    else
+      __gmp_binary_plus::eval(q, r, -static_cast<unsigned long>(l));
+  }
+  static void eval(mpq_ptr q, signed long int l, mpq_srcptr r)
+  { eval(q, r, l); __gmpq_neg(q, q); }
+  static void eval(mpq_ptr q, mpq_srcptr r, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_sub (q, r, temp); }
+  static void eval(mpq_ptr q, double d, mpq_srcptr r)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_sub (q, temp, r); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpz_srcptr z)
+  {
+    if (q == r)
+      __gmpz_submul((&((q)->_mp_num)), (&((q)->_mp_den)), z);
+    else
+    {
+      __gmpz_mul((&((q)->_mp_num)), (&((r)->_mp_den)), z);
+      __gmpz_sub((&((q)->_mp_num)), (&((r)->_mp_num)), (&((q)->_mp_num)));
+      __gmpz_set((&((q)->_mp_den)), (&((r)->_mp_den)));
+    }
+  }
+  static void eval(mpq_ptr q, mpz_srcptr z, mpq_srcptr r)
+  { eval(q, r, z); __gmpq_neg(q, q); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, mpf_srcptr h)
+  { __gmpf_sub(f, g, h); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, unsigned long int l)
+  { __gmpf_sub_ui(f, g, l); }
+  static void eval(mpf_ptr f, unsigned long int l, mpf_srcptr g)
+  { __gmpf_ui_sub(f, l, g); }
+  static void eval(mpf_ptr f, mpf_srcptr g, signed long int l)
+  {
+    if (l >= 0)
+      __gmpf_sub_ui(f, g, l);
+    else
+      __gmpf_add_ui(f, g, -static_cast<unsigned long>(l));
+  }
+  static void eval(mpf_ptr f, signed long int l, mpf_srcptr g)
+  {
+    if (l >= 0)
+      __gmpf_sub_ui(f, g, l);
+    else
+      __gmpf_add_ui(f, g, -static_cast<unsigned long>(l));
+    __gmpf_neg(f, f);
+  }
+  static void eval(mpf_ptr f, mpf_srcptr g, double d)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_sub(f, g, temp);
+    __gmpf_clear(temp);
+  }
+  static void eval(mpf_ptr f, double d, mpf_srcptr g)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_sub(f, temp, g);
+    __gmpf_clear(temp);
+  }
+};
+
+
+inline void
+__gmp_binary_plus::eval(mpq_ptr q, mpq_srcptr r, signed long int l)
+{
+  if (l >= 0)
+    eval(q, r, static_cast<unsigned long>(l));
+  else
+    __gmp_binary_minus::eval(q, r, -static_cast<unsigned long>(l));
+}
+
+struct __gmp_binary_lshift
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mp_bitcnt_t l)
+  {
+    if (__builtin_constant_p(l) && (l == 0))
+    {
+      if (z != w) __gmpz_set(z, w);
+    }
+    else
+      __gmpz_mul_2exp(z, w, l);
+  }
+  static void eval(mpq_ptr q, mpq_srcptr r, mp_bitcnt_t l)
+  {
+    if (__builtin_constant_p(l) && (l == 0))
+    {
+      if (q != r) __gmpq_set(q, r);
+    }
+    else
+      __gmpq_mul_2exp(q, r, l);
+  }
+  static void eval(mpf_ptr f, mpf_srcptr g, mp_bitcnt_t l)
+  { __gmpf_mul_2exp(f, g, l); }
+};
+
+struct __gmp_binary_rshift
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mp_bitcnt_t l)
+  {
+    if (__builtin_constant_p(l) && (l == 0))
+    {
+      if (z != w) __gmpz_set(z, w);
+    }
+    else
+      __gmpz_fdiv_q_2exp(z, w, l);
+  }
+  static void eval(mpq_ptr q, mpq_srcptr r, mp_bitcnt_t l)
+  {
+    if (__builtin_constant_p(l) && (l == 0))
+    {
+      if (q != r) __gmpq_set(q, r);
+    }
+    else
+      __gmpq_div_2exp(q, r, l);
+  }
+  static void eval(mpf_ptr f, mpf_srcptr g, mp_bitcnt_t l)
+  { __gmpf_div_2exp(f, g, l); }
+};
+
+struct __gmp_binary_multiplies
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_mul(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  {
+
+
+    if (__builtin_constant_p(l) && (l & (l-1)) == 0)
+    {
+      if (l == 0)
+      {
+        z->_mp_size = 0;
+      }
+      else
+      {
+        __gmp_binary_lshift::eval(z, w, __builtin_ctzl(l));
+      }
+    }
+    else
+
+      __gmpz_mul_ui(z, w, l);
+  }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      eval(z, w, static_cast<unsigned long>(l));
+    else if ((__builtin_constant_p(l <= 0) && (l <= 0)))
+      {
+        eval(z, w, -static_cast<unsigned long>(l));
+ __gmpz_neg(z, z);
+      }
+    else
+      __gmpz_mul_si (z, w, l);
+  }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_mul (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpq_srcptr s)
+  { __gmpq_mul(q, r, s); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, unsigned long int l)
+  {
+
+    if (__builtin_constant_p(l) && (l & (l-1)) == 0)
+    {
+      if (l == 0)
+      {
+ __gmpq_set_ui(q, 0, 1);
+      }
+      else
+      {
+        __gmp_binary_lshift::eval(q, r, __builtin_ctzl(l));
+      }
+    }
+    else
+
+    {
+      mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_ui_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+      __gmpq_mul (q, r, temp);
+    }
+  }
+  static void eval(mpq_ptr q, unsigned long int l, mpq_srcptr r)
+  { eval(q, r, l); }
+  static void eval(mpq_ptr q, mpq_srcptr r, signed long int l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      eval(q, r, static_cast<unsigned long>(l));
+    else if ((__builtin_constant_p(l <= 0) && (l <= 0)))
+      {
+        eval(q, r, -static_cast<unsigned long>(l));
+ __gmpq_neg(q, q);
+      }
+    else
+      {
+ mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_si_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+ __gmpq_mul (q, r, temp);
+      }
+  }
+  static void eval(mpq_ptr q, signed long int l, mpq_srcptr r)
+  { eval(q, r, l); }
+  static void eval(mpq_ptr q, mpq_srcptr r, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_mul (q, r, temp); }
+  static void eval(mpq_ptr q, double d, mpq_srcptr r)
+  { eval(q, r, d); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, mpf_srcptr h)
+  { __gmpf_mul(f, g, h); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, unsigned long int l)
+  { __gmpf_mul_ui(f, g, l); }
+  static void eval(mpf_ptr f, unsigned long int l, mpf_srcptr g)
+  { __gmpf_mul_ui(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, signed long int l)
+  {
+    if (l >= 0)
+      __gmpf_mul_ui(f, g, l);
+    else
+      {
+ __gmpf_mul_ui(f, g, -static_cast<unsigned long>(l));
+ __gmpf_neg(f, f);
+      }
+  }
+  static void eval(mpf_ptr f, signed long int l, mpf_srcptr g)
+  { eval(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, double d)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_mul(f, g, temp);
+    __gmpf_clear(temp);
+  }
+  static void eval(mpf_ptr f, double d, mpf_srcptr g)
+  { eval(f, g, d); }
+};
+
+struct __gmp_binary_divides
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_tdiv_q(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  {
+
+
+    if (__builtin_constant_p(l) && (l & (l-1)) == 0 && l != 0)
+    {
+      if (l == 1)
+      {
+        if (z != w) __gmpz_set(z, w);
+      }
+      else
+        __gmpz_tdiv_q_2exp(z, w, __builtin_ctzl(l));
+
+    }
+    else
+
+      __gmpz_tdiv_q_ui(z, w, l);
+  }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  {
+    if (((w)->_mp_size < 0 ? -1 : (w)->_mp_size > 0) >= 0)
+      {
+ if (__gmpz_fits_ulong_p(w))
+   __gmpz_set_ui(z, l / __gmpz_get_ui(w));
+ else
+   __gmpz_set_ui(z, 0);
+      }
+    else
+      {
+ __gmpz_neg(z, w);
+ if (__gmpz_fits_ulong_p(z))
+   {
+     __gmpz_set_ui(z, l / __gmpz_get_ui(z));
+     __gmpz_neg(z, z);
+   }
+ else
+   __gmpz_set_ui(z, 0);
+      }
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  {
+    if (l >= 0)
+      eval(z, w, static_cast<unsigned long>(l));
+    else
+      {
+ eval(z, w, -static_cast<unsigned long>(l));
+ __gmpz_neg(z, z);
+      }
+  }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  {
+    if (__gmpz_fits_slong_p(w))
+      __gmpz_set_si(z, l / __gmpz_get_si(w));
+    else
+      {
+
+
+        __gmpz_set_si (z, (__gmpz_cmpabs_ui (w, __gmpxx_abs_ui(l)) == 0 ? -1 : 0));
+      }
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_tdiv_q (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_tdiv_q (z, temp, w); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, mpq_srcptr s)
+  { __gmpq_div(q, r, s); }
+
+  static void eval(mpq_ptr q, mpq_srcptr r, unsigned long int l)
+  {
+
+    if (__builtin_constant_p(l) && (l & (l-1)) == 0 && l != 0)
+      __gmp_binary_rshift::eval(q, r, __builtin_ctzl(l));
+    else
+
+    {
+      mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_ui_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+      __gmpq_div (q, r, temp);
+    }
+  }
+  static void eval(mpq_ptr q, unsigned long int l, mpq_srcptr r)
+  {
+    if ((__builtin_constant_p(l == 0) && (l == 0)))
+      __gmpq_set_ui(q, 0, 1);
+    else if ((__builtin_constant_p(l == 1) && (l == 1)))
+      __gmpq_inv(q, r);
+    else
+      {
+ mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_ui_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+ __gmpq_div (q, temp, r);
+      }
+  }
+  static void eval(mpq_ptr q, mpq_srcptr r, signed long int l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      eval(q, r, static_cast<unsigned long>(l));
+    else if ((__builtin_constant_p(l <= 0) && (l <= 0)))
+      {
+        eval(q, r, -static_cast<unsigned long>(l));
+ __gmpq_neg(q, q);
+      }
+    else
+      {
+ mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_si_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+ __gmpq_div (q, r, temp);
+      }
+  }
+  static void eval(mpq_ptr q, signed long int l, mpq_srcptr r)
+  {
+    if ((__builtin_constant_p(l == 0) && (l == 0)))
+      __gmpq_set_ui(q, 0, 1);
+    else if ((__builtin_constant_p(l == 1) && (l == 1)))
+      __gmpq_inv(q, r);
+    else if ((__builtin_constant_p(l == -1) && (l == -1)))
+      {
+ __gmpq_inv(q, r);
+ __gmpq_neg(q, q);
+      }
+    else
+      {
+ mpq_t temp; mp_limb_t limbs[1 +1]; (&((temp)->_mp_num))->_mp_d = limbs; __mpz_set_si_safe ((&((temp)->_mp_num)), l); (&((temp)->_mp_den))->_mp_d = limbs + 1; (&((temp)->_mp_den))->_mp_size = 1; (&((temp)->_mp_den))->_mp_d[0] = 1;
+ __gmpq_div (q, temp, r);
+      }
+  }
+  static void eval(mpq_ptr q, mpq_srcptr r, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_div (q, r, temp); }
+  static void eval(mpq_ptr q, double d, mpq_srcptr r)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); __gmpq_div (q, temp, r); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, mpf_srcptr h)
+  { __gmpf_div(f, g, h); }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, unsigned long int l)
+  { __gmpf_div_ui(f, g, l); }
+  static void eval(mpf_ptr f, unsigned long int l, mpf_srcptr g)
+  { __gmpf_ui_div(f, l, g); }
+  static void eval(mpf_ptr f, mpf_srcptr g, signed long int l)
+  {
+    if (l >= 0)
+      __gmpf_div_ui(f, g, l);
+    else
+      {
+ __gmpf_div_ui(f, g, -static_cast<unsigned long>(l));
+ __gmpf_neg(f, f);
+      }
+  }
+  static void eval(mpf_ptr f, signed long int l, mpf_srcptr g)
+  {
+    if (l >= 0)
+      __gmpf_ui_div(f, l, g);
+    else
+      {
+ __gmpf_ui_div(f, -static_cast<unsigned long>(l), g);
+ __gmpf_neg(f, f);
+      }
+  }
+  static void eval(mpf_ptr f, mpf_srcptr g, double d)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_div(f, g, temp);
+    __gmpf_clear(temp);
+  }
+  static void eval(mpf_ptr f, double d, mpf_srcptr g)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, 8*sizeof(double));
+    __gmpf_set_d(temp, d);
+    __gmpf_div(f, temp, g);
+    __gmpf_clear(temp);
+  }
+};
+
+struct __gmp_binary_modulus
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_tdiv_r(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { __gmpz_tdiv_r_ui(z, w, l); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  {
+    if (((w)->_mp_size < 0 ? -1 : (w)->_mp_size > 0) >= 0)
+      {
+ if (__gmpz_fits_ulong_p(w))
+   __gmpz_set_ui(z, l % __gmpz_get_ui(w));
+ else
+   __gmpz_set_ui(z, l);
+      }
+    else
+      {
+ __gmpz_neg(z, w);
+ if (__gmpz_fits_ulong_p(z))
+   __gmpz_set_ui(z, l % __gmpz_get_ui(z));
+ else
+   __gmpz_set_ui(z, l);
+      }
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  {
+    __gmpz_tdiv_r_ui (z, w, __gmpxx_abs_ui(l));
+  }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  {
+    if (__gmpz_fits_slong_p(w))
+      __gmpz_set_si(z, l % __gmpz_get_si(w));
+    else
+      {
+
+
+        __gmpz_set_si (z, __gmpz_cmpabs_ui (w, __gmpxx_abs_ui(l)) == 0 ? 0 : l);
+      }
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_tdiv_r (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_tdiv_r (z, temp, w); }
+};
+
+struct __gmp_binary_and
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_and(z, w, v); }
+
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_ui_safe (temp, l); __gmpz_and (z, w, temp); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_si_safe (temp, l); __gmpz_and (z, w, temp); }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_and (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+};
+
+struct __gmp_binary_ior
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_ior(z, w, v); }
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_ui_safe (temp, l); __gmpz_ior (z, w, temp); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_si_safe (temp, l); __gmpz_ior (z, w, temp); }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_ior (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+};
+
+struct __gmp_binary_xor
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_xor(z, w, v); }
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_ui_safe (temp, l); __gmpz_xor (z, w, temp); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  { mpz_t temp; mp_limb_t limbs[1]; temp->_mp_d = limbs; __mpz_set_si_safe (temp, l); __gmpz_xor (z, w, temp); }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_xor (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+};
+
+struct __gmp_cmp_function
+{
+  static int eval(mpz_srcptr z, mpz_srcptr w) { return __gmpz_cmp(z, w); }
+
+  static int eval(mpz_srcptr z, unsigned long int l)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,l)); }
+  static int eval(unsigned long int l, mpz_srcptr z)
+  { return -(__builtin_constant_p (l) && (l) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,l)); }
+  static int eval(mpz_srcptr z, signed long int l)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,(static_cast<unsigned long> (l)))) : __gmpz_cmp_si (z,l)); }
+  static int eval(signed long int l, mpz_srcptr z)
+  { return -(__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,(static_cast<unsigned long> (l)))) : __gmpz_cmp_si (z,l)); }
+  static int eval(mpz_srcptr z, double d)
+  { return __gmpz_cmp_d(z, d); }
+  static int eval(double d, mpz_srcptr z)
+  { return -__gmpz_cmp_d(z, d); }
+
+  static int eval(mpq_srcptr q, mpq_srcptr r) { return __gmpq_cmp(q, r); }
+
+  static int eval(mpq_srcptr q, unsigned long int l)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p ((l) == (1)) && (l) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,l,1)); }
+  static int eval(unsigned long int l, mpq_srcptr q)
+  { return -(__builtin_constant_p (l) && (l) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p ((l) == (1)) && (l) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,l,1)); }
+  static int eval(mpq_srcptr q, signed long int l)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p (((static_cast<unsigned long> (l))) == (1)) && ((static_cast<unsigned long> (l))) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,(static_cast<unsigned long> (l)),1)) : __gmpq_cmp_si (q, l, 1)); }
+  static int eval(signed long int l, mpq_srcptr q)
+  { return -(__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p (((static_cast<unsigned long> (l))) == (1)) && ((static_cast<unsigned long> (l))) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,(static_cast<unsigned long> (l)),1)) : __gmpq_cmp_si (q, l, 1)); }
+  static int eval(mpq_srcptr q, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); return __gmpq_cmp (q, temp); }
+  static int eval(double d, mpq_srcptr q)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); return __gmpq_cmp (temp, q); }
+  static int eval(mpq_srcptr q, mpz_srcptr z)
+  { return __gmpq_cmp_z(q, z); }
+  static int eval(mpz_srcptr z, mpq_srcptr q)
+  { return -__gmpq_cmp_z(q, z); }
+
+  static int eval(mpf_srcptr f, mpf_srcptr g) { return __gmpf_cmp(f, g); }
+
+  static int eval(mpf_srcptr f, unsigned long int l)
+  { return __gmpf_cmp_ui(f, l); }
+  static int eval(unsigned long int l, mpf_srcptr f)
+  { return -__gmpf_cmp_ui(f, l); }
+  static int eval(mpf_srcptr f, signed long int l)
+  { return __gmpf_cmp_si(f, l); }
+  static int eval(signed long int l, mpf_srcptr f)
+  { return -__gmpf_cmp_si(f, l); }
+  static int eval(mpf_srcptr f, double d)
+  { return __gmpf_cmp_d(f, d); }
+  static int eval(double d, mpf_srcptr f)
+  { return -__gmpf_cmp_d(f, d); }
+  static int eval(mpf_srcptr f, mpz_srcptr z)
+  { return __gmpf_cmp_z(f, z); }
+  static int eval(mpz_srcptr z, mpf_srcptr f)
+  { return -__gmpf_cmp_z(f, z); }
+  static int eval(mpf_srcptr f, mpq_srcptr q)
+  {
+    mpf_t qf;
+    __gmpf_init(qf);
+    __gmpf_set_q(qf, q);
+    int ret = eval(f, qf);
+    __gmpf_clear(qf);
+    return ret;
+  }
+  static int eval(mpq_srcptr q, mpf_srcptr f)
+  { return -eval(f, q); }
+};
+
+struct __gmp_binary_equal
+{
+  static bool eval(mpz_srcptr z, mpz_srcptr w) { return __gmpz_cmp(z, w) == 0; }
+
+  static bool eval(mpz_srcptr z, unsigned long int l)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,l)) == 0; }
+  static bool eval(unsigned long int l, mpz_srcptr z)
+  { return eval(z, l); }
+  static bool eval(mpz_srcptr z, signed long int l)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,(static_cast<unsigned long> (l)))) : __gmpz_cmp_si (z,l)) == 0; }
+  static bool eval(signed long int l, mpz_srcptr z)
+  { return eval(z, l); }
+  static bool eval(mpz_srcptr z, double d)
+  { return __gmpz_cmp_d(z, d) == 0; }
+  static bool eval(double d, mpz_srcptr z)
+  { return eval(z, d); }
+
+  static bool eval(mpq_srcptr q, mpq_srcptr r)
+  { return __gmpq_equal(q, r) != 0; }
+
+  static bool eval(mpq_srcptr q, unsigned long int l)
+  { return ((__builtin_constant_p(l) && l == 0) ||
+     (__builtin_constant_p (1) && (1) == 0 ? (((&((q)->_mp_den)))->_mp_size < 0 ? -1 : ((&((q)->_mp_den)))->_mp_size > 0) : __gmpz_cmp_ui ((&((q)->_mp_den)),1)) == 0) &&
+      (__builtin_constant_p (l) && (l) == 0 ? (((&((q)->_mp_num)))->_mp_size < 0 ? -1 : ((&((q)->_mp_num)))->_mp_size > 0) : __gmpz_cmp_ui ((&((q)->_mp_num)),l)) == 0; }
+  static bool eval(unsigned long int l, mpq_srcptr q)
+  { return eval(q, l); }
+  static bool eval(mpq_srcptr q, signed long int l)
+  { return ((__builtin_constant_p(l) && l == 0) ||
+     (__builtin_constant_p (1) && (1) == 0 ? (((&((q)->_mp_den)))->_mp_size < 0 ? -1 : ((&((q)->_mp_den)))->_mp_size > 0) : __gmpz_cmp_ui ((&((q)->_mp_den)),1)) == 0) &&
+      (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? (((&((q)->_mp_num)))->_mp_size < 0 ? -1 : ((&((q)->_mp_num)))->_mp_size > 0) : __gmpz_cmp_ui ((&((q)->_mp_num)),(static_cast<unsigned long> (l)))) : __gmpz_cmp_si ((&((q)->_mp_num)),l)) == 0; }
+  static bool eval(signed long int l, mpq_srcptr q)
+  { return eval(q, l); }
+  static bool eval(mpq_srcptr q, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); return __gmpq_equal (q, temp) != 0; }
+  static bool eval(double d, mpq_srcptr q)
+  { return eval(q, d); }
+  static bool eval(mpq_srcptr q, mpz_srcptr z)
+  { return (__builtin_constant_p (1) && (1) == 0 ? (((&((q)->_mp_den)))->_mp_size < 0 ? -1 : ((&((q)->_mp_den)))->_mp_size > 0) : __gmpz_cmp_ui ((&((q)->_mp_den)),1)) == 0 && __gmpz_cmp((&((q)->_mp_num)), z) == 0; }
+  static bool eval(mpz_srcptr z, mpq_srcptr q)
+  { return eval(q, z); }
+
+  static bool eval(mpf_srcptr f, mpf_srcptr g) { return __gmpf_cmp(f, g) == 0; }
+
+  static bool eval(mpf_srcptr f, unsigned long int l)
+  { return __gmpf_cmp_ui(f, l) == 0; }
+  static bool eval(unsigned long int l, mpf_srcptr f)
+  { return eval(f, l); }
+  static bool eval(mpf_srcptr f, signed long int l)
+  { return __gmpf_cmp_si(f, l) == 0; }
+  static bool eval(signed long int l, mpf_srcptr f)
+  { return eval(f, l); }
+  static bool eval(mpf_srcptr f, double d)
+  { return __gmpf_cmp_d(f, d) == 0; }
+  static bool eval(double d, mpf_srcptr f)
+  { return eval(f, d); }
+  static bool eval(mpf_srcptr f, mpz_srcptr z)
+  { return __gmpf_cmp_z(f, z) == 0; }
+  static bool eval(mpz_srcptr z, mpf_srcptr f)
+  { return eval(f, z); }
+  static bool eval(mpf_srcptr f, mpq_srcptr q)
+  { return __gmp_cmp_function::eval(f, q) == 0; }
+  static bool eval(mpq_srcptr q, mpf_srcptr f)
+  { return eval(f, q); }
+};
+
+struct __gmp_binary_less
+{
+  static bool eval(mpz_srcptr z, mpz_srcptr w) { return __gmpz_cmp(z, w) < 0; }
+
+  static bool eval(mpz_srcptr z, unsigned long int l)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,l)) < 0; }
+  static bool eval(unsigned long int l, mpz_srcptr z)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,l)) > 0; }
+  static bool eval(mpz_srcptr z, signed long int l)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,(static_cast<unsigned long> (l)))) : __gmpz_cmp_si (z,l)) < 0; }
+  static bool eval(signed long int l, mpz_srcptr z)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0) : __gmpz_cmp_ui (z,(static_cast<unsigned long> (l)))) : __gmpz_cmp_si (z,l)) > 0; }
+  static bool eval(mpz_srcptr z, double d)
+  { return __gmpz_cmp_d(z, d) < 0; }
+  static bool eval(double d, mpz_srcptr z)
+  { return __gmpz_cmp_d(z, d) > 0; }
+
+  static bool eval(mpq_srcptr q, mpq_srcptr r) { return __gmpq_cmp(q, r) < 0; }
+
+  static bool eval(mpq_srcptr q, unsigned long int l)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p ((l) == (1)) && (l) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,l,1)) < 0; }
+  static bool eval(unsigned long int l, mpq_srcptr q)
+  { return (__builtin_constant_p (l) && (l) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p ((l) == (1)) && (l) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,l,1)) > 0; }
+  static bool eval(mpq_srcptr q, signed long int l)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p (((static_cast<unsigned long> (l))) == (1)) && ((static_cast<unsigned long> (l))) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,(static_cast<unsigned long> (l)),1)) : __gmpq_cmp_si (q, l, 1)) < 0; }
+  static bool eval(signed long int l, mpq_srcptr q)
+  { return (__builtin_constant_p ((l) >= 0) && (l) >= 0 ? (__builtin_constant_p ((static_cast<unsigned long> (l))) && ((static_cast<unsigned long> (l))) == 0 ? ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0) : __builtin_constant_p (((static_cast<unsigned long> (l))) == (1)) && ((static_cast<unsigned long> (l))) == (1) ? __gmpz_cmp ((&((q)->_mp_num)), (&((q)->_mp_den))) : __gmpq_cmp_ui (q,(static_cast<unsigned long> (l)),1)) : __gmpq_cmp_si (q, l, 1)) > 0; }
+  static bool eval(mpq_srcptr q, double d)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); return __gmpq_cmp (q, temp) < 0; }
+  static bool eval(double d, mpq_srcptr q)
+  { mpq_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1 + (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1]; (&((temp)->_mp_num))->_mp_d = limbs; (&((temp)->_mp_num))->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_d = limbs + (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; (&((temp)->_mp_den))->_mp_alloc = (((53 +1-(-1021)) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpq_set_d (temp, d); return __gmpq_cmp (temp, q) < 0; }
+  static bool eval(mpq_srcptr q, mpz_srcptr z)
+  { return __gmpq_cmp_z(q, z) < 0; }
+  static bool eval(mpz_srcptr z, mpq_srcptr q)
+  { return __gmpq_cmp_z(q, z) > 0; }
+
+  static bool eval(mpf_srcptr f, mpf_srcptr g) { return __gmpf_cmp(f, g) < 0; }
+
+  static bool eval(mpf_srcptr f, unsigned long int l)
+  { return __gmpf_cmp_ui(f, l) < 0; }
+  static bool eval(unsigned long int l, mpf_srcptr f)
+  { return __gmpf_cmp_ui(f, l) > 0; }
+  static bool eval(mpf_srcptr f, signed long int l)
+  { return __gmpf_cmp_si(f, l) < 0; }
+  static bool eval(signed long int l, mpf_srcptr f)
+  { return __gmpf_cmp_si(f, l) > 0; }
+  static bool eval(mpf_srcptr f, double d)
+  { return __gmpf_cmp_d(f, d) < 0; }
+  static bool eval(double d, mpf_srcptr f)
+  { return __gmpf_cmp_d(f, d) > 0; }
+  static bool eval(mpf_srcptr f, mpz_srcptr z)
+  { return __gmpf_cmp_z(f, z) < 0; }
+  static bool eval(mpz_srcptr z, mpf_srcptr f)
+  { return __gmpf_cmp_z(f, z) > 0; }
+  static bool eval(mpf_srcptr f, mpq_srcptr q)
+  { return __gmp_cmp_function::eval(f, q) < 0; }
+  static bool eval(mpq_srcptr q, mpf_srcptr f)
+  { return __gmp_cmp_function::eval(q, f) < 0; }
+};
+
+struct __gmp_binary_greater
+{
+  template <class T, class U>
+  static inline bool eval(T t, U u) { return __gmp_binary_less::eval(u, t); }
+};
+
+struct __gmp_unary_increment
+{
+  static void eval(mpz_ptr z) { __gmpz_add_ui(z, z, 1); }
+  static void eval(mpq_ptr q)
+  { __gmpz_add((&((q)->_mp_num)), (&((q)->_mp_num)), (&((q)->_mp_den))); }
+  static void eval(mpf_ptr f) { __gmpf_add_ui(f, f, 1); }
+};
+
+struct __gmp_unary_decrement
+{
+  static void eval(mpz_ptr z) { __gmpz_sub_ui(z, z, 1); }
+  static void eval(mpq_ptr q)
+  { __gmpz_sub((&((q)->_mp_num)), (&((q)->_mp_num)), (&((q)->_mp_den))); }
+  static void eval(mpf_ptr f) { __gmpf_sub_ui(f, f, 1); }
+};
+
+struct __gmp_abs_function
+{
+  static void eval(mpz_ptr z, mpz_srcptr w) { __gmpz_abs(z, w); }
+  static void eval(mpq_ptr q, mpq_srcptr r) { __gmpq_abs(q, r); }
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_abs(f, g); }
+};
+
+struct __gmp_trunc_function
+{
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_trunc(f, g); }
+};
+
+struct __gmp_floor_function
+{
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_floor(f, g); }
+};
+
+struct __gmp_ceil_function
+{
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_ceil(f, g); }
+};
+
+struct __gmp_sqrt_function
+{
+  static void eval(mpz_ptr z, mpz_srcptr w) { __gmpz_sqrt(z, w); }
+  static void eval(mpf_ptr f, mpf_srcptr g) { __gmpf_sqrt(f, g); }
+};
+
+struct __gmp_hypot_function
+{
+  static void eval(mpf_ptr f, mpf_srcptr g, mpf_srcptr h)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, __gmpf_get_prec(f));
+    __gmpf_mul(temp, g, g);
+    __gmpf_mul(f, h, h);
+    __gmpf_add(f, f, temp);
+    __gmpf_sqrt(f, f);
+    __gmpf_clear(temp);
+  }
+
+  static void eval(mpf_ptr f, mpf_srcptr g, unsigned long int l)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, __gmpf_get_prec(f));
+    __gmpf_mul(temp, g, g);
+    __gmpf_set_ui(f, l);
+    __gmpf_mul_ui(f, f, l);
+    __gmpf_add(f, f, temp);
+    __gmpf_clear(temp);
+    __gmpf_sqrt(f, f);
+  }
+  static void eval(mpf_ptr f, unsigned long int l, mpf_srcptr g)
+  { eval(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, signed long int l)
+  { eval(f, g, __gmpxx_abs_ui(l)); }
+  static void eval(mpf_ptr f, signed long int l, mpf_srcptr g)
+  { eval(f, g, l); }
+  static void eval(mpf_ptr f, mpf_srcptr g, double d)
+  {
+    mpf_t temp;
+    __gmpf_init2(temp, __gmpf_get_prec(f));
+    __gmpf_mul(temp, g, g);
+    __gmpf_set_d(f, d);
+    __gmpf_mul(f, f, f);
+    __gmpf_add(f, f, temp);
+    __gmpf_sqrt(f, f);
+    __gmpf_clear(temp);
+  }
+  static void eval(mpf_ptr f, double d, mpf_srcptr g)
+  { eval(f, g, d); }
+};
+
+struct __gmp_sgn_function
+{
+  static int eval(mpz_srcptr z) { return ((z)->_mp_size < 0 ? -1 : (z)->_mp_size > 0); }
+  static int eval(mpq_srcptr q) { return ((q)->_mp_num._mp_size < 0 ? -1 : (q)->_mp_num._mp_size > 0); }
+  static int eval(mpf_srcptr f) { return ((f)->_mp_size < 0 ? -1 : (f)->_mp_size > 0); }
+};
+
+struct __gmp_gcd_function
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_gcd(z, w, v); }
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { __gmpz_gcd_ui(z, w, l); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  { eval(z, w, __gmpxx_abs_ui(l)); }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_gcd (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+};
+
+struct __gmp_lcm_function
+{
+  static void eval(mpz_ptr z, mpz_srcptr w, mpz_srcptr v)
+  { __gmpz_lcm(z, w, v); }
+  static void eval(mpz_ptr z, mpz_srcptr w, unsigned long int l)
+  { __gmpz_lcm_ui(z, w, l); }
+  static void eval(mpz_ptr z, unsigned long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, signed long int l)
+  { eval(z, w, __gmpxx_abs_ui(l)); }
+  static void eval(mpz_ptr z, signed long int l, mpz_srcptr w)
+  { eval(z, w, l); }
+  static void eval(mpz_ptr z, mpz_srcptr w, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); __gmpz_lcm (z, w, temp); }
+  static void eval(mpz_ptr z, double d, mpz_srcptr w)
+  { eval(z, w, d); }
+};
+
+struct __gmp_rand_function
+{
+  static void eval(mpz_ptr z, gmp_randstate_t s, mp_bitcnt_t l)
+  { __gmpz_urandomb(z, s, l); }
+  static void eval(mpz_ptr z, gmp_randstate_t s, mpz_srcptr w)
+  { __gmpz_urandomm(z, s, w); }
+  static void eval(mpf_ptr f, gmp_randstate_t s, mp_bitcnt_t prec)
+  { __gmpf_urandomb(f, s, prec); }
+};
+
+struct __gmp_fac_function
+{
+  static void eval(mpz_ptr z, unsigned long l) { __gmpz_fac_ui(z, l); }
+  static void eval(mpz_ptr z, signed long l)
+  {
+    if (l < 0)
+      throw std::domain_error ("factorial(negative)");
+    eval(z, static_cast<unsigned long>(l));
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w)
+  {
+    if (!__gmpz_fits_ulong_p(w))
+      {
+ if (((w)->_mp_size < 0 ? -1 : (w)->_mp_size > 0) < 0)
+   throw std::domain_error ("factorial(negative)");
+ else
+   throw std::bad_alloc();
+      }
+    eval(z, __gmpz_get_ui(w));
+  }
+  static void eval(mpz_ptr z, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); eval (z, temp); }
+};
+
+struct __gmp_primorial_function
+{
+  static void eval(mpz_ptr z, unsigned long l) { __gmpz_primorial_ui(z, l); }
+  static void eval(mpz_ptr z, signed long l)
+  {
+    if (l < 0)
+      throw std::domain_error ("primorial(negative)");
+    eval(z, static_cast<unsigned long>(l));
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w)
+  {
+    if (!__gmpz_fits_ulong_p(w))
+      {
+ if (((w)->_mp_size < 0 ? -1 : (w)->_mp_size > 0) < 0)
+   throw std::domain_error ("primorial(negative)");
+ else
+   throw std::bad_alloc();
+      }
+    eval(z, __gmpz_get_ui(w));
+  }
+  static void eval(mpz_ptr z, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); eval (z, temp); }
+};
+
+struct __gmp_fib_function
+{
+  static void eval(mpz_ptr z, unsigned long l) { __gmpz_fib_ui(z, l); }
+  static void eval(mpz_ptr z, signed long l)
+  {
+    if (l < 0)
+      {
+ eval(z, -static_cast<unsigned long>(l));
+ if ((l & 1) == 0)
+   __gmpz_neg(z, z);
+      }
+    else
+      eval(z, static_cast<unsigned long>(l));
+  }
+  static void eval(mpz_ptr z, mpz_srcptr w)
+  {
+    if (!__gmpz_fits_slong_p(w))
+      throw std::bad_alloc();
+    eval(z, __gmpz_get_si(w));
+  }
+  static void eval(mpz_ptr z, double d)
+  { mpz_t temp; mp_limb_t limbs[(((1024) + ((64 - 0) - 1)) / (64 - 0))+1]; temp->_mp_d = limbs; temp->_mp_alloc = (((1024) + ((64 - 0) - 1)) / (64 - 0))+1; __gmpz_set_d (temp, d); eval (z, temp); }
+};
+# 1316 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+extern "C" {
+  typedef void (*__gmp_freefunc_t) (void *, size_t);
+}
+struct __gmp_alloc_cstring
+{
+  char *str;
+  __gmp_alloc_cstring(char *s) { str = s; }
+  ~__gmp_alloc_cstring()
+  {
+    __gmp_freefunc_t freefunc;
+    __gmp_get_memory_functions (__null, __null, &freefunc);
+    (*freefunc) (str, std::strlen(str)+1);
+  }
+};
+
+
+
+template <class T, class U>
+class __gmp_expr;
+
+
+
+template <class T>
+struct __gmp_resolve_ref
+{
+  typedef T ref_type;
+};
+
+template <class T, class U>
+struct __gmp_resolve_ref<__gmp_expr<T, U> >
+{
+  typedef const __gmp_expr<T, U> & ref_type;
+};
+
+
+template <class T, class U = T>
+struct __gmp_resolve_expr;
+
+template <>
+struct __gmp_resolve_expr<mpz_t>
+{
+  typedef mpz_t value_type;
+  typedef mpz_ptr ptr_type;
+  typedef mpz_srcptr srcptr_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpq_t>
+{
+  typedef mpq_t value_type;
+  typedef mpq_ptr ptr_type;
+  typedef mpq_srcptr srcptr_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpf_t>
+{
+  typedef mpf_t value_type;
+  typedef mpf_ptr ptr_type;
+  typedef mpf_srcptr srcptr_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpz_t, mpq_t>
+{
+  typedef mpq_t value_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpq_t, mpz_t>
+{
+  typedef mpq_t value_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpz_t, mpf_t>
+{
+  typedef mpf_t value_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpf_t, mpz_t>
+{
+  typedef mpf_t value_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpq_t, mpf_t>
+{
+  typedef mpf_t value_type;
+};
+
+template <>
+struct __gmp_resolve_expr<mpf_t, mpq_t>
+{
+  typedef mpf_t value_type;
+};
+
+
+namespace std {
+  template <class T, class U, class V, class W>
+  struct common_type <__gmp_expr<T, U>, __gmp_expr<V, W> >
+  {
+  private:
+    typedef typename __gmp_resolve_expr<T, V>::value_type X;
+  public:
+    typedef __gmp_expr<X, X> type;
+  };
+
+  template <class T, class U>
+  struct common_type <__gmp_expr<T, U> >
+  {
+    typedef __gmp_expr<T, T> type;
+  };
+# 1444 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, signed char > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <signed char, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, unsigned char > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <unsigned char, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, signed int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <signed int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, unsigned int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <unsigned int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, signed short int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <signed short int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, unsigned short int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <unsigned short int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, signed long int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <signed long int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, unsigned long int > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <unsigned long int, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, float > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <float, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+  template <class T, class U> struct common_type <__gmp_expr<T, U>, double > { typedef __gmp_expr<T, T> type; }; template <class T, class U> struct common_type <double, __gmp_expr<T, U> > { typedef __gmp_expr<T, T> type; };
+
+}
+
+
+
+template <class T, class Op>
+struct __gmp_unary_expr
+{
+  typename __gmp_resolve_ref<T>::ref_type val;
+
+  __gmp_unary_expr(const T &v) : val(v) { }
+private:
+  __gmp_unary_expr();
+};
+
+template <class T, class U, class Op>
+struct __gmp_binary_expr
+{
+  typename __gmp_resolve_ref<T>::ref_type val1;
+  typename __gmp_resolve_ref<U>::ref_type val2;
+
+  __gmp_binary_expr(const T &v1, const U &v2) : val1(v1), val2(v2) { }
+private:
+  __gmp_binary_expr();
+};
+# 1572 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+template <>
+class __gmp_expr<mpz_t, mpz_t>
+{
+private:
+  typedef mpz_t value_type;
+  value_type mp;
+
+
+  void assign_ui(unsigned long l)
+  {
+    if ((__builtin_constant_p(l == 0) && (l == 0)))
+      __get_mp()->_mp_size = 0;
+    else
+      __gmpz_set_ui(mp, l);
+  }
+  void assign_si(signed long l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      assign_ui(l);
+    else if ((__builtin_constant_p(l <= 0) && (l <= 0)))
+      {
+ assign_ui(-static_cast<unsigned long>(l));
+ __gmpz_neg(mp, mp);
+      }
+    else
+      __gmpz_set_si(mp, l);
+  }
+  void assign_d (double d)
+  {
+    __gmpz_set_d (mp, d);
+  }
+
+  void init_ui(unsigned long l)
+  {
+    if ((__builtin_constant_p(l == 0) && (l == 0)))
+      __gmpz_init(mp);
+    else
+      __gmpz_init_set_ui(mp, l);
+  }
+  void init_si(signed long l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      init_ui(l);
+    else if ((__builtin_constant_p(l <= 0) && (l <= 0)))
+      {
+ init_ui(-static_cast<unsigned long>(l));
+ __gmpz_neg(mp, mp);
+      }
+    else
+      __gmpz_init_set_si(mp, l);
+  }
+  void init_d (double d)
+  {
+    __gmpz_init_set_d (mp, d);
+  }
+
+public:
+  mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); }
+
+
+  __gmp_expr() noexcept { __gmpz_init(mp); }
+
+  __gmp_expr(const __gmp_expr &z) { __gmpz_init_set(mp, z.mp); }
+
+  __gmp_expr(__gmp_expr &&z) noexcept
+  { *__get_mp() = *z.__get_mp(); __gmpz_init(z.mp); }
+
+  template <class T>
+  __gmp_expr(const __gmp_expr<mpz_t, T> &expr)
+  { __gmpz_init(mp); __gmp_set_expr(mp, expr); }
+  template <class T, class U>
+  explicit __gmp_expr(const __gmp_expr<T, U> &expr)
+  { __gmpz_init(mp); __gmp_set_expr(mp, expr); }
+
+  __gmp_expr(signed char c) { init_si(c); } __gmp_expr(unsigned char c) { init_ui(c); } __gmp_expr(signed int i) { init_si(i); } __gmp_expr(unsigned int i) { init_ui(i); } __gmp_expr(signed short int s) { init_si(s); } __gmp_expr(unsigned short int s) { init_ui(s); } __gmp_expr(signed long int l) { init_si(l); } __gmp_expr(unsigned long int l) { init_ui(l); } __gmp_expr(float f) { init_d(f); } __gmp_expr(double d) { init_d(d); }
+
+  explicit __gmp_expr(const char *s, int base = 0)
+  {
+    if (__gmpz_init_set_str (mp, s, base) != 0)
+      {
+        __gmpz_clear (mp);
+        throw std::invalid_argument ("mpz_set_str");
+      }
+  }
+  explicit __gmp_expr(const std::string &s, int base = 0)
+  {
+    if (__gmpz_init_set_str(mp, s.c_str(), base) != 0)
+      {
+        __gmpz_clear (mp);
+        throw std::invalid_argument ("mpz_set_str");
+      }
+  }
+
+  explicit __gmp_expr(mpz_srcptr z) { __gmpz_init_set(mp, z); }
+
+  ~__gmp_expr() { __gmpz_clear(mp); }
+
+  void swap(__gmp_expr& z) noexcept
+  { std::swap(*__get_mp(), *z.__get_mp()); }
+
+
+  __gmp_expr & operator=(const __gmp_expr &z)
+  { __gmpz_set(mp, z.mp); return *this; }
+
+  __gmp_expr & operator=(__gmp_expr &&z) noexcept
+  { swap(z); return *this; }
+
+  template <class T, class U>
+  __gmp_expr<value_type, value_type> & operator=(const __gmp_expr<T, U> &expr)
+  { __gmp_set_expr(mp, expr); return *this; }
+
+  __gmp_expr & operator=(signed char c) { assign_si(c); return *this; } __gmp_expr & operator=(unsigned char c) { assign_ui(c); return *this; } __gmp_expr & operator=(signed int i) { assign_si(i); return *this; } __gmp_expr & operator=(unsigned int i) { assign_ui(i); return *this; } __gmp_expr & operator=(signed short int s) { assign_si(s); return *this; } __gmp_expr & operator=(unsigned short int s) { assign_ui(s); return *this; } __gmp_expr & operator=(signed long int l) { assign_si(l); return *this; } __gmp_expr & operator=(unsigned long int l) { assign_ui(l); return *this; } __gmp_expr & operator=(float f) { assign_d(f); return *this; } __gmp_expr & operator=(double d) { assign_d(d); return *this; }
+
+  __gmp_expr & operator=(const char *s)
+  {
+    if (__gmpz_set_str (mp, s, 0) != 0)
+      throw std::invalid_argument ("mpz_set_str");
+    return *this;
+  }
+  __gmp_expr & operator=(const std::string &s)
+  {
+    if (__gmpz_set_str(mp, s.c_str(), 0) != 0)
+      throw std::invalid_argument ("mpz_set_str");
+    return *this;
+  }
+
+
+  int set_str(const char *s, int base)
+  { return __gmpz_set_str(mp, s, base); }
+  int set_str(const std::string &s, int base)
+  { return __gmpz_set_str(mp, s.c_str(), base); }
+  std::string get_str(int base = 10) const
+  {
+    __gmp_alloc_cstring temp(__gmpz_get_str(0, base, mp));
+    return std::string(temp.str);
+  }
+
+
+  mpz_srcptr __get_mp() const { return mp; }
+  mpz_ptr __get_mp() { return mp; }
+  mpz_srcptr get_mpz_t() const { return mp; }
+  mpz_ptr get_mpz_t() { return mp; }
+
+  signed long int get_si() const { return __gmpz_get_si(mp); }
+  unsigned long int get_ui() const { return __gmpz_get_ui(mp); }
+  double get_d() const { return __gmpz_get_d(mp); }
+
+
+
+  bool fits_sint_p() const { return __gmpz_fits_sint_p(mp); }
+  bool fits_uint_p() const { return __gmpz_fits_uint_p(mp); }
+  bool fits_sshort_p() const { return __gmpz_fits_sshort_p(mp); }
+  bool fits_ushort_p() const { return __gmpz_fits_ushort_p(mp); }
+  bool fits_slong_p() const { return __gmpz_fits_slong_p(mp); }
+  bool fits_ulong_p() const { return __gmpz_fits_ulong_p(mp); }
+
+
+
+
+
+  explicit operator bool() const { return __get_mp()->_mp_size != 0; }
+
+
+
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator+=(const __gmp_expr<T, U> &); __gmp_expr & operator+=(signed char); __gmp_expr & operator+=(unsigned char); __gmp_expr & operator+=(signed int); __gmp_expr & operator+=(unsigned int); __gmp_expr & operator+=(signed short int); __gmp_expr & operator+=(unsigned short int); __gmp_expr & operator+=(signed long int); __gmp_expr & operator+=(unsigned long int); __gmp_expr & operator+=(float); __gmp_expr & operator+=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator-=(const __gmp_expr<T, U> &); __gmp_expr & operator-=(signed char); __gmp_expr & operator-=(unsigned char); __gmp_expr & operator-=(signed int); __gmp_expr & operator-=(unsigned int); __gmp_expr & operator-=(signed short int); __gmp_expr & operator-=(unsigned short int); __gmp_expr & operator-=(signed long int); __gmp_expr & operator-=(unsigned long int); __gmp_expr & operator-=(float); __gmp_expr & operator-=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator*=(const __gmp_expr<T, U> &); __gmp_expr & operator*=(signed char); __gmp_expr & operator*=(unsigned char); __gmp_expr & operator*=(signed int); __gmp_expr & operator*=(unsigned int); __gmp_expr & operator*=(signed short int); __gmp_expr & operator*=(unsigned short int); __gmp_expr & operator*=(signed long int); __gmp_expr & operator*=(unsigned long int); __gmp_expr & operator*=(float); __gmp_expr & operator*=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator/=(const __gmp_expr<T, U> &); __gmp_expr & operator/=(signed char); __gmp_expr & operator/=(unsigned char); __gmp_expr & operator/=(signed int); __gmp_expr & operator/=(unsigned int); __gmp_expr & operator/=(signed short int); __gmp_expr & operator/=(unsigned short int); __gmp_expr & operator/=(signed long int); __gmp_expr & operator/=(unsigned long int); __gmp_expr & operator/=(float); __gmp_expr & operator/=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator%=(const __gmp_expr<T, U> &); __gmp_expr & operator%=(signed char); __gmp_expr & operator%=(unsigned char); __gmp_expr & operator%=(signed int); __gmp_expr & operator%=(unsigned int); __gmp_expr & operator%=(signed short int); __gmp_expr & operator%=(unsigned short int); __gmp_expr & operator%=(signed long int); __gmp_expr & operator%=(unsigned long int); __gmp_expr & operator%=(float); __gmp_expr & operator%=(double);
+
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator&=(const __gmp_expr<T, U> &); __gmp_expr & operator&=(signed char); __gmp_expr & operator&=(unsigned char); __gmp_expr & operator&=(signed int); __gmp_expr & operator&=(unsigned int); __gmp_expr & operator&=(signed short int); __gmp_expr & operator&=(unsigned short int); __gmp_expr & operator&=(signed long int); __gmp_expr & operator&=(unsigned long int); __gmp_expr & operator&=(float); __gmp_expr & operator&=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator|=(const __gmp_expr<T, U> &); __gmp_expr & operator|=(signed char); __gmp_expr & operator|=(unsigned char); __gmp_expr & operator|=(signed int); __gmp_expr & operator|=(unsigned int); __gmp_expr & operator|=(signed short int); __gmp_expr & operator|=(unsigned short int); __gmp_expr & operator|=(signed long int); __gmp_expr & operator|=(unsigned long int); __gmp_expr & operator|=(float); __gmp_expr & operator|=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator^=(const __gmp_expr<T, U> &); __gmp_expr & operator^=(signed char); __gmp_expr & operator^=(unsigned char); __gmp_expr & operator^=(signed int); __gmp_expr & operator^=(unsigned int); __gmp_expr & operator^=(signed short int); __gmp_expr & operator^=(unsigned short int); __gmp_expr & operator^=(signed long int); __gmp_expr & operator^=(unsigned long int); __gmp_expr & operator^=(float); __gmp_expr & operator^=(double);
+
+  __gmp_expr & operator<<=(mp_bitcnt_t);
+  __gmp_expr & operator>>=(mp_bitcnt_t);
+
+  inline __gmp_expr & operator++(); inline __gmp_expr operator++(int);
+  inline __gmp_expr & operator--(); inline __gmp_expr operator--(int);
+
+  template <class U> static __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fac_function> > factorial(const __gmp_expr<mpz_t, U> &expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > factorial(signed char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > factorial(unsigned char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > factorial(signed int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > factorial(unsigned int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > factorial(signed short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > factorial(unsigned short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > factorial(signed long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > factorial(unsigned long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> > factorial(float expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> > factorial(double expr);
+  template <class U> static __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_primorial_function> > primorial(const __gmp_expr<mpz_t, U> &expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > primorial(signed char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > primorial(unsigned char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > primorial(signed int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > primorial(unsigned int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > primorial(signed short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > primorial(unsigned short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > primorial(signed long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > primorial(unsigned long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> > primorial(float expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> > primorial(double expr);
+  template <class U> static __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fib_function> > fibonacci(const __gmp_expr<mpz_t, U> &expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > fibonacci(signed char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > fibonacci(unsigned char expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > fibonacci(signed int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > fibonacci(unsigned int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > fibonacci(signed short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > fibonacci(unsigned short int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > fibonacci(signed long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > fibonacci(unsigned long int expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> > fibonacci(float expr); static inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> > fibonacci(double expr);
+};
+
+typedef __gmp_expr<mpz_t, mpz_t> mpz_class;
+
+
+
+
+template <>
+class __gmp_expr<mpq_t, mpq_t>
+{
+private:
+  typedef mpq_t value_type;
+  value_type mp;
+
+
+  void assign_ui(unsigned long l) { __gmpq_set_ui(mp, l, 1); }
+  void assign_si(signed long l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      assign_ui(l);
+    else
+      __gmpq_set_si(mp, l, 1);
+  }
+  void assign_d (double d) { __gmpq_set_d (mp, d); }
+
+  void init_ui(unsigned long l) { __gmpq_init(mp); get_num() = l; }
+  void init_si(signed long l) { __gmpq_init(mp); get_num() = l; }
+  void init_d (double d) { __gmpq_init(mp); assign_d (d); }
+
+public:
+  mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); }
+  void canonicalize() { __gmpq_canonicalize(mp); }
+
+
+  __gmp_expr() { __gmpq_init(mp); }
+
+  __gmp_expr(const __gmp_expr &q)
+  {
+    __gmpz_init_set((&((mp)->_mp_num)), (&((q.mp)->_mp_num)));
+    __gmpz_init_set((&((mp)->_mp_den)), (&((q.mp)->_mp_den)));
+  }
+
+  __gmp_expr(__gmp_expr &&q)
+  { *mp = *q.mp; __gmpq_init(q.mp); }
+  __gmp_expr(mpz_class &&z)
+  {
+    *(&((mp)->_mp_num)) = *z.get_mpz_t();
+    __gmpz_init_set_ui((&((mp)->_mp_den)), 1);
+    __gmpz_init(z.get_mpz_t());
+  }
+
+  template <class T>
+  __gmp_expr(const __gmp_expr<mpz_t, T> &expr)
+  { __gmpq_init(mp); __gmp_set_expr(mp, expr); }
+  template <class T>
+  __gmp_expr(const __gmp_expr<mpq_t, T> &expr)
+  { __gmpq_init(mp); __gmp_set_expr(mp, expr); }
+  template <class T, class U>
+  explicit __gmp_expr(const __gmp_expr<T, U> &expr)
+  { __gmpq_init(mp); __gmp_set_expr(mp, expr); }
+
+  __gmp_expr(signed char c) { init_si(c); } __gmp_expr(unsigned char c) { init_ui(c); } __gmp_expr(signed int i) { init_si(i); } __gmp_expr(unsigned int i) { init_ui(i); } __gmp_expr(signed short int s) { init_si(s); } __gmp_expr(unsigned short int s) { init_ui(s); } __gmp_expr(signed long int l) { init_si(l); } __gmp_expr(unsigned long int l) { init_ui(l); } __gmp_expr(float f) { init_d(f); } __gmp_expr(double d) { init_d(d); }
+
+  explicit __gmp_expr(const char *s, int base = 0)
+  {
+    __gmpq_init (mp);
+
+
+    if (s == 0)
+      {
+
+ __gmpz_set_si((&((mp)->_mp_den)), base);
+      }
+    else if (__gmpq_set_str(mp, s, base) != 0)
+      {
+        __gmpq_clear (mp);
+        throw std::invalid_argument ("mpq_set_str");
+      }
+  }
+  explicit __gmp_expr(const std::string &s, int base = 0)
+  {
+    __gmpq_init(mp);
+    if (__gmpq_set_str (mp, s.c_str(), base) != 0)
+      {
+        __gmpq_clear (mp);
+        throw std::invalid_argument ("mpq_set_str");
+      }
+  }
+  explicit __gmp_expr(mpq_srcptr q)
+  {
+    __gmpz_init_set((&((mp)->_mp_num)), (&((q)->_mp_num)));
+    __gmpz_init_set((&((mp)->_mp_den)), (&((q)->_mp_den)));
+  }
+
+  __gmp_expr(const mpz_class &num, const mpz_class &den)
+  {
+    __gmpz_init_set((&((mp)->_mp_num)), num.get_mpz_t());
+    __gmpz_init_set((&((mp)->_mp_den)), den.get_mpz_t());
+  }
+
+  ~__gmp_expr() { __gmpq_clear(mp); }
+
+  void swap(__gmp_expr& q) noexcept { std::swap(*mp, *q.mp); }
+
+
+  __gmp_expr & operator=(const __gmp_expr &q)
+  { __gmpq_set(mp, q.mp); return *this; }
+
+  __gmp_expr & operator=(__gmp_expr &&q) noexcept
+  { swap(q); return *this; }
+  __gmp_expr & operator=(mpz_class &&z) noexcept
+  { get_num() = std::move(z); get_den() = 1u; return *this; }
+
+  template <class T, class U>
+  __gmp_expr<value_type, value_type> & operator=(const __gmp_expr<T, U> &expr)
+  { __gmp_set_expr(mp, expr); return *this; }
+
+  __gmp_expr & operator=(signed char c) { assign_si(c); return *this; } __gmp_expr & operator=(unsigned char c) { assign_ui(c); return *this; } __gmp_expr & operator=(signed int i) { assign_si(i); return *this; } __gmp_expr & operator=(unsigned int i) { assign_ui(i); return *this; } __gmp_expr & operator=(signed short int s) { assign_si(s); return *this; } __gmp_expr & operator=(unsigned short int s) { assign_ui(s); return *this; } __gmp_expr & operator=(signed long int l) { assign_si(l); return *this; } __gmp_expr & operator=(unsigned long int l) { assign_ui(l); return *this; } __gmp_expr & operator=(float f) { assign_d(f); return *this; } __gmp_expr & operator=(double d) { assign_d(d); return *this; }
+
+  __gmp_expr & operator=(const char *s)
+  {
+    if (__gmpq_set_str (mp, s, 0) != 0)
+      throw std::invalid_argument ("mpq_set_str");
+    return *this;
+  }
+  __gmp_expr & operator=(const std::string &s)
+  {
+    if (__gmpq_set_str(mp, s.c_str(), 0) != 0)
+      throw std::invalid_argument ("mpq_set_str");
+    return *this;
+  }
+
+
+  int set_str(const char *s, int base)
+  { return __gmpq_set_str(mp, s, base); }
+  int set_str(const std::string &s, int base)
+  { return __gmpq_set_str(mp, s.c_str(), base); }
+  std::string get_str(int base = 10) const
+  {
+    __gmp_alloc_cstring temp(__gmpq_get_str(0, base, mp));
+    return std::string(temp.str);
+  }
+# 1905 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+  const mpz_class & get_num() const
+  { return reinterpret_cast<const mpz_class &>(*(&((mp)->_mp_num))); }
+  mpz_class & get_num()
+  { return reinterpret_cast<mpz_class &>(*(&((mp)->_mp_num))); }
+  const mpz_class & get_den() const
+  { return reinterpret_cast<const mpz_class &>(*(&((mp)->_mp_den))); }
+  mpz_class & get_den()
+  { return reinterpret_cast<mpz_class &>(*(&((mp)->_mp_den))); }
+
+  mpq_srcptr __get_mp() const { return mp; }
+  mpq_ptr __get_mp() { return mp; }
+  mpq_srcptr get_mpq_t() const { return mp; }
+  mpq_ptr get_mpq_t() { return mp; }
+
+  mpz_srcptr get_num_mpz_t() const { return (&((mp)->_mp_num)); }
+  mpz_ptr get_num_mpz_t() { return (&((mp)->_mp_num)); }
+  mpz_srcptr get_den_mpz_t() const { return (&((mp)->_mp_den)); }
+  mpz_ptr get_den_mpz_t() { return (&((mp)->_mp_den)); }
+
+  double get_d() const { return __gmpq_get_d(mp); }
+
+
+  explicit operator bool() const { return (&((mp)->_mp_num))->_mp_size != 0; }
+
+
+
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator+=(const __gmp_expr<T, U> &); __gmp_expr & operator+=(signed char); __gmp_expr & operator+=(unsigned char); __gmp_expr & operator+=(signed int); __gmp_expr & operator+=(unsigned int); __gmp_expr & operator+=(signed short int); __gmp_expr & operator+=(unsigned short int); __gmp_expr & operator+=(signed long int); __gmp_expr & operator+=(unsigned long int); __gmp_expr & operator+=(float); __gmp_expr & operator+=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator-=(const __gmp_expr<T, U> &); __gmp_expr & operator-=(signed char); __gmp_expr & operator-=(unsigned char); __gmp_expr & operator-=(signed int); __gmp_expr & operator-=(unsigned int); __gmp_expr & operator-=(signed short int); __gmp_expr & operator-=(unsigned short int); __gmp_expr & operator-=(signed long int); __gmp_expr & operator-=(unsigned long int); __gmp_expr & operator-=(float); __gmp_expr & operator-=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator*=(const __gmp_expr<T, U> &); __gmp_expr & operator*=(signed char); __gmp_expr & operator*=(unsigned char); __gmp_expr & operator*=(signed int); __gmp_expr & operator*=(unsigned int); __gmp_expr & operator*=(signed short int); __gmp_expr & operator*=(unsigned short int); __gmp_expr & operator*=(signed long int); __gmp_expr & operator*=(unsigned long int); __gmp_expr & operator*=(float); __gmp_expr & operator*=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator/=(const __gmp_expr<T, U> &); __gmp_expr & operator/=(signed char); __gmp_expr & operator/=(unsigned char); __gmp_expr & operator/=(signed int); __gmp_expr & operator/=(unsigned int); __gmp_expr & operator/=(signed short int); __gmp_expr & operator/=(unsigned short int); __gmp_expr & operator/=(signed long int); __gmp_expr & operator/=(unsigned long int); __gmp_expr & operator/=(float); __gmp_expr & operator/=(double);
+
+  __gmp_expr & operator<<=(mp_bitcnt_t);
+  __gmp_expr & operator>>=(mp_bitcnt_t);
+
+  inline __gmp_expr & operator++(); inline __gmp_expr operator++(int);
+  inline __gmp_expr & operator--(); inline __gmp_expr operator--(int);
+};
+
+typedef __gmp_expr<mpq_t, mpq_t> mpq_class;
+
+
+
+
+template <>
+class __gmp_expr<mpf_t, mpf_t>
+{
+private:
+  typedef mpf_t value_type;
+  value_type mp;
+
+
+  void assign_ui(unsigned long l) { __gmpf_set_ui(mp, l); }
+  void assign_si(signed long l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      assign_ui(l);
+    else
+      __gmpf_set_si(mp, l);
+  }
+  void assign_d (double d) { __gmpf_set_d (mp, d); }
+
+  void init_ui(unsigned long l)
+  {
+    if ((__builtin_constant_p(l == 0) && (l == 0)))
+      __gmpf_init(mp);
+    else
+      __gmpf_init_set_ui(mp, l);
+  }
+  void init_si(signed long l)
+  {
+    if ((__builtin_constant_p(l >= 0) && (l >= 0)))
+      init_ui(l);
+    else
+      __gmpf_init_set_si(mp, l);
+  }
+  void init_d (double d) { __gmpf_init_set_d (mp, d); }
+
+public:
+  mp_bitcnt_t get_prec() const { return __gmpf_get_prec(mp); }
+
+  void set_prec(mp_bitcnt_t prec) { __gmpf_set_prec(mp, prec); }
+  void set_prec_raw(mp_bitcnt_t prec) { __gmpf_set_prec_raw(mp, prec); }
+
+
+  __gmp_expr() { __gmpf_init(mp); }
+
+  __gmp_expr(const __gmp_expr &f)
+  { __gmpf_init2(mp, f.get_prec()); __gmpf_set(mp, f.mp); }
+
+  __gmp_expr(__gmp_expr &&f)
+  { *mp = *f.mp; __gmpf_init2(f.mp, get_prec()); }
+
+  __gmp_expr(const __gmp_expr &f, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set(mp, f.mp); }
+  template <class T, class U>
+  __gmp_expr(const __gmp_expr<T, U> &expr)
+  { __gmpf_init2(mp, expr.get_prec()); __gmp_set_expr(mp, expr); }
+  template <class T, class U>
+  __gmp_expr(const __gmp_expr<T, U> &expr, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmp_set_expr(mp, expr); }
+
+  __gmp_expr(signed char c) { init_si(c); } __gmp_expr(unsigned char c) { init_ui(c); } __gmp_expr(signed int i) { init_si(i); } __gmp_expr(unsigned int i) { init_ui(i); } __gmp_expr(signed short int s) { init_si(s); } __gmp_expr(unsigned short int s) { init_ui(s); } __gmp_expr(signed long int l) { init_si(l); } __gmp_expr(unsigned long int l) { init_ui(l); } __gmp_expr(float f) { init_d(f); } __gmp_expr(double d) { init_d(d); }
+
+  __gmp_expr(signed char c, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_si(mp, c); }
+  __gmp_expr(unsigned char c, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_ui(mp, c); }
+
+  __gmp_expr(signed int i, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_si(mp, i); }
+  __gmp_expr(unsigned int i, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_ui(mp, i); }
+
+  __gmp_expr(signed short int s, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_si(mp, s); }
+  __gmp_expr(unsigned short int s, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_ui(mp, s); }
+
+  __gmp_expr(signed long int l, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_si(mp, l); }
+  __gmp_expr(unsigned long int l, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_ui(mp, l); }
+
+  __gmp_expr(float f, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_d(mp, f); }
+  __gmp_expr(double d, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set_d(mp, d); }
+
+
+
+
+  explicit __gmp_expr(const char *s)
+  {
+    if (__gmpf_init_set_str (mp, s, 0) != 0)
+      {
+        __gmpf_clear (mp);
+        throw std::invalid_argument ("mpf_set_str");
+      }
+  }
+  __gmp_expr(const char *s, mp_bitcnt_t prec, int base = 0)
+  {
+    __gmpf_init2(mp, prec);
+    if (__gmpf_set_str(mp, s, base) != 0)
+      {
+        __gmpf_clear (mp);
+        throw std::invalid_argument ("mpf_set_str");
+      }
+  }
+  explicit __gmp_expr(const std::string &s)
+  {
+    if (__gmpf_init_set_str(mp, s.c_str(), 0) != 0)
+      {
+        __gmpf_clear (mp);
+        throw std::invalid_argument ("mpf_set_str");
+      }
+  }
+  __gmp_expr(const std::string &s, mp_bitcnt_t prec, int base = 0)
+  {
+    __gmpf_init2(mp, prec);
+    if (__gmpf_set_str(mp, s.c_str(), base) != 0)
+      {
+        __gmpf_clear (mp);
+        throw std::invalid_argument ("mpf_set_str");
+      }
+  }
+
+  explicit __gmp_expr(mpf_srcptr f)
+  { __gmpf_init2(mp, __gmpf_get_prec(f)); __gmpf_set(mp, f); }
+  __gmp_expr(mpf_srcptr f, mp_bitcnt_t prec)
+  { __gmpf_init2(mp, prec); __gmpf_set(mp, f); }
+
+  ~__gmp_expr() { __gmpf_clear(mp); }
+
+  void swap(__gmp_expr& f) noexcept { std::swap(*mp, *f.mp); }
+
+
+  __gmp_expr & operator=(const __gmp_expr &f)
+  { __gmpf_set(mp, f.mp); return *this; }
+
+  __gmp_expr & operator=(__gmp_expr &&f) noexcept
+  { swap(f); return *this; }
+
+  template <class T, class U>
+  __gmp_expr<value_type, value_type> & operator=(const __gmp_expr<T, U> &expr)
+  { __gmp_set_expr(mp, expr); return *this; }
+
+  __gmp_expr & operator=(signed char c) { assign_si(c); return *this; } __gmp_expr & operator=(unsigned char c) { assign_ui(c); return *this; } __gmp_expr & operator=(signed int i) { assign_si(i); return *this; } __gmp_expr & operator=(unsigned int i) { assign_ui(i); return *this; } __gmp_expr & operator=(signed short int s) { assign_si(s); return *this; } __gmp_expr & operator=(unsigned short int s) { assign_ui(s); return *this; } __gmp_expr & operator=(signed long int l) { assign_si(l); return *this; } __gmp_expr & operator=(unsigned long int l) { assign_ui(l); return *this; } __gmp_expr & operator=(float f) { assign_d(f); return *this; } __gmp_expr & operator=(double d) { assign_d(d); return *this; }
+
+  __gmp_expr & operator=(const char *s)
+  {
+    if (__gmpf_set_str (mp, s, 0) != 0)
+      throw std::invalid_argument ("mpf_set_str");
+    return *this;
+  }
+  __gmp_expr & operator=(const std::string &s)
+  {
+    if (__gmpf_set_str(mp, s.c_str(), 0) != 0)
+      throw std::invalid_argument ("mpf_set_str");
+    return *this;
+  }
+
+
+  int set_str(const char *s, int base)
+  { return __gmpf_set_str(mp, s, base); }
+  int set_str(const std::string &s, int base)
+  { return __gmpf_set_str(mp, s.c_str(), base); }
+  std::string get_str(mp_exp_t &expo, int base = 10, size_t size = 0) const
+  {
+    __gmp_alloc_cstring temp(__gmpf_get_str(0, &expo, base, size, mp));
+    return std::string(temp.str);
+  }
+
+
+  mpf_srcptr __get_mp() const { return mp; }
+  mpf_ptr __get_mp() { return mp; }
+  mpf_srcptr get_mpf_t() const { return mp; }
+  mpf_ptr get_mpf_t() { return mp; }
+
+  signed long int get_si() const { return __gmpf_get_si(mp); }
+  unsigned long int get_ui() const { return __gmpf_get_ui(mp); }
+  double get_d() const { return __gmpf_get_d(mp); }
+
+
+
+  bool fits_sint_p() const { return __gmpf_fits_sint_p(mp); }
+  bool fits_uint_p() const { return __gmpf_fits_uint_p(mp); }
+  bool fits_sshort_p() const { return __gmpf_fits_sshort_p(mp); }
+  bool fits_ushort_p() const { return __gmpf_fits_ushort_p(mp); }
+  bool fits_slong_p() const { return __gmpf_fits_slong_p(mp); }
+  bool fits_ulong_p() const { return __gmpf_fits_ulong_p(mp); }
+
+
+
+
+
+  explicit operator bool() const { return ((mp)->_mp_size < 0 ? -1 : (mp)->_mp_size > 0) != 0; }
+
+
+
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator+=(const __gmp_expr<T, U> &); __gmp_expr & operator+=(signed char); __gmp_expr & operator+=(unsigned char); __gmp_expr & operator+=(signed int); __gmp_expr & operator+=(unsigned int); __gmp_expr & operator+=(signed short int); __gmp_expr & operator+=(unsigned short int); __gmp_expr & operator+=(signed long int); __gmp_expr & operator+=(unsigned long int); __gmp_expr & operator+=(float); __gmp_expr & operator+=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator-=(const __gmp_expr<T, U> &); __gmp_expr & operator-=(signed char); __gmp_expr & operator-=(unsigned char); __gmp_expr & operator-=(signed int); __gmp_expr & operator-=(unsigned int); __gmp_expr & operator-=(signed short int); __gmp_expr & operator-=(unsigned short int); __gmp_expr & operator-=(signed long int); __gmp_expr & operator-=(unsigned long int); __gmp_expr & operator-=(float); __gmp_expr & operator-=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator*=(const __gmp_expr<T, U> &); __gmp_expr & operator*=(signed char); __gmp_expr & operator*=(unsigned char); __gmp_expr & operator*=(signed int); __gmp_expr & operator*=(unsigned int); __gmp_expr & operator*=(signed short int); __gmp_expr & operator*=(unsigned short int); __gmp_expr & operator*=(signed long int); __gmp_expr & operator*=(unsigned long int); __gmp_expr & operator*=(float); __gmp_expr & operator*=(double);
+  template <class T, class U> __gmp_expr<value_type, value_type> & operator/=(const __gmp_expr<T, U> &); __gmp_expr & operator/=(signed char); __gmp_expr & operator/=(unsigned char); __gmp_expr & operator/=(signed int); __gmp_expr & operator/=(unsigned int); __gmp_expr & operator/=(signed short int); __gmp_expr & operator/=(unsigned short int); __gmp_expr & operator/=(signed long int); __gmp_expr & operator/=(unsigned long int); __gmp_expr & operator/=(float); __gmp_expr & operator/=(double);
+
+  __gmp_expr & operator<<=(mp_bitcnt_t);
+  __gmp_expr & operator>>=(mp_bitcnt_t);
+
+  inline __gmp_expr & operator++(); inline __gmp_expr operator++(int);
+  inline __gmp_expr & operator--(); inline __gmp_expr operator--(int);
+};
+
+typedef __gmp_expr<mpf_t, mpf_t> mpf_class;
+
+
+
+
+
+
+inline mpz_class operator"" _mpz(const char* s)
+{
+  return mpz_class(s);
+}
+
+inline mpq_class operator"" _mpq(const char* s)
+{
+  mpq_class q;
+  q.get_num() = s;
+  return q;
+}
+
+inline mpf_class operator"" _mpf(const char* s)
+{
+  return mpf_class(s);
+}
+
+
+
+
+
+
+template <class T, class U>
+inline std::ostream & operator<<
+(std::ostream &o, const __gmp_expr<T, U> &expr)
+{
+  __gmp_expr<T, T> const& temp(expr);
+  return o << temp.__get_mp();
+}
+
+template <class T>
+inline std::istream & operator>>(std::istream &i, __gmp_expr<T, T> &expr)
+{
+  return i >> expr.__get_mp();
+}
+# 2212 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+inline void __gmp_set_expr(mpz_ptr z, const mpz_class &w)
+{
+  __gmpz_set(z, w.get_mpz_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpz_ptr z, const __gmp_expr<mpz_t, T> &expr)
+{
+  expr.eval(z);
+}
+
+template <class T>
+inline void __gmp_set_expr(mpz_ptr z, const __gmp_expr<mpq_t, T> &expr)
+{
+  mpq_class const& temp(expr);
+  __gmpz_set_q(z, temp.get_mpq_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpz_ptr z, const __gmp_expr<mpf_t, T> &expr)
+{
+  mpf_class const& temp(expr);
+  __gmpz_set_f(z, temp.get_mpf_t());
+}
+
+inline void __gmp_set_expr(mpq_ptr q, const mpz_class &z)
+{
+  __gmpq_set_z(q, z.get_mpz_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpq_ptr q, const __gmp_expr<mpz_t, T> &expr)
+{
+  __gmp_set_expr((&((q)->_mp_num)), expr);
+  __gmpz_set_ui((&((q)->_mp_den)), 1);
+}
+
+inline void __gmp_set_expr(mpq_ptr q, const mpq_class &r)
+{
+  __gmpq_set(q, r.get_mpq_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpq_ptr q, const __gmp_expr<mpq_t, T> &expr)
+{
+  expr.eval(q);
+}
+
+template <class T>
+inline void __gmp_set_expr(mpq_ptr q, const __gmp_expr<mpf_t, T> &expr)
+{
+  mpf_class const& temp(expr);
+  __gmpq_set_f(q, temp.get_mpf_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpf_ptr f, const __gmp_expr<mpz_t, T> &expr)
+{
+  mpz_class const& temp(expr);
+  __gmpf_set_z(f, temp.get_mpz_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpf_ptr f, const __gmp_expr<mpq_t, T> &expr)
+{
+  mpq_class const& temp(expr);
+  __gmpf_set_q(f, temp.get_mpq_t());
+}
+
+inline void __gmp_set_expr(mpf_ptr f, const mpf_class &g)
+{
+  __gmpf_set(f, g.get_mpf_t());
+}
+
+template <class T>
+inline void __gmp_set_expr(mpf_ptr f, const __gmp_expr<mpf_t, T> &expr)
+{
+  expr.eval(f);
+}
+
+
+
+
+template <class T>
+class __gmp_temp
+{
+  __gmp_expr<T, T> val;
+  public:
+  template<class U, class V>
+  __gmp_temp(U const& u, V) : val (u) {}
+  typename __gmp_resolve_expr<T>::srcptr_type
+  __get_mp() const { return val.__get_mp(); }
+};
+
+template <>
+class __gmp_temp <mpf_t>
+{
+  mpf_class val;
+  public:
+  template<class U>
+  __gmp_temp(U const& u, mpf_ptr res) : val (u, __gmpf_get_prec(res)) {}
+  mpf_srcptr __get_mp() const { return val.__get_mp(); }
+};
+# 2335 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+template <class T, class Op>
+class __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, T>, Op> >
+{
+private:
+  typedef __gmp_expr<T, T> val_type;
+
+  __gmp_unary_expr<val_type, Op> expr;
+public:
+  explicit __gmp_expr(const val_type &val) : expr(val) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { Op::eval(p, expr.val.__get_mp()); }
+  const val_type & get_val() const { return expr.val; }
+  mp_bitcnt_t get_prec() const { return expr.val.get_prec(); }
+};
+
+
+
+
+template <class T, class U, class Op>
+class __gmp_expr<T, __gmp_unary_expr<U, Op> >
+{
+private:
+  typedef U val_type;
+
+  __gmp_unary_expr<val_type, Op> expr;
+public:
+  explicit __gmp_expr(const val_type &val) : expr(val) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { Op::eval(p, expr.val); }
+  const val_type & get_val() const { return expr.val; }
+  mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); }
+};
+
+
+
+
+template <class T, class U, class Op>
+class __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, Op> >
+{
+private:
+  typedef __gmp_expr<T, U> val_type;
+
+  __gmp_unary_expr<val_type, Op> expr;
+public:
+  explicit __gmp_expr(const val_type &val) : expr(val) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { expr.val.eval(p); Op::eval(p, p); }
+  const val_type & get_val() const { return expr.val; }
+  mp_bitcnt_t get_prec() const { return expr.val.get_prec(); }
+};
+# 2399 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+template <class T, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, T>, __gmp_expr<T, T>, Op> >
+{
+private:
+  typedef __gmp_expr<T, T> val1_type;
+  typedef __gmp_expr<T, T> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { Op::eval(p, expr.val1.__get_mp(), expr.val2.__get_mp()); }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+
+
+
+template <class T, class U, class Op>
+class __gmp_expr<T, __gmp_binary_expr<__gmp_expr<T, T>, U, Op> >
+{
+private:
+  typedef __gmp_expr<T, T> val1_type;
+  typedef U val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { Op::eval(p, expr.val1.__get_mp(), expr.val2); }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const { return expr.val1.get_prec(); }
+};
+
+template <class T, class U, class Op>
+class __gmp_expr<T, __gmp_binary_expr<U, __gmp_expr<T, T>, Op> >
+{
+private:
+  typedef U val1_type;
+  typedef __gmp_expr<T, T> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  { Op::eval(p, expr.val1, expr.val2.__get_mp()); }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const { return expr.val2.get_prec(); }
+};
+
+
+
+
+template <class T, class U, class V, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, T>, __gmp_expr<U, V>, Op> >
+{
+private:
+  typedef __gmp_expr<T, T> val1_type;
+  typedef __gmp_expr<U, V> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    if(p != expr.val1.__get_mp())
+    {
+      __gmp_set_expr(p, expr.val2);
+      Op::eval(p, expr.val1.__get_mp(), p);
+    }
+    else
+    {
+      __gmp_temp<T> temp(expr.val2, p);
+      Op::eval(p, expr.val1.__get_mp(), temp.__get_mp());
+    }
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+template <class T, class U, class V, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<U, V>, __gmp_expr<T, T>, Op> >
+{
+private:
+  typedef __gmp_expr<U, V> val1_type;
+  typedef __gmp_expr<T, T> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    if(p != expr.val2.__get_mp())
+    {
+      __gmp_set_expr(p, expr.val1);
+      Op::eval(p, p, expr.val2.__get_mp());
+    }
+    else
+    {
+      __gmp_temp<T> temp(expr.val1, p);
+      Op::eval(p, temp.__get_mp(), expr.val2.__get_mp());
+    }
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+template <class T, class U, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, T>, __gmp_expr<T, U>, Op> >
+{
+private:
+  typedef __gmp_expr<T, T> val1_type;
+  typedef __gmp_expr<T, U> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    if(p != expr.val1.__get_mp())
+    {
+      __gmp_set_expr(p, expr.val2);
+      Op::eval(p, expr.val1.__get_mp(), p);
+    }
+    else
+    {
+      __gmp_temp<T> temp(expr.val2, p);
+      Op::eval(p, expr.val1.__get_mp(), temp.__get_mp());
+    }
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+template <class T, class U, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<T, T>, Op> >
+{
+private:
+  typedef __gmp_expr<T, U> val1_type;
+  typedef __gmp_expr<T, T> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    if(p != expr.val2.__get_mp())
+    {
+      __gmp_set_expr(p, expr.val1);
+      Op::eval(p, p, expr.val2.__get_mp());
+    }
+    else
+    {
+      __gmp_temp<T> temp(expr.val1, p);
+      Op::eval(p, temp.__get_mp(), expr.val2.__get_mp());
+    }
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+
+
+
+template <class T, class U, class V, class Op>
+class __gmp_expr<T, __gmp_binary_expr<__gmp_expr<T, U>, V, Op> >
+{
+private:
+  typedef __gmp_expr<T, U> val1_type;
+  typedef V val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    expr.val1.eval(p);
+    Op::eval(p, p, expr.val2);
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const { return expr.val1.get_prec(); }
+};
+
+template <class T, class U, class V, class Op>
+class __gmp_expr<T, __gmp_binary_expr<U, __gmp_expr<T, V>, Op> >
+{
+private:
+  typedef U val1_type;
+  typedef __gmp_expr<T, V> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    expr.val2.eval(p);
+    Op::eval(p, expr.val1, p);
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const { return expr.val2.get_prec(); }
+};
+
+
+
+
+template <class T, class U, class V, class W, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, Op> >
+{
+private:
+  typedef __gmp_expr<T, U> val1_type;
+  typedef __gmp_expr<V, W> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    __gmp_temp<T> temp2(expr.val2, p);
+    expr.val1.eval(p);
+    Op::eval(p, p, temp2.__get_mp());
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+template <class T, class U, class V, class W, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<U, V>, __gmp_expr<T, W>, Op> >
+{
+private:
+  typedef __gmp_expr<U, V> val1_type;
+  typedef __gmp_expr<T, W> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    __gmp_temp<T> temp1(expr.val1, p);
+    expr.val2.eval(p);
+    Op::eval(p, temp1.__get_mp(), p);
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+
+template <class T, class U, class V, class Op>
+class __gmp_expr
+<T, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<T, V>, Op> >
+{
+private:
+  typedef __gmp_expr<T, U> val1_type;
+  typedef __gmp_expr<T, V> val2_type;
+
+  __gmp_binary_expr<val1_type, val2_type, Op> expr;
+public:
+  __gmp_expr(const val1_type &val1, const val2_type &val2)
+    : expr(val1, val2) { }
+  void eval(typename __gmp_resolve_expr<T>::ptr_type p) const
+  {
+    __gmp_temp<T> temp2(expr.val2, p);
+    expr.val1.eval(p);
+    Op::eval(p, p, temp2.__get_mp());
+  }
+  const val1_type & get_val1() const { return expr.val1; }
+  const val2_type & get_val2() const { return expr.val2; }
+  mp_bitcnt_t get_prec() const
+  {
+    mp_bitcnt_t prec1 = expr.val1.get_prec(),
+      prec2 = expr.val2.get_prec();
+    return (prec1 > prec2) ? prec1 : prec2;
+  }
+};
+# 2918 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+template <> class __gmp_expr<mpq_t, __gmp_binary_expr<mpz_class, mpq_class, __gmp_binary_plus> > { private: typedef mpz_class val1_type; typedef mpq_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { __gmp_binary_plus::eval(q, expr.val1.get_mpz_t(), expr.val2.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <> class __gmp_expr<mpq_t, __gmp_binary_expr<mpq_class, mpz_class, __gmp_binary_plus> > { private: typedef mpq_class val1_type; typedef mpz_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { __gmp_binary_plus::eval(q, expr.val1.get_mpq_t(), expr.val2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<mpz_class, __gmp_expr<mpq_t, T>, __gmp_binary_plus> > { private: typedef mpz_class val1_type; typedef __gmp_expr<mpq_t, T> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpq_class temp(expr.val2); __gmp_binary_plus::eval(q, expr.val1.get_mpz_t(), temp.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<mpq_class, __gmp_expr<mpz_t, T>, __gmp_binary_plus> > { private: typedef mpq_class val1_type; typedef __gmp_expr<mpz_t, T> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp(expr.val2); __gmp_binary_plus::eval(q, expr.val1.get_mpq_t(), temp.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<__gmp_expr<mpz_t, T>, mpq_class, __gmp_binary_plus> > { private: typedef __gmp_expr<mpz_t, T> val1_type; typedef mpq_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp(expr.val1); __gmp_binary_plus::eval(q, temp.get_mpz_t(), expr.val2.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<__gmp_expr<mpq_t, T>, mpz_class, __gmp_binary_plus> > { private: typedef __gmp_expr<mpq_t, T> val1_type; typedef mpz_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpq_class temp(expr.val1); __gmp_binary_plus::eval(q, temp.get_mpq_t(), expr.val2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T, class U> class __gmp_expr<mpq_t, __gmp_binary_expr <__gmp_expr<mpz_t, T>, __gmp_expr<mpq_t, U>, __gmp_binary_plus> > { private: typedef __gmp_expr<mpz_t, T> val1_type; typedef __gmp_expr<mpq_t, U> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp1(expr.val1); expr.val2.eval(q); __gmp_binary_plus::eval(q, temp1.get_mpz_t(), q); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T, class U> class __gmp_expr<mpq_t, __gmp_binary_expr <__gmp_expr<mpq_t, T>, __gmp_expr<mpz_t, U>, __gmp_binary_plus> > { private: typedef __gmp_expr<mpq_t, T> val1_type; typedef __gmp_expr<mpz_t, U> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_plus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp2(expr.val2); expr.val1.eval(q); __gmp_binary_plus::eval(q, q, temp2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } };
+template <> class __gmp_expr<mpq_t, __gmp_binary_expr<mpz_class, mpq_class, __gmp_binary_minus> > { private: typedef mpz_class val1_type; typedef mpq_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { __gmp_binary_minus::eval(q, expr.val1.get_mpz_t(), expr.val2.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <> class __gmp_expr<mpq_t, __gmp_binary_expr<mpq_class, mpz_class, __gmp_binary_minus> > { private: typedef mpq_class val1_type; typedef mpz_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { __gmp_binary_minus::eval(q, expr.val1.get_mpq_t(), expr.val2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<mpz_class, __gmp_expr<mpq_t, T>, __gmp_binary_minus> > { private: typedef mpz_class val1_type; typedef __gmp_expr<mpq_t, T> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpq_class temp(expr.val2); __gmp_binary_minus::eval(q, expr.val1.get_mpz_t(), temp.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<mpq_class, __gmp_expr<mpz_t, T>, __gmp_binary_minus> > { private: typedef mpq_class val1_type; typedef __gmp_expr<mpz_t, T> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp(expr.val2); __gmp_binary_minus::eval(q, expr.val1.get_mpq_t(), temp.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<__gmp_expr<mpz_t, T>, mpq_class, __gmp_binary_minus> > { private: typedef __gmp_expr<mpz_t, T> val1_type; typedef mpq_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp(expr.val1); __gmp_binary_minus::eval(q, temp.get_mpz_t(), expr.val2.get_mpq_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T> class __gmp_expr <mpq_t, __gmp_binary_expr<__gmp_expr<mpq_t, T>, mpz_class, __gmp_binary_minus> > { private: typedef __gmp_expr<mpq_t, T> val1_type; typedef mpz_class val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpq_class temp(expr.val1); __gmp_binary_minus::eval(q, temp.get_mpq_t(), expr.val2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T, class U> class __gmp_expr<mpq_t, __gmp_binary_expr <__gmp_expr<mpz_t, T>, __gmp_expr<mpq_t, U>, __gmp_binary_minus> > { private: typedef __gmp_expr<mpz_t, T> val1_type; typedef __gmp_expr<mpq_t, U> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp1(expr.val1); expr.val2.eval(q); __gmp_binary_minus::eval(q, temp1.get_mpz_t(), q); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } }; template <class T, class U> class __gmp_expr<mpq_t, __gmp_binary_expr <__gmp_expr<mpq_t, T>, __gmp_expr<mpz_t, U>, __gmp_binary_minus> > { private: typedef __gmp_expr<mpq_t, T> val1_type; typedef __gmp_expr<mpz_t, U> val2_type; __gmp_binary_expr<val1_type, val2_type, __gmp_binary_minus> expr; public: __gmp_expr(const val1_type &val1, const val2_type &val2) : expr(val1, val2) { } void eval(mpq_ptr q) const { mpz_class temp2(expr.val2); expr.val1.eval(q); __gmp_binary_minus::eval(q, q, temp2.get_mpz_t()); } const val1_type & get_val1() const { return expr.val1; } const val2_type & get_val2() const { return expr.val2; } mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); } };
+# 3323 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h" 3 4
+template <class T, class U> inline __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_unary_plus> > operator+(const __gmp_expr<T, U> &expr) { return __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_unary_plus> >(expr); }
+template <class T, class U> inline __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_unary_minus> > operator-(const __gmp_expr<T, U> &expr) { return __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_unary_minus> >(expr); }
+template <class U> inline __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_unary_com> > operator~(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_unary_com> >(expr); }
+
+template <class T, class U, class V, class W> inline __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { return __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_plus> > (expr1, expr2); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, signed char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(signed char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, unsigned char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(unsigned char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, signed int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(signed int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, unsigned int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(unsigned int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, signed short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(signed short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, unsigned short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(unsigned short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, signed long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(signed long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, unsigned long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(unsigned long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, float t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(float t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_plus> > operator+(const __gmp_expr<T, U> &expr, double t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_plus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_plus> > operator+(double t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_plus> >(t, expr); }
+template <class T, class U, class V, class W> inline __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { return __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_minus> > (expr1, expr2); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, signed char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(signed char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, unsigned char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(unsigned char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, signed int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(signed int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, unsigned int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(unsigned int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, signed short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(signed short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, unsigned short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(unsigned short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, signed long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(signed long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, unsigned long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(unsigned long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, float t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(float t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_minus> > operator-(const __gmp_expr<T, U> &expr, double t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_minus> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_minus> > operator-(double t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_minus> >(t, expr); }
+template <class T, class U, class V, class W> inline __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { return __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_multiplies> > (expr1, expr2); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, signed char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(signed char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, unsigned char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(unsigned char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, signed int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(signed int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, unsigned int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(unsigned int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, signed short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(signed short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, unsigned short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(unsigned short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, signed long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(signed long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, unsigned long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(unsigned long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, float t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(float t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_multiplies> > operator*(const __gmp_expr<T, U> &expr, double t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_multiplies> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_multiplies> > operator*(double t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_multiplies> >(t, expr); }
+template <class T, class U, class V, class W> inline __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { return __gmp_expr<typename __gmp_resolve_expr<T, V>::value_type, __gmp_binary_expr<__gmp_expr<T, U>, __gmp_expr<V, W>, __gmp_binary_divides> > (expr1, expr2); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, signed char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(signed char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, unsigned char t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(unsigned char t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, signed int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(signed int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, unsigned int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(unsigned int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, signed short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(signed short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, unsigned short int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(unsigned short int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, signed long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, signed long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(signed long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<signed long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, unsigned long int t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, unsigned long int, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(unsigned long int t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<unsigned long int, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, float t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(float t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_divides> > operator/(const __gmp_expr<T, U> &expr, double t) { return __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, double, __gmp_binary_divides> >(expr, t); } template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_divides> > operator/(double t, const __gmp_expr<T, U> &expr) { return __gmp_expr <T, __gmp_binary_expr<double, __gmp_expr<T, U>, __gmp_binary_divides> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_modulus> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_modulus> > operator%(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_modulus> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> > operator%(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_modulus> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_and> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_and> > operator&(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_and> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_and> > operator&(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_and> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_ior> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_ior> > operator|(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_ior> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_ior> > operator|(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_ior> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_binary_xor> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_xor> > operator^(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_binary_xor> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_xor> > operator^(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_binary_xor> >(t, expr); }
+
+template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, mp_bitcnt_t, __gmp_binary_lshift> > operator<<(const __gmp_expr<T, U> &expr, mp_bitcnt_t l) { return __gmp_expr<T, __gmp_binary_expr <__gmp_expr<T, U>, mp_bitcnt_t, __gmp_binary_lshift> >(expr, l); }
+template <class T, class U> inline __gmp_expr <T, __gmp_binary_expr<__gmp_expr<T, U>, mp_bitcnt_t, __gmp_binary_rshift> > operator>>(const __gmp_expr<T, U> &expr, mp_bitcnt_t l) { return __gmp_expr<T, __gmp_binary_expr <__gmp_expr<T, U>, mp_bitcnt_t, __gmp_binary_rshift> >(expr, l); }
+
+template <class T, class U, class V, class W> inline bool operator==(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return __gmp_binary_equal::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator==(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator==(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator==(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator==(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator==(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator==(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator==(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator==(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator==(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator==(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator==(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_equal::eval(static_cast<double>(t), temp.__get_mp()); }
+template <class T, class U, class V, class W> inline bool operator!=(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return ! __gmp_binary_equal::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator!=(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator!=(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator!=(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator!=(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator!=(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator!=(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator!=(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator!=(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator!=(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator!=(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator!=(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_equal::eval(static_cast<double>(t), temp.__get_mp()); }
+template <class T, class U, class V, class W> inline bool operator<(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return __gmp_binary_less::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator<(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator<(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_less::eval(static_cast<double>(t), temp.__get_mp()); }
+template <class T, class U, class V, class W> inline bool operator<=(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return ! __gmp_binary_greater::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<=(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<=(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<=(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<=(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<=(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<=(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator<=(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator<=(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator<=(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator<=(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator<=(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_greater::eval(static_cast<double>(t), temp.__get_mp()); }
+template <class T, class U, class V, class W> inline bool operator>(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return __gmp_binary_greater::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator>(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator>(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_binary_greater::eval(static_cast<double>(t), temp.__get_mp()); }
+template <class T, class U, class V, class W> inline bool operator>=(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return ! __gmp_binary_less::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>=(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>=(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>=(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>=(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>=(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>=(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline bool operator>=(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline bool operator>=(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator>=(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline bool operator>=(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline bool operator>=(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return ! __gmp_binary_less::eval(static_cast<double>(t), temp.__get_mp()); }
+
+template <class T, class U> inline __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_abs_function> > abs(const __gmp_expr<T, U> &expr) { return __gmp_expr<T, __gmp_unary_expr<__gmp_expr<T, U>, __gmp_abs_function> >(expr); }
+template <class U> inline __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_trunc_function> > trunc(const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_trunc_function> >(expr); }
+template <class U> inline __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_floor_function> > floor(const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_floor_function> >(expr); }
+template <class U> inline __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_ceil_function> > ceil(const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_ceil_function> >(expr); }
+template <class U> inline __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_sqrt_function> > sqrt(const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr<mpf_t, __gmp_unary_expr<__gmp_expr<mpf_t, U>, __gmp_sqrt_function> >(expr); }
+template <class U> inline __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_sqrt_function> > sqrt(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_sqrt_function> >(expr); }
+template <class U> inline __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fac_function> > factorial(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fac_function> >(expr); }
+template <class U> inline __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_primorial_function> > primorial(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_primorial_function> >(expr); }
+template <class U> inline __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fib_function> > fibonacci(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fib_function> >(expr); }
+template <class U, class W> inline __gmp_expr<mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, __gmp_expr<mpf_t, W>, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr1, const __gmp_expr<mpf_t, W> &expr2) { return __gmp_expr<mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, __gmp_expr<mpf_t, W>, __gmp_hypot_function> > (expr1, expr2); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, signed char t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(signed char t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, unsigned char t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(unsigned char t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, signed int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(signed int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, unsigned int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(unsigned int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, signed short int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(signed short int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, unsigned short int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(unsigned short int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, signed long int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, signed long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(signed long int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<signed long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, unsigned long int t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, unsigned long int, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(unsigned long int t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, double, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, float t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, double, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<double, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(float t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<double, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, double, __gmp_hypot_function> > hypot(const __gmp_expr<mpf_t, U> &expr, double t) { return __gmp_expr <mpf_t, __gmp_binary_expr<__gmp_expr<mpf_t, U>, double, __gmp_hypot_function> >(expr, t); } template <class U> inline __gmp_expr <mpf_t, __gmp_binary_expr<double, __gmp_expr<mpf_t, U>, __gmp_hypot_function> > hypot(double t, const __gmp_expr<mpf_t, U> &expr) { return __gmp_expr <mpf_t, __gmp_binary_expr<double, __gmp_expr<mpf_t, U>, __gmp_hypot_function> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_gcd_function> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_gcd_function> > gcd(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_gcd_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_gcd_function> > gcd(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_gcd_function> >(t, expr); }
+template <class U, class W> inline __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr1, const __gmp_expr<mpz_t, W> &expr2) { return __gmp_expr<mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, __gmp_expr<mpz_t, W>, __gmp_lcm_function> > (expr1, expr2); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, signed char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(signed char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, unsigned char t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(unsigned char t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, signed int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(signed int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, unsigned int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(unsigned int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, signed short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(signed short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, unsigned short int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(unsigned short int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, signed long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, signed long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(signed long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<signed long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, unsigned long int t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, unsigned long int, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(unsigned long int t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<unsigned long int, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, float t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(float t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_lcm_function> > lcm(const __gmp_expr<mpz_t, U> &expr, double t) { return __gmp_expr <mpz_t, __gmp_binary_expr<__gmp_expr<mpz_t, U>, double, __gmp_lcm_function> >(expr, t); } template <class U> inline __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_lcm_function> > lcm(double t, const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr <mpz_t, __gmp_binary_expr<double, __gmp_expr<mpz_t, U>, __gmp_lcm_function> >(t, expr); }
+
+template <class T, class U> inline int sgn(const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_sgn_function::eval(temp.__get_mp()); }
+template <class T, class U, class V, class W> inline int cmp(const __gmp_expr<T, U> &expr1, const __gmp_expr<V, W> &expr2) { __gmp_expr<T, T> const& temp1(expr1); __gmp_expr<V, V> const& temp2(expr2); return __gmp_cmp_function::eval(temp1.__get_mp(), temp2.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, signed char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline int cmp(signed char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, unsigned char t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline int cmp(unsigned char t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, signed int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline int cmp(signed int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, unsigned int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline int cmp(unsigned int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, signed short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline int cmp(signed short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, unsigned short int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline int cmp(unsigned short int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, signed long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<signed long int>(t)); } template <class T, class U> inline int cmp(signed long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<signed long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, unsigned long int t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<unsigned long int>(t)); } template <class T, class U> inline int cmp(unsigned long int t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<unsigned long int>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, float t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline int cmp(float t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<double>(t), temp.__get_mp()); } template <class T, class U> inline int cmp(const __gmp_expr<T, U> &expr, double t) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(temp.__get_mp(), static_cast<double>(t)); } template <class T, class U> inline int cmp(double t, const __gmp_expr<T, U> &expr) { __gmp_expr<T, T> const& temp(expr); return __gmp_cmp_function::eval(static_cast<double>(t), temp.__get_mp()); }
+
+template <class T>
+void swap(__gmp_expr<T, T>& x, __gmp_expr<T, T>& y) noexcept
+{ x.swap(y); }
+
+
+
+template <class T, class U> inline mpz_class & mpz_class::operator+=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_plus> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator+=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_plus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator+=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_plus> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator-=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_minus> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator-=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_minus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator-=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_minus> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator*=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_multiplies> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator*=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator*=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator/=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_divides> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator/=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_divides> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator/=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_divides> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator%=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_modulus> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator%=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_modulus> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator%=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_modulus> >(*this, t)); return *this; }
+
+template <class T, class U> inline mpz_class & mpz_class::operator&=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_and> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator&=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_and> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator&=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_and> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator|=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_ior> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator|=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_ior> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator|=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_ior> >(*this, t)); return *this; }
+template <class T, class U> inline mpz_class & mpz_class::operator^=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, __gmp_expr<T, U>, __gmp_binary_xor> >(*this, expr)); return *this; } inline mpz_class & mpz_class::operator^=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, signed long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, unsigned long int, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(float t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_xor> >(*this, t)); return *this; } inline mpz_class & mpz_class::operator^=(double t) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, double, __gmp_binary_xor> >(*this, t)); return *this; }
+
+inline mpz_class & mpz_class::operator<<=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, mp_bitcnt_t, __gmp_binary_lshift> >(*this, l)); return *this; }
+inline mpz_class & mpz_class::operator>>=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpz_t, __gmp_binary_expr <mpz_class, mp_bitcnt_t, __gmp_binary_rshift> >(*this, l)); return *this; }
+
+inline mpz_class & mpz_class::operator++() { __gmp_unary_increment::eval(mp); return *this; } inline mpz_class mpz_class::operator++(int) { mpz_class temp(*this); __gmp_unary_increment::eval(mp); return temp; }
+inline mpz_class & mpz_class::operator--() { __gmp_unary_decrement::eval(mp); return *this; } inline mpz_class mpz_class::operator--(int) { mpz_class temp(*this); __gmp_unary_decrement::eval(mp); return temp; }
+
+template <class U> __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fac_function> > mpz_class::factorial(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > mpz_class::factorial(signed char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > mpz_class::factorial(unsigned char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > mpz_class::factorial(signed int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > mpz_class::factorial(unsigned int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > mpz_class::factorial(signed short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > mpz_class::factorial(unsigned short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> > mpz_class::factorial(signed long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> > mpz_class::factorial(unsigned long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> > mpz_class::factorial(float expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> > mpz_class::factorial(double expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fac_function> >(expr); }
+template <class U> __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_primorial_function> > mpz_class::primorial(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > mpz_class::primorial(signed char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > mpz_class::primorial(unsigned char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > mpz_class::primorial(signed int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > mpz_class::primorial(unsigned int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > mpz_class::primorial(signed short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > mpz_class::primorial(unsigned short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> > mpz_class::primorial(signed long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> > mpz_class::primorial(unsigned long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> > mpz_class::primorial(float expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> > mpz_class::primorial(double expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_primorial_function> >(expr); }
+template <class U> __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fib_function> > mpz_class::fibonacci(const __gmp_expr<mpz_t, U> &expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<__gmp_expr<mpz_t, U>, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > mpz_class::fibonacci(signed char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > mpz_class::fibonacci(unsigned char expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > mpz_class::fibonacci(signed int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > mpz_class::fibonacci(unsigned int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > mpz_class::fibonacci(signed short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > mpz_class::fibonacci(unsigned short int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> > mpz_class::fibonacci(signed long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<signed long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> > mpz_class::fibonacci(unsigned long int expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<unsigned long, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> > mpz_class::fibonacci(float expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> >(expr); } inline __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> > mpz_class::fibonacci(double expr) { return __gmp_expr<mpz_t, __gmp_unary_expr<double, __gmp_fib_function> >(expr); }
+
+
+
+template <class T, class U> inline mpq_class & mpq_class::operator+=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, __gmp_expr<T, U>, __gmp_binary_plus> >(*this, expr)); return *this; } inline mpq_class & mpq_class::operator+=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(float t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_plus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator+=(double t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_plus> >(*this, t)); return *this; }
+template <class T, class U> inline mpq_class & mpq_class::operator-=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, __gmp_expr<T, U>, __gmp_binary_minus> >(*this, expr)); return *this; } inline mpq_class & mpq_class::operator-=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(float t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_minus> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator-=(double t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_minus> >(*this, t)); return *this; }
+template <class T, class U> inline mpq_class & mpq_class::operator*=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, __gmp_expr<T, U>, __gmp_binary_multiplies> >(*this, expr)); return *this; } inline mpq_class & mpq_class::operator*=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(float t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator*=(double t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; }
+template <class T, class U> inline mpq_class & mpq_class::operator/=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, __gmp_expr<T, U>, __gmp_binary_divides> >(*this, expr)); return *this; } inline mpq_class & mpq_class::operator/=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(float t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_divides> >(*this, t)); return *this; } inline mpq_class & mpq_class::operator/=(double t) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, double, __gmp_binary_divides> >(*this, t)); return *this; }
+
+inline mpq_class & mpq_class::operator<<=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, mp_bitcnt_t, __gmp_binary_lshift> >(*this, l)); return *this; }
+inline mpq_class & mpq_class::operator>>=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpq_t, __gmp_binary_expr <mpq_class, mp_bitcnt_t, __gmp_binary_rshift> >(*this, l)); return *this; }
+
+inline mpq_class & mpq_class::operator++() { __gmp_unary_increment::eval(mp); return *this; } inline mpq_class mpq_class::operator++(int) { mpq_class temp(*this); __gmp_unary_increment::eval(mp); return temp; }
+inline mpq_class & mpq_class::operator--() { __gmp_unary_decrement::eval(mp); return *this; } inline mpq_class mpq_class::operator--(int) { mpq_class temp(*this); __gmp_unary_decrement::eval(mp); return temp; }
+
+
+
+template <class T, class U> inline mpf_class & mpf_class::operator+=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, __gmp_expr<T, U>, __gmp_binary_plus> >(*this, expr)); return *this; } inline mpf_class & mpf_class::operator+=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(float t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_plus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator+=(double t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_plus> >(*this, t)); return *this; }
+template <class T, class U> inline mpf_class & mpf_class::operator-=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, __gmp_expr<T, U>, __gmp_binary_minus> >(*this, expr)); return *this; } inline mpf_class & mpf_class::operator-=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(float t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_minus> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator-=(double t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_minus> >(*this, t)); return *this; }
+template <class T, class U> inline mpf_class & mpf_class::operator*=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, __gmp_expr<T, U>, __gmp_binary_multiplies> >(*this, expr)); return *this; } inline mpf_class & mpf_class::operator*=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(float t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator*=(double t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_multiplies> >(*this, t)); return *this; }
+template <class T, class U> inline mpf_class & mpf_class::operator/=(const __gmp_expr<T, U> &expr) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, __gmp_expr<T, U>, __gmp_binary_divides> >(*this, expr)); return *this; } inline mpf_class & mpf_class::operator/=(signed char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(unsigned char t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(signed int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(unsigned int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(signed short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(unsigned short int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(signed long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, signed long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(unsigned long int t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, unsigned long int, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(float t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_divides> >(*this, t)); return *this; } inline mpf_class & mpf_class::operator/=(double t) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, double, __gmp_binary_divides> >(*this, t)); return *this; }
+
+inline mpf_class & mpf_class::operator<<=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, mp_bitcnt_t, __gmp_binary_lshift> >(*this, l)); return *this; }
+inline mpf_class & mpf_class::operator>>=(mp_bitcnt_t l) { __gmp_set_expr(mp, __gmp_expr<mpf_t, __gmp_binary_expr <mpf_class, mp_bitcnt_t, __gmp_binary_rshift> >(*this, l)); return *this; }
+
+inline mpf_class & mpf_class::operator++() { __gmp_unary_increment::eval(mp); return *this; } inline mpf_class mpf_class::operator++(int) { mpf_class temp(*this); __gmp_unary_increment::eval(mp); return temp; }
+inline mpf_class & mpf_class::operator--() { __gmp_unary_decrement::eval(mp); return *this; } inline mpf_class mpf_class::operator--(int) { mpf_class temp(*this); __gmp_unary_decrement::eval(mp); return temp; }
+
+
+
+
+
+class __gmp_urandomb_value { };
+class __gmp_urandomm_value { };
+
+template <>
+class __gmp_expr<mpz_t, __gmp_urandomb_value>
+{
+private:
+  __gmp_randstate_struct *state;
+  mp_bitcnt_t bits;
+public:
+  __gmp_expr(gmp_randstate_t s, mp_bitcnt_t l) : state(s), bits(l) { }
+  void eval(mpz_ptr z) const { __gmp_rand_function::eval(z, state, bits); }
+  mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); }
+};
+
+template <>
+class __gmp_expr<mpz_t, __gmp_urandomm_value>
+{
+private:
+  __gmp_randstate_struct *state;
+  mpz_class range;
+public:
+  __gmp_expr(gmp_randstate_t s, const mpz_class &z) : state(s), range(z) { }
+  void eval(mpz_ptr z) const
+  { __gmp_rand_function::eval(z, state, range.get_mpz_t()); }
+  mp_bitcnt_t get_prec() const { return __gmpf_get_default_prec(); }
+};
+
+template <>
+class __gmp_expr<mpf_t, __gmp_urandomb_value>
+{
+private:
+  __gmp_randstate_struct *state;
+  mp_bitcnt_t bits;
+public:
+  __gmp_expr(gmp_randstate_t s, mp_bitcnt_t l) : state(s), bits(l) { }
+  void eval(mpf_ptr f) const
+  {
+    __gmp_rand_function::eval(f, state,
+ (bits>0) ? bits : __gmpf_get_prec(f));
+  }
+  mp_bitcnt_t get_prec() const
+  {
+    if (bits == 0)
+      return __gmpf_get_default_prec();
+    else
+      return bits;
+  }
+};
+
+extern "C" {
+  typedef void __gmp_randinit_default_t (gmp_randstate_t);
+  typedef void __gmp_randinit_lc_2exp_t (gmp_randstate_t, mpz_srcptr, unsigned long int, mp_bitcnt_t);
+  typedef int __gmp_randinit_lc_2exp_size_t (gmp_randstate_t, mp_bitcnt_t);
+}
+
+class gmp_randclass
+{
+private:
+  gmp_randstate_t state;
+
+
+  gmp_randclass(const gmp_randclass &);
+  void operator=(const gmp_randclass &);
+public:
+
+  gmp_randclass(gmp_randalg_t alg, unsigned long int size)
+  {
+    switch (alg)
+      {
+      case GMP_RAND_ALG_LC:
+      default:
+ __gmp_randinit(state, alg, size);
+ break;
+      }
+  }
+
+
+  gmp_randclass(__gmp_randinit_default_t* f) { f(state); }
+
+
+  gmp_randclass(__gmp_randinit_lc_2exp_t* f,
+  mpz_class z, unsigned long int l1, mp_bitcnt_t l2)
+  { f(state, z.get_mpz_t(), l1, l2); }
+
+
+  gmp_randclass(__gmp_randinit_lc_2exp_size_t* f,
+  mp_bitcnt_t size)
+  {
+    if (f (state, size) == 0)
+      throw std::length_error ("gmp_randinit_lc_2exp_size");
+  }
+
+  ~gmp_randclass() { __gmp_randclear(state); }
+
+
+  void seed();
+  void seed(unsigned long int s) { __gmp_randseed_ui(state, s); }
+  void seed(const mpz_class &z) { __gmp_randseed(state, z.get_mpz_t()); }
+
+
+  __gmp_expr<mpz_t, __gmp_urandomb_value> get_z_bits(mp_bitcnt_t l)
+  { return __gmp_expr<mpz_t, __gmp_urandomb_value>(state, l); }
+  __gmp_expr<mpz_t, __gmp_urandomb_value> get_z_bits(const mpz_class &z)
+  { return get_z_bits(z.get_ui()); }
+
+
+  __gmp_expr<mpz_t, __gmp_urandomm_value> get_z_range(const mpz_class &z)
+  { return __gmp_expr<mpz_t, __gmp_urandomm_value>(state, z); }
+
+  __gmp_expr<mpf_t, __gmp_urandomb_value> get_f(mp_bitcnt_t prec = 0)
+  { return __gmp_expr<mpf_t, __gmp_urandomb_value>(state, prec); }
+};
+
+
+
+
+namespace std {
+  template <> class numeric_limits<mpz_class>
+  {
+  public:
+    static const bool is_specialized = true;
+    static mpz_class min() { return mpz_class(); }
+    static mpz_class max() { return mpz_class(); }
+    static mpz_class lowest() { return mpz_class(); }
+    static const int digits = 0;
+    static const int digits10 = 0;
+    static const int max_digits10 = 0;
+    static const bool is_signed = true;
+    static const bool is_integer = true;
+    static const bool is_exact = true;
+    static const int radix = 2;
+    static mpz_class epsilon() { return mpz_class(); }
+    static mpz_class round_error() { return mpz_class(); }
+    static const int min_exponent = 0;
+    static const int min_exponent10 = 0;
+    static const int max_exponent = 0;
+    static const int max_exponent10 = 0;
+    static const bool has_infinity = false;
+    static const bool has_quiet_NaN = false;
+    static const bool has_signaling_NaN = false;
+    static const float_denorm_style has_denorm = denorm_absent;
+    static const bool has_denorm_loss = false;
+    static mpz_class infinity() { return mpz_class(); }
+    static mpz_class quiet_NaN() { return mpz_class(); }
+    static mpz_class signaling_NaN() { return mpz_class(); }
+    static mpz_class denorm_min() { return mpz_class(); }
+    static const bool is_iec559 = false;
+    static const bool is_bounded = false;
+    static const bool is_modulo = false;
+    static const bool traps = false;
+    static const bool tinyness_before = false;
+    static const float_round_style round_style = round_toward_zero;
+  };
+
+  template <> class numeric_limits<mpq_class>
+  {
+  public:
+    static const bool is_specialized = true;
+    static mpq_class min() { return mpq_class(); }
+    static mpq_class max() { return mpq_class(); }
+    static mpq_class lowest() { return mpq_class(); }
+    static const int digits = 0;
+    static const int digits10 = 0;
+    static const int max_digits10 = 0;
+    static const bool is_signed = true;
+    static const bool is_integer = false;
+    static const bool is_exact = true;
+    static const int radix = 2;
+    static mpq_class epsilon() { return mpq_class(); }
+    static mpq_class round_error() { return mpq_class(); }
+    static const int min_exponent = 0;
+    static const int min_exponent10 = 0;
+    static const int max_exponent = 0;
+    static const int max_exponent10 = 0;
+    static const bool has_infinity = false;
+    static const bool has_quiet_NaN = false;
+    static const bool has_signaling_NaN = false;
+    static const float_denorm_style has_denorm = denorm_absent;
+    static const bool has_denorm_loss = false;
+    static mpq_class infinity() { return mpq_class(); }
+    static mpq_class quiet_NaN() { return mpq_class(); }
+    static mpq_class signaling_NaN() { return mpq_class(); }
+    static mpq_class denorm_min() { return mpq_class(); }
+    static const bool is_iec559 = false;
+    static const bool is_bounded = false;
+    static const bool is_modulo = false;
+    static const bool traps = false;
+    static const bool tinyness_before = false;
+    static const float_round_style round_style = round_toward_zero;
+  };
+
+  template <> class numeric_limits<mpf_class>
+  {
+  public:
+    static const bool is_specialized = true;
+    static mpf_class min() { return mpf_class(); }
+    static mpf_class max() { return mpf_class(); }
+    static mpf_class lowest() { return mpf_class(); }
+    static const int digits = 0;
+    static const int digits10 = 0;
+    static const int max_digits10 = 0;
+    static const bool is_signed = true;
+    static const bool is_integer = false;
+    static const bool is_exact = false;
+    static const int radix = 2;
+    static mpf_class epsilon() { return mpf_class(); }
+    static mpf_class round_error() { return mpf_class(); }
+    static const int min_exponent = 0;
+    static const int min_exponent10 = 0;
+    static const int max_exponent = 0;
+    static const int max_exponent10 = 0;
+    static const bool has_infinity = false;
+    static const bool has_quiet_NaN = false;
+    static const bool has_signaling_NaN = false;
+    static const float_denorm_style has_denorm = denorm_absent;
+    static const bool has_denorm_loss = false;
+    static mpf_class infinity() { return mpf_class(); }
+    static mpf_class quiet_NaN() { return mpf_class(); }
+    static mpf_class signaling_NaN() { return mpf_class(); }
+    static mpf_class denorm_min() { return mpf_class(); }
+    static const bool is_iec559 = false;
+    static const bool is_bounded = false;
+    static const bool is_modulo = false;
+    static const bool traps = false;
+    static const bool tinyness_before = false;
+    static const float_round_style round_style = round_indeterminate;
+  };
+}
+# 16 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/App.h" 2
+
+
+# 17 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/App.h"
 class App {
 public:
     App();

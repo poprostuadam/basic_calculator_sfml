@@ -316,4 +316,11 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Text.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Button.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h
+ /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h \
+ /usr/include/c++/14.2.0/cstring /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/14.2.0/limits \
+ /usr/include/c++/14.2.0/utility \
+ /usr/include/c++/14.2.0/bits/stl_relops.h /usr/include/c++/14.2.0/cfloat \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/float.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h

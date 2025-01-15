@@ -245,6 +245,9 @@ FLAC_LIB:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/li
 //The directory containing a CMake configuration file for Freetype.
 Freetype_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype
 
+//The directory containing a CMake configuration file for GMP.
+GMP_DIR:PATH=GMP_DIR-NOTFOUND
+
 //Path to a file.
 OPENAL_INCLUDE_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/AL
 
@@ -295,6 +298,12 @@ OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 Ogg_LIB:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libogg.a
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a library.
 PNG_LIBRARY_DEBUG:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libpng16d.a
@@ -395,6 +404,18 @@ basic_calculator_sfml_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 basic_calculator_sfml_SOURCE_DIR:STATIC=/home/adam/CLionProjects/basic-calculator-sfml
+
+//Path to a library.
+pkgcfg_lib_GMPXX_gmp:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libgmp.a
+
+//Path to a library.
+pkgcfg_lib_GMPXX_gmpxx:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libgmpxx.a
+
+//Path to a library.
+pkgcfg_lib_gmpxx_gmp:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libgmp.a
+
+//Path to a library.
+pkgcfg_lib_gmpxx_gmpxx:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libgmpxx.a
 
 
 ########################
@@ -568,6 +589,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/home/adam/.vcpkg-clion/vcpkg/inst
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //Details about finding PNG
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[optimized;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libpng16.a;debug;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libpng16d.a][/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include][v1.6.44()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.3.0()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[optimized;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libz.a;debug;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libz.a][/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include][c ][v1.3.1()]
 //ADVANCED property for variable: FLAC_LIB
@@ -580,6 +603,41 @@ FREETYPE_LIBRARY_DEBUG:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linu
 FREETYPE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //vcpkg
 FREETYPE_LIBRARY_RELEASE:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libfreetype.a
+GMPXX_CFLAGS:INTERNAL=-I/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+GMPXX_CFLAGS_I:INTERNAL=
+GMPXX_CFLAGS_OTHER:INTERNAL=
+GMPXX_FOUND:INTERNAL=1
+GMPXX_INCLUDEDIR:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+GMPXX_INCLUDE_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+GMPXX_LDFLAGS:INTERNAL=-L/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib;-lgmpxx;-lgmp
+GMPXX_LDFLAGS_OTHER:INTERNAL=
+GMPXX_LIBDIR:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+GMPXX_LIBRARIES:INTERNAL=gmpxx;gmp
+GMPXX_LIBRARY_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+GMPXX_LIBS:INTERNAL=
+GMPXX_LIBS_L:INTERNAL=
+GMPXX_LIBS_OTHER:INTERNAL=
+GMPXX_LIBS_PATHS:INTERNAL=
+GMPXX_MODULE_NAME:INTERNAL=gmpxx
+GMPXX_PREFIX:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../..
+GMPXX_STATIC_CFLAGS:INTERNAL=-I/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+GMPXX_STATIC_CFLAGS_I:INTERNAL=
+GMPXX_STATIC_CFLAGS_OTHER:INTERNAL=
+GMPXX_STATIC_INCLUDE_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+GMPXX_STATIC_LDFLAGS:INTERNAL=-L/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib;-lgmpxx;-lgmp
+GMPXX_STATIC_LDFLAGS_OTHER:INTERNAL=
+GMPXX_STATIC_LIBDIR:INTERNAL=
+GMPXX_STATIC_LIBRARIES:INTERNAL=gmpxx;gmp
+GMPXX_STATIC_LIBRARY_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+GMPXX_STATIC_LIBS:INTERNAL=
+GMPXX_STATIC_LIBS_L:INTERNAL=
+GMPXX_STATIC_LIBS_OTHER:INTERNAL=
+GMPXX_STATIC_LIBS_PATHS:INTERNAL=
+GMPXX_VERSION:INTERNAL=6.3.0
+GMPXX_gmpxx_INCLUDEDIR:INTERNAL=
+GMPXX_gmpxx_LIBDIR:INTERNAL=
+GMPXX_gmpxx_PREFIX:INTERNAL=
+GMPXX_gmpxx_VERSION:INTERNAL=
 //ADVANCED property for variable: OPENAL_INCLUDE_DIR
 OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENAL_LIBRARY
@@ -614,6 +672,10 @@ OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Ogg_LIB
 Ogg_LIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_LIBRARY_DEBUG
 PNG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_LIBRARY_RELEASE
@@ -654,4 +716,52 @@ Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
 Z_VCPKG_ROOT_DIR:INTERNAL=/home/adam/.vcpkg-clion/vcpkg
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_GMPXX:INTERNAL=REQUIRED;IMPORTED_TARGET;gmpxx
+__pkg_config_arguments_gmpxx:INTERNAL=REQUIRED;IMPORTED_TARGET;gmpxx
+__pkg_config_checked_GMPXX:INTERNAL=1
+__pkg_config_checked_gmpxx:INTERNAL=1
+gmpxx_CFLAGS:INTERNAL=-I/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+gmpxx_CFLAGS_I:INTERNAL=
+gmpxx_CFLAGS_OTHER:INTERNAL=
+gmpxx_FOUND:INTERNAL=1
+gmpxx_INCLUDEDIR:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+gmpxx_INCLUDE_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+gmpxx_LDFLAGS:INTERNAL=-L/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib;-lgmpxx;-lgmp
+gmpxx_LDFLAGS_OTHER:INTERNAL=
+gmpxx_LIBDIR:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+gmpxx_LIBRARIES:INTERNAL=gmpxx;gmp
+gmpxx_LIBRARY_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+gmpxx_LIBS:INTERNAL=
+gmpxx_LIBS_L:INTERNAL=
+gmpxx_LIBS_OTHER:INTERNAL=
+gmpxx_LIBS_PATHS:INTERNAL=
+gmpxx_MODULE_NAME:INTERNAL=gmpxx
+gmpxx_PREFIX:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../..
+gmpxx_STATIC_CFLAGS:INTERNAL=-I/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+gmpxx_STATIC_CFLAGS_I:INTERNAL=
+gmpxx_STATIC_CFLAGS_OTHER:INTERNAL=
+gmpxx_STATIC_INCLUDE_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include
+gmpxx_STATIC_LDFLAGS:INTERNAL=-L/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib;-lgmpxx;-lgmp
+gmpxx_STATIC_LDFLAGS_OTHER:INTERNAL=
+gmpxx_STATIC_LIBDIR:INTERNAL=
+gmpxx_STATIC_LIBRARIES:INTERNAL=gmpxx;gmp
+gmpxx_STATIC_LIBRARY_DIRS:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
+gmpxx_STATIC_LIBS:INTERNAL=
+gmpxx_STATIC_LIBS_L:INTERNAL=
+gmpxx_STATIC_LIBS_OTHER:INTERNAL=
+gmpxx_STATIC_LIBS_PATHS:INTERNAL=
+gmpxx_VERSION:INTERNAL=6.3.0
+gmpxx_gmpxx_INCLUDEDIR:INTERNAL=
+gmpxx_gmpxx_LIBDIR:INTERNAL=
+gmpxx_gmpxx_PREFIX:INTERNAL=
+gmpxx_gmpxx_VERSION:INTERNAL=
+//ADVANCED property for variable: pkgcfg_lib_GMPXX_gmp
+pkgcfg_lib_GMPXX_gmp-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GMPXX_gmpxx
+pkgcfg_lib_GMPXX_gmpxx-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_gmpxx_gmp
+pkgcfg_lib_gmpxx_gmp-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_gmpxx_gmpxx
+pkgcfg_lib_gmpxx_gmpxx-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../lib
 
