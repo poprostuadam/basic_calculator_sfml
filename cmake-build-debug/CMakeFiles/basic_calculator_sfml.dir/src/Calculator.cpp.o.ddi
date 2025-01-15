@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/basic_calculator_sfml.dir/src/Calculator.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
