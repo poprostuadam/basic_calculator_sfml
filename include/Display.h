@@ -18,12 +18,14 @@ public:
         int fontSize,
         int char_limit);
 
-    void addChar(char c);
+    void addChar(const char c);
     void deleteLastChar();
     void setText(const std::string& text);
-    void render(sf::RenderWindow& window);
+    void render(sf::RenderWindow& window) const;
     void clear();
     void showError();
+
+    const std::string& getText() const;
 
 private:
     sf::RectangleShape dShape;

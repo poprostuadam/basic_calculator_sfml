@@ -32,6 +32,10 @@ private:
     std::vector<std::unique_ptr<Button>> mButtons;
 
     std::unique_ptr<Display> mDisplay;
+
+    void processMouseInput(const sf::Event& event) const;
+    void processKeyboardInput(const sf::Event& event);
+
 };
 
 

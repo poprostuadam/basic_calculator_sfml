@@ -59193,7 +59193,7 @@ uninitialized_value_construct_n(_ExecutionPolicy&& __exec, _ForwardIterator __fi
 # 172 "/usr/include/c++/14.2.0/memory" 2 3
 # 10 "/home/adam/CLionProjects/basic-calculator-sfml/include/App.h" 2
 
-# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 1
+# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 1
 
 
 
@@ -84150,13 +84150,13 @@ private:
 
 }
 # 58 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp" 2 3 4
-# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 2
+# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 2
 
 
 
 
-# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h"
-struct Config {
+# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h"
+struct config {
 
     static constexpr int windowWidth = 520;
     static constexpr int windowHeight = 820;
@@ -84167,6 +84167,7 @@ struct Config {
     static constexpr const char* fontPath = "../assets/fonts/DejaVuSans-Bold.ttf";
     static constexpr int ButtonFontSize = 32;
     static constexpr int DisplayFontSize = 48;
+    static constexpr int DisplayMaxChars = 30;
 
 
     inline static const sf::Color BackgroundColor{110,110,110};
@@ -84195,10 +84196,12 @@ public:
 
     void setColors(const sf::Color& normal, const sf::Color& hover, const sf::Color& active);
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
-    void render(sf::RenderWindow& window);
-
+    void render(sf::RenderWindow& window) const;
     void setActive(bool isActive);
 
+    bool isHovered(const sf::RenderWindow& window) const;
+
+    const std::string& getLabel() const;
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -84207,14 +84210,13 @@ private:
     sf::Color bHoverColor;
     sf::Color bActiveColor;
 
-    bool isHovered(const sf::RenderWindow& window) const;
 
     bool isActive;
 };
 # 13 "/home/adam/CLionProjects/basic-calculator-sfml/include/App.h" 2
 # 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h" 1
 # 10 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h"
-constexpr const char* error_message = "ERROR*************";
+constexpr const char* error_message = "ERROR";
 
 class Display {
 public:
@@ -84225,12 +84227,14 @@ public:
         int fontSize,
         int char_limit);
 
-    void addChar(char c);
+    void addChar(const char c);
     void deleteLastChar();
     void setText(const std::string& text);
-    void render(sf::RenderWindow& window);
+    void render(sf::RenderWindow& window) const;
     void clear();
     void showError();
+
+    const std::string& getText() const;
 
 private:
     sf::RectangleShape dShape;
@@ -84266,6 +84270,10 @@ private:
     std::vector<std::unique_ptr<Button>> mButtons;
 
     std::unique_ptr<Display> mDisplay;
+
+    void processMouseInput(const sf::Event& event) const;
+    void processKeyboardInput(const sf::Event& event);
+
 };
 # 3 "/home/adam/CLionProjects/basic-calculator-sfml/src/main.cpp" 2
 

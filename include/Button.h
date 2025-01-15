@@ -18,10 +18,12 @@ public:
 
     void setColors(const sf::Color& normal, const sf::Color& hover, const sf::Color& active);
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
-    void render(sf::RenderWindow& window);
-
+    void render(sf::RenderWindow& window) const;
     void setActive(bool isActive);
 
+    bool isHovered(const sf::RenderWindow& window) const;
+
+    const std::string& getLabel() const;
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -30,11 +32,9 @@ private:
     sf::Color bHoverColor;
     sf::Color bActiveColor;
 
-    bool isHovered(const sf::RenderWindow& window) const;
 
     bool isActive;
 };
-
 
 
 #endif //BUTTON_H

@@ -2,7 +2,7 @@ CMakeFiles/basic_calculator_sfml.dir/src/Display.cpp.o.ddi: \
  /home/adam/CLionProjects/basic-calculator-sfml/src/Display.cpp \
  /usr/include/stdc-predef.h \
  /home/adam/CLionProjects/basic-calculator-sfml/src/../include/Display.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Config.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/config.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/System.hpp \
@@ -278,4 +278,6 @@ CMakeFiles/basic_calculator_sfml.dir/src/Display.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Glsl.inl \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Sprite.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Text.hpp \
- /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
+ /usr/include/c++/14.2.0/iostream /usr/include/c++/14.2.0/istream \
+ /usr/include/c++/14.2.0/bits/istream.tcc

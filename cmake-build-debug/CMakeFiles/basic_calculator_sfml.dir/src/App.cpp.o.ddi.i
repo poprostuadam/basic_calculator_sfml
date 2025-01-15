@@ -57579,7 +57579,7 @@ uninitialized_value_construct_n(_ExecutionPolicy&& __exec, _ForwardIterator __fi
 # 172 "/usr/include/c++/14.2.0/memory" 2 3
 # 10 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/App.h" 2
 
-# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 1
+# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 1
 
 
 
@@ -82536,13 +82536,13 @@ private:
 
 }
 # 58 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp" 2 3 4
-# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 2
+# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 2
 
 
 
 
-# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h"
-struct Config {
+# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h"
+struct config {
 
     static constexpr int windowWidth = 520;
     static constexpr int windowHeight = 820;
@@ -82553,6 +82553,7 @@ struct Config {
     static constexpr const char* fontPath = "../assets/fonts/DejaVuSans-Bold.ttf";
     static constexpr int ButtonFontSize = 32;
     static constexpr int DisplayFontSize = 48;
+    static constexpr int DisplayMaxChars = 30;
 
 
     inline static const sf::Color BackgroundColor{110,110,110};
@@ -82581,10 +82582,12 @@ public:
 
     void setColors(const sf::Color& normal, const sf::Color& hover, const sf::Color& active);
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
-    void render(sf::RenderWindow& window);
-
+    void render(sf::RenderWindow& window) const;
     void setActive(bool isActive);
 
+    bool isHovered(const sf::RenderWindow& window) const;
+
+    const std::string& getLabel() const;
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -82593,14 +82596,13 @@ private:
     sf::Color bHoverColor;
     sf::Color bActiveColor;
 
-    bool isHovered(const sf::RenderWindow& window) const;
 
     bool isActive;
 };
 # 13 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/App.h" 2
 # 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h" 1
 # 10 "/home/adam/CLionProjects/basic-calculator-sfml/include/Display.h"
-constexpr const char* error_message = "ERROR*************";
+constexpr const char* error_message = "ERROR";
 
 class Display {
 public:
@@ -82611,12 +82613,14 @@ public:
         int fontSize,
         int char_limit);
 
-    void addChar(char c);
+    void addChar(const char c);
     void deleteLastChar();
     void setText(const std::string& text);
-    void render(sf::RenderWindow& window);
+    void render(sf::RenderWindow& window) const;
     void clear();
     void showError();
+
+    const std::string& getText() const;
 
 private:
     sf::RectangleShape dShape;
@@ -82652,24 +82656,1622 @@ private:
     std::vector<std::unique_ptr<Button>> mButtons;
 
     std::unique_ptr<Display> mDisplay;
+
+    void processMouseInput(const sf::Event& event) const;
+    void processKeyboardInput(const sf::Event& event);
+
 };
 # 6 "/home/adam/CLionProjects/basic-calculator-sfml/src/App.cpp" 2
+# 1 "/usr/include/c++/14.2.0/iostream" 1 3
+# 36 "/usr/include/c++/14.2.0/iostream" 3
+       
+# 37 "/usr/include/c++/14.2.0/iostream" 3
 
-App::App(): mWindow(sf::VideoMode(Config::windowWidth, Config::windowHeight),
-        Config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
+
+
+
+
+# 1 "/usr/include/c++/14.2.0/istream" 1 3
+# 36 "/usr/include/c++/14.2.0/istream" 3
+       
+# 37 "/usr/include/c++/14.2.0/istream" 3
+
+
+
+
+
+
+
+# 43 "/usr/include/c++/14.2.0/istream" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 59 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_istream : virtual public basic_ios<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef basic_ios<_CharT, _Traits> __ios_type;
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef num_get<_CharT, istreambuf_iterator<_CharT, _Traits> >
+        __num_get_type;
+      typedef ctype<_CharT> __ctype_type;
+
+    protected:
+
+
+
+
+
+      streamsize _M_gcount;
+
+    public:
+
+
+
+
+
+
+
+      explicit
+      basic_istream(__streambuf_type* __sb)
+      : _M_gcount(streamsize(0))
+      { this->init(__sb); }
+
+
+
+
+
+
+      virtual
+      ~basic_istream()
+      { _M_gcount = streamsize(0); }
+
+
+      class sentry;
+      friend class sentry;
+# 121 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      operator>>(__istream_type& (*__pf)(__istream_type&))
+      { return __pf(*this); }
+
+      __istream_type&
+      operator>>(__ios_type& (*__pf)(__ios_type&))
+      {
+ __pf(*this);
+ return *this;
+      }
+
+      __istream_type&
+      operator>>(ios_base& (*__pf)(ios_base&))
+      {
+ __pf(*this);
+ return *this;
+      }
+# 169 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      operator>>(bool& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(short& __n);
+
+      __istream_type&
+      operator>>(unsigned short& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(int& __n);
+
+      __istream_type&
+      operator>>(unsigned int& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(long& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(unsigned long& __n)
+      { return _M_extract(__n); }
+
+
+      __istream_type&
+      operator>>(long long& __n)
+      { return _M_extract(__n); }
+
+      __istream_type&
+      operator>>(unsigned long long& __n)
+      { return _M_extract(__n); }
+# 215 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      operator>>(float& __f)
+      { return _M_extract(__f); }
+
+      __istream_type&
+      operator>>(double& __f)
+      { return _M_extract(__f); }
+
+      __istream_type&
+      operator>>(long double& __f)
+      { return _M_extract(__f); }
+# 324 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      operator>>(void*& __p)
+      { return _M_extract(__p); }
+# 348 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      operator>>(__streambuf_type* __sb);
+# 358 "/usr/include/c++/14.2.0/istream" 3
+      streamsize
+      gcount() const
+      { return _M_gcount; }
+# 391 "/usr/include/c++/14.2.0/istream" 3
+      int_type
+      get();
+# 405 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      get(char_type& __c);
+# 432 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      get(char_type* __s, streamsize __n, char_type __delim);
+# 443 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      get(char_type* __s, streamsize __n)
+      { return this->get(__s, __n, this->widen('\n')); }
+# 466 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      get(__streambuf_type& __sb, char_type __delim);
+# 476 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      get(__streambuf_type& __sb)
+      { return this->get(__sb, this->widen('\n')); }
+# 505 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      getline(char_type* __s, streamsize __n, char_type __delim);
+# 516 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      getline(char_type* __s, streamsize __n)
+      { return this->getline(__s, __n, this->widen('\n')); }
+# 540 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      ignore(streamsize __n, int_type __delim);
+
+      __istream_type&
+      ignore(streamsize __n);
+
+      __istream_type&
+      ignore();
+# 557 "/usr/include/c++/14.2.0/istream" 3
+      int_type
+      peek();
+# 575 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      read(char_type* __s, streamsize __n);
+# 594 "/usr/include/c++/14.2.0/istream" 3
+      streamsize
+      readsome(char_type* __s, streamsize __n);
+# 611 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      putback(char_type __c);
+# 627 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      unget();
+# 645 "/usr/include/c++/14.2.0/istream" 3
+      int
+      sync();
+# 660 "/usr/include/c++/14.2.0/istream" 3
+      pos_type
+      tellg();
+# 675 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      seekg(pos_type);
+# 691 "/usr/include/c++/14.2.0/istream" 3
+      __istream_type&
+      seekg(off_type, ios_base::seekdir);
+
+
+    protected:
+      basic_istream()
+      : _M_gcount(streamsize(0))
+      { this->init(0); }
+
+
+      basic_istream(const basic_istream&) = delete;
+
+      basic_istream(basic_istream&& __rhs)
+      : __ios_type(), _M_gcount(__rhs._M_gcount)
+      {
+ __ios_type::move(__rhs);
+ __rhs._M_gcount = 0;
+      }
+
+
+
+      basic_istream& operator=(const basic_istream&) = delete;
+
+      basic_istream&
+      operator=(basic_istream&& __rhs)
+      {
+ swap(__rhs);
+ return *this;
+      }
+
+      void
+      swap(basic_istream& __rhs)
+      {
+ __ios_type::swap(__rhs);
+ std::swap(_M_gcount, __rhs._M_gcount);
+      }
+
+
+      template<typename _ValueT>
+ __istream_type&
+ _M_extract(_ValueT& __v);
+    };
+
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    getline(char_type* __s, streamsize __n, char_type __delim);
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    ignore(streamsize __n);
+
+  template<>
+    basic_istream<char>&
+    basic_istream<char>::
+    ignore(streamsize __n, int_type __delim);
+
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    getline(char_type* __s, streamsize __n, char_type __delim);
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    ignore(streamsize __n);
+
+  template<>
+    basic_istream<wchar_t>&
+    basic_istream<wchar_t>::
+    ignore(streamsize __n, int_type __delim);
+# 775 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_istream<_CharT, _Traits>::sentry
+    {
+
+      bool _M_ok;
+
+    public:
+
+      typedef _Traits traits_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef typename __istream_type::__ctype_type __ctype_type;
+      typedef typename _Traits::int_type __int_type;
+# 811 "/usr/include/c++/14.2.0/istream" 3
+      explicit
+      sentry(basic_istream<_CharT, _Traits>& __is, bool __noskipws = false);
+# 822 "/usr/include/c++/14.2.0/istream" 3
+      explicit
+
+      operator bool() const
+      { return _M_ok; }
+    };
+# 840 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c);
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+    { return (__in >> reinterpret_cast<char&>(__c)); }
+
+  template<class _Traits>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+    { return (__in >> reinterpret_cast<char&>(__c)); }
+
+
+
+  template<typename _CharT, typename _Traits>
+    void
+    __istream_extract(basic_istream<_CharT, _Traits>&, _CharT*, streamsize);
+
+  void __istream_extract(istream&, char*, streamsize);
+# 947 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits, size_t _Num>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT (&__s)[_Num])
+    {
+      static_assert(_Num <= __gnu_cxx::__numeric_traits<streamsize>::__max);
+      std::__istream_extract(__in, __s, _Num);
+      return __in;
+    }
+
+  template<class _Traits, size_t _Num>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char (&__s)[_Num])
+    { return __in >> reinterpret_cast<char(&)[_Num]>(__s); }
+
+  template<class _Traits, size_t _Num>
+    inline basic_istream<char, _Traits>&
+    operator>>(basic_istream<char, _Traits>& __in, signed char (&__s)[_Num])
+    { return __in >> reinterpret_cast<char(&)[_Num]>(__s); }
+# 979 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits>
+    class basic_iostream
+    : public basic_istream<_CharT, _Traits>,
+      public basic_ostream<_CharT, _Traits>
+    {
+    public:
+
+
+
+      typedef _CharT char_type;
+      typedef typename _Traits::int_type int_type;
+      typedef typename _Traits::pos_type pos_type;
+      typedef typename _Traits::off_type off_type;
+      typedef _Traits traits_type;
+
+
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_ostream<_CharT, _Traits> __ostream_type;
+
+
+
+
+
+
+
+      explicit
+      basic_iostream(basic_streambuf<_CharT, _Traits>* __sb)
+      : __istream_type(__sb), __ostream_type(__sb) { }
+
+
+
+
+      virtual
+      ~basic_iostream() { }
+
+    protected:
+      basic_iostream()
+      : __istream_type(), __ostream_type() { }
+
+
+      basic_iostream(const basic_iostream&) = delete;
+
+      basic_iostream(basic_iostream&& __rhs)
+      : __istream_type(std::move(__rhs)), __ostream_type(*this)
+      { }
+
+
+
+      basic_iostream& operator=(const basic_iostream&) = delete;
+
+      basic_iostream&
+      operator=(basic_iostream&& __rhs)
+      {
+ swap(__rhs);
+ return *this;
+      }
+
+      void
+      swap(basic_iostream& __rhs)
+      { __istream_type::swap(__rhs); }
+
+    };
+# 1062 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    ws(basic_istream<_CharT, _Traits>& __is);
+# 1073 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _Is, typename _Tp>
+    requires __derived_from_ios_base<_Is>
+      && requires (_Is& __is, _Tp&& __t) { __is >> std::forward<_Tp>(__t); }
+    using __rvalue_stream_extraction_t = _Is&&;
+# 1094 "/usr/include/c++/14.2.0/istream" 3
+  template<typename _Istream, typename _Tp>
+    inline __rvalue_stream_extraction_t<_Istream, _Tp>
+    operator>>(_Istream&& __is, _Tp&& __x)
+    {
+      __is >> std::forward<_Tp>(__x);
+      return std::move(__is);
+    }
+
+
+
+}
+
+# 1 "/usr/include/c++/14.2.0/bits/istream.tcc" 1 3
+# 37 "/usr/include/c++/14.2.0/bits/istream.tcc" 3
+       
+# 38 "/usr/include/c++/14.2.0/bits/istream.tcc" 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>::sentry::
+    sentry(basic_istream<_CharT, _Traits>& __in, bool __noskip) : _M_ok(false)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      if (__in.good())
+ {
+   try
+     {
+       if (__in.tie())
+  __in.tie()->flush();
+       if (!__noskip && bool(__in.flags() & ios_base::skipws))
+  {
+    const __int_type __eof = traits_type::eof();
+    __streambuf_type* __sb = __in.rdbuf();
+    __int_type __c = __sb->sgetc();
+
+    const __ctype_type& __ct = __check_facet(__in._M_ctype);
+    while (!traits_type::eq_int_type(__c, __eof)
+    && __ct.is(ctype_base::space,
+        traits_type::to_char_type(__c)))
+      __c = __sb->snextc();
+
+
+
+
+    if (traits_type::eq_int_type(__c, __eof))
+      __err |= ios_base::eofbit;
+  }
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       __in._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { __in._M_setstate(ios_base::badbit); }
+ }
+
+      if (__in.good() && __err == ios_base::goodbit)
+ _M_ok = true;
+      else
+ {
+   __err |= ios_base::failbit;
+   __in.setstate(__err);
+ }
+    }
+
+  template<typename _CharT, typename _Traits>
+    template<typename _ValueT>
+      basic_istream<_CharT, _Traits>&
+      basic_istream<_CharT, _Traits>::
+      _M_extract(_ValueT& __v)
+      {
+ sentry __cerb(*this, false);
+ if (__cerb)
+   {
+     ios_base::iostate __err = ios_base::goodbit;
+     try
+       {
+
+  const __num_get_type& __ng = __check_facet(this->_M_num_get);
+
+
+
+
+  __ng.get(*this, 0, *this, __err, __v);
+       }
+     catch(__cxxabiv1::__forced_unwind&)
+       {
+  this->_M_setstate(ios_base::badbit);
+  throw;
+       }
+     catch(...)
+       { this->_M_setstate(ios_base::badbit); }
+     if (__err)
+       this->setstate(__err);
+   }
+ return *this;
+      }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(short& __n)
+    {
+
+
+      sentry __cerb(*this, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       long __l;
+
+       const __num_get_type& __ng = __check_facet(this->_M_num_get);
+
+
+
+
+       __ng.get(*this, 0, *this, __err, __l);
+
+
+
+       if (__l < __gnu_cxx::__numeric_traits<short>::__min)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<short>::__min;
+  }
+       else if (__l > __gnu_cxx::__numeric_traits<short>::__max)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<short>::__max;
+  }
+       else
+  __n = short(__l);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(int& __n)
+    {
+
+
+      sentry __cerb(*this, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       long __l;
+
+       const __num_get_type& __ng = __check_facet(this->_M_num_get);
+
+
+
+
+       __ng.get(*this, 0, *this, __err, __l);
+
+
+
+       if (__l < __gnu_cxx::__numeric_traits<int>::__min)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<int>::__min;
+  }
+       else if (__l > __gnu_cxx::__numeric_traits<int>::__max)
+  {
+    __err |= ios_base::failbit;
+    __n = __gnu_cxx::__numeric_traits<int>::__max;
+  }
+       else
+  __n = int(__l);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    operator>>(__streambuf_type* __sbout)
+    {
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, false);
+      if (__cerb && __sbout)
+ {
+   try
+     {
+       bool __ineof;
+       if (!__copy_streambufs_eof(this->rdbuf(), __sbout, __ineof))
+  __err |= ios_base::failbit;
+       if (__ineof)
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::failbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::failbit); }
+ }
+      else if (!__sbout)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::int_type
+    basic_istream<_CharT, _Traits>::
+    get(void)
+    {
+      const int_type __eof = traits_type::eof();
+      int_type __c = __eof;
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   try
+     {
+       __c = this->rdbuf()->sbumpc();
+
+       if (!traits_type::eq_int_type(__c, __eof))
+  _M_gcount = 1;
+       else
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return __c;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(char_type& __c)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   try
+     {
+       const int_type __cb = this->rdbuf()->sbumpc();
+
+       if (!traits_type::eq_int_type(__cb, traits_type::eof()))
+  {
+    _M_gcount = 1;
+    __c = traits_type::to_char_type(__cb);
+  }
+       else
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(char_type* __s, streamsize __n, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   try
+     {
+       const int_type __idelim = traits_type::to_int_type(__delim);
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       int_type __c = __sb->sgetc();
+
+       while (_M_gcount + 1 < __n
+       && !traits_type::eq_int_type(__c, __eof)
+       && !traits_type::eq_int_type(__c, __idelim))
+  {
+    *__s++ = traits_type::to_char_type(__c);
+    ++_M_gcount;
+    __c = __sb->snextc();
+  }
+       if (traits_type::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+
+
+      if (__n > 0)
+ *__s = char_type();
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    get(__streambuf_type& __sb, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   try
+     {
+       const int_type __idelim = traits_type::to_int_type(__delim);
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __this_sb = this->rdbuf();
+       int_type __c = __this_sb->sgetc();
+       char_type __c2 = traits_type::to_char_type(__c);
+       unsigned long long __gcount = 0;
+
+       while (!traits_type::eq_int_type(__c, __eof)
+       && !traits_type::eq_int_type(__c, __idelim)
+       && !traits_type::eq_int_type(__sb.sputc(__c2), __eof))
+  {
+    ++__gcount;
+    __c = __this_sb->snextc();
+    __c2 = traits_type::to_char_type(__c);
+  }
+       if (traits_type::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+
+
+       if (__gcount <= __gnu_cxx::__numeric_traits<streamsize>::__max)
+  _M_gcount = __gcount;
+       else
+  _M_gcount = __gnu_cxx::__numeric_traits<streamsize>::__max;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      if (!_M_gcount)
+ __err |= ios_base::failbit;
+      if (__err)
+ this->setstate(__err);
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    getline(char_type* __s, streamsize __n, char_type __delim)
+    {
+      _M_gcount = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      sentry __cerb(*this, true);
+      if (__cerb)
+        {
+          try
+            {
+              const int_type __idelim = traits_type::to_int_type(__delim);
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+
+              while (_M_gcount + 1 < __n
+                     && !traits_type::eq_int_type(__c, __eof)
+                     && !traits_type::eq_int_type(__c, __idelim))
+                {
+                  *__s++ = traits_type::to_char_type(__c);
+                  __c = __sb->snextc();
+                  ++_M_gcount;
+                }
+              if (traits_type::eq_int_type(__c, __eof))
+                __err |= ios_base::eofbit;
+              else
+                {
+                  if (traits_type::eq_int_type(__c, __idelim))
+                    {
+                      __sb->sbumpc();
+                      ++_M_gcount;
+                    }
+                  else
+                    __err |= ios_base::failbit;
+                }
+            }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+          catch(...)
+            { this->_M_setstate(ios_base::badbit); }
+        }
+
+
+      if (__n > 0)
+ *__s = char_type();
+      if (!_M_gcount)
+        __err |= ios_base::failbit;
+      if (__err)
+        this->setstate(__err);
+      return *this;
+    }
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(void)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+
+       if (traits_type::eq_int_type(__sb->sbumpc(), __eof))
+  __err |= ios_base::eofbit;
+       else
+  _M_gcount = 1;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb && __n > 0)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          try
+            {
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+# 545 "/usr/include/c++/14.2.0/bits/istream.tcc" 3
+       bool __large_ignore = false;
+       while (true)
+  {
+    while (_M_gcount < __n
+    && !traits_type::eq_int_type(__c, __eof))
+      {
+        ++_M_gcount;
+        __c = __sb->snextc();
+      }
+    if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max
+        && !traits_type::eq_int_type(__c, __eof))
+      {
+        _M_gcount =
+   __gnu_cxx::__numeric_traits<streamsize>::__min;
+        __large_ignore = true;
+      }
+    else
+      break;
+  }
+
+       if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max)
+  {
+    if (__large_ignore)
+      _M_gcount = __gnu_cxx::__numeric_traits<streamsize>::__max;
+
+    if (traits_type::eq_int_type(__c, __eof))
+      __err |= ios_base::eofbit;
+  }
+       else if (_M_gcount < __n)
+  {
+    if (traits_type::eq_int_type(__c, __eof))
+      __err |= ios_base::eofbit;
+  }
+            }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+          catch(...)
+            { this->_M_setstate(ios_base::badbit); }
+          if (__err)
+            this->setstate(__err);
+        }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    ignore(streamsize __n, int_type __delim)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb && __n > 0)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          try
+            {
+              const int_type __eof = traits_type::eof();
+              __streambuf_type* __sb = this->rdbuf();
+              int_type __c = __sb->sgetc();
+
+
+       bool __large_ignore = false;
+       while (true)
+  {
+    while (_M_gcount < __n
+    && !traits_type::eq_int_type(__c, __eof)
+    && !traits_type::eq_int_type(__c, __delim))
+      {
+        ++_M_gcount;
+        __c = __sb->snextc();
+      }
+    if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max
+        && !traits_type::eq_int_type(__c, __eof)
+        && !traits_type::eq_int_type(__c, __delim))
+      {
+        _M_gcount =
+   __gnu_cxx::__numeric_traits<streamsize>::__min;
+        __large_ignore = true;
+      }
+    else
+      break;
+  }
+
+       if (__n == __gnu_cxx::__numeric_traits<streamsize>::__max)
+  {
+    if (__large_ignore)
+      _M_gcount = __gnu_cxx::__numeric_traits<streamsize>::__max;
+
+    if (traits_type::eq_int_type(__c, __eof))
+      __err |= ios_base::eofbit;
+    else
+      {
+        if (_M_gcount != __n)
+   ++_M_gcount;
+        __sb->sbumpc();
+      }
+  }
+       else if (_M_gcount < __n)
+  {
+    if (traits_type::eq_int_type(__c, __eof))
+      __err |= ios_base::eofbit;
+    else
+      {
+        ++_M_gcount;
+        __sb->sbumpc();
+      }
+  }
+            }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+          catch(...)
+            { this->_M_setstate(ios_base::badbit); }
+          if (__err)
+            this->setstate(__err);
+        }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::int_type
+    basic_istream<_CharT, _Traits>::
+    peek(void)
+    {
+      int_type __c = traits_type::eof();
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       __c = this->rdbuf()->sgetc();
+       if (traits_type::eq_int_type(__c, traits_type::eof()))
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return __c;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    read(char_type* __s, streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       _M_gcount = this->rdbuf()->sgetn(__s, __n);
+       if (_M_gcount != __n)
+  __err |= (ios_base::eofbit | ios_base::failbit);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    streamsize
+    basic_istream<_CharT, _Traits>::
+    readsome(char_type* __s, streamsize __n)
+    {
+      _M_gcount = 0;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+
+       const streamsize __num = this->rdbuf()->in_avail();
+       if (__num > 0)
+  _M_gcount = this->rdbuf()->sgetn(__s, std::min(__num, __n));
+       else if (__num == -1)
+  __err |= ios_base::eofbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return _M_gcount;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    putback(char_type __c)
+    {
+
+
+      _M_gcount = 0;
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       if (!__sb
+    || traits_type::eq_int_type(__sb->sputbackc(__c), __eof))
+  __err |= ios_base::badbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    unget(void)
+    {
+
+
+      _M_gcount = 0;
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       const int_type __eof = traits_type::eof();
+       __streambuf_type* __sb = this->rdbuf();
+       if (!__sb
+    || traits_type::eq_int_type(__sb->sungetc(), __eof))
+  __err |= ios_base::badbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    int
+    basic_istream<_CharT, _Traits>::
+    sync(void)
+    {
+
+
+      int __ret = -1;
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       __streambuf_type* __sb = this->rdbuf();
+       if (__sb)
+  {
+    if (__sb->pubsync() == -1)
+      __err |= ios_base::badbit;
+    else
+      __ret = 0;
+  }
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    typename basic_istream<_CharT, _Traits>::pos_type
+    basic_istream<_CharT, _Traits>::
+    tellg(void)
+    {
+
+
+      pos_type __ret = pos_type(-1);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   try
+     {
+       if (!this->fail())
+  __ret = this->rdbuf()->pubseekoff(0, ios_base::cur,
+        ios_base::in);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+ }
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    seekg(pos_type __pos)
+    {
+
+
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       if (!this->fail())
+  {
+
+    const pos_type __p = this->rdbuf()->pubseekpos(__pos,
+         ios_base::in);
+
+
+    if (__p == pos_type(off_type(-1)))
+      __err |= ios_base::failbit;
+  }
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    basic_istream<_CharT, _Traits>::
+    seekg(off_type __off, ios_base::seekdir __dir)
+    {
+
+
+
+      this->clear(this->rdstate() & ~ios_base::eofbit);
+      sentry __cerb(*this, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       if (!this->fail())
+  {
+
+    const pos_type __p = this->rdbuf()->pubseekoff(__off, __dir,
+         ios_base::in);
+
+
+    if (__p == pos_type(off_type(-1)))
+      __err |= ios_base::failbit;
+  }
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       this->_M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { this->_M_setstate(ios_base::badbit); }
+   if (__err)
+     this->setstate(__err);
+ }
+      return *this;
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef typename __istream_type::int_type __int_type;
+
+      typename __istream_type::sentry __cerb(__in, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       const __int_type __cb = __in.rdbuf()->sbumpc();
+       if (!_Traits::eq_int_type(__cb, _Traits::eof()))
+  __c = _Traits::to_char_type(__cb);
+       else
+  __err |= (ios_base::eofbit | ios_base::failbit);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       __in._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { __in._M_setstate(ios_base::badbit); }
+   if (__err)
+     __in.setstate(__err);
+ }
+      return __in;
+    }
+
+  template<typename _CharT, typename _Traits>
+    void
+    __istream_extract(basic_istream<_CharT, _Traits>& __in, _CharT* __s,
+        streamsize __num)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef typename _Traits::int_type int_type;
+      typedef _CharT char_type;
+      typedef ctype<_CharT> __ctype_type;
+
+      streamsize __extracted = 0;
+      ios_base::iostate __err = ios_base::goodbit;
+      typename __istream_type::sentry __cerb(__in, false);
+      if (__cerb)
+ {
+   try
+     {
+
+       streamsize __width = __in.width();
+       if (0 < __width && __width < __num)
+  __num = __width;
+
+       const __ctype_type& __ct = use_facet<__ctype_type>(__in.getloc());
+
+       const int_type __eof = _Traits::eof();
+       __streambuf_type* __sb = __in.rdbuf();
+       int_type __c = __sb->sgetc();
+
+       while (__extracted < __num - 1
+       && !_Traits::eq_int_type(__c, __eof)
+       && !__ct.is(ctype_base::space,
+     _Traits::to_char_type(__c)))
+  {
+    *__s++ = _Traits::to_char_type(__c);
+    ++__extracted;
+    __c = __sb->snextc();
+  }
+
+       if (__extracted < __num - 1
+    && _Traits::eq_int_type(__c, __eof))
+  __err |= ios_base::eofbit;
+
+
+
+       *__s = char_type();
+       __in.width(0);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       __in._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { __in._M_setstate(ios_base::badbit); }
+ }
+      if (!__extracted)
+ __err |= ios_base::failbit;
+      if (__err)
+ __in.setstate(__err);
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    ws(basic_istream<_CharT, _Traits>& __in)
+    {
+      typedef basic_istream<_CharT, _Traits> __istream_type;
+      typedef basic_streambuf<_CharT, _Traits> __streambuf_type;
+      typedef typename __istream_type::int_type __int_type;
+      typedef ctype<_CharT> __ctype_type;
+
+
+
+      typename __istream_type::sentry __cerb(__in, true);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       const __ctype_type& __ct = use_facet<__ctype_type>(__in.getloc());
+       const __int_type __eof = _Traits::eof();
+       __streambuf_type* __sb = __in.rdbuf();
+       __int_type __c = __sb->sgetc();
+
+       while (true)
+  {
+    if (_Traits::eq_int_type(__c, __eof))
+      {
+        __err = ios_base::eofbit;
+        break;
+      }
+    if (!__ct.is(ctype_base::space, _Traits::to_char_type(__c)))
+      break;
+    __c = __sb->snextc();
+  }
+     }
+   catch(const __cxxabiv1::__forced_unwind&)
+     {
+       __in._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     {
+       __in._M_setstate(ios_base::badbit);
+     }
+   if (__err)
+     __in.setstate(__err);
+ }
+      return __in;
+    }
+
+
+
+
+  extern template class basic_istream<char>;
+  extern template istream& ws(istream&);
+  extern template istream& operator>>(istream&, char&);
+  extern template istream& operator>>(istream&, unsigned char&);
+  extern template istream& operator>>(istream&, signed char&);
+
+  extern template istream& istream::_M_extract(unsigned short&);
+  extern template istream& istream::_M_extract(unsigned int&);
+  extern template istream& istream::_M_extract(long&);
+  extern template istream& istream::_M_extract(unsigned long&);
+  extern template istream& istream::_M_extract(bool&);
+
+  extern template istream& istream::_M_extract(long long&);
+  extern template istream& istream::_M_extract(unsigned long long&);
+
+  extern template istream& istream::_M_extract(float&);
+  extern template istream& istream::_M_extract(double&);
+  extern template istream& istream::_M_extract(long double&);
+  extern template istream& istream::_M_extract(void*&);
+
+  extern template class basic_iostream<char>;
+
+
+  extern template class basic_istream<wchar_t>;
+  extern template wistream& ws(wistream&);
+  extern template wistream& operator>>(wistream&, wchar_t&);
+  extern template void __istream_extract(wistream&, wchar_t*, streamsize);
+
+  extern template wistream& wistream::_M_extract(unsigned short&);
+  extern template wistream& wistream::_M_extract(unsigned int&);
+  extern template wistream& wistream::_M_extract(long&);
+  extern template wistream& wistream::_M_extract(unsigned long&);
+  extern template wistream& wistream::_M_extract(bool&);
+
+  extern template wistream& wistream::_M_extract(long long&);
+  extern template wistream& wistream::_M_extract(unsigned long long&);
+
+  extern template wistream& wistream::_M_extract(float&);
+  extern template wistream& wistream::_M_extract(double&);
+  extern template wistream& wistream::_M_extract(long double&);
+  extern template wistream& wistream::_M_extract(void*&);
+
+  extern template class basic_iostream<wchar_t>;
+
+
+
+
+}
+# 1107 "/usr/include/c++/14.2.0/istream" 2 3
+# 43 "/usr/include/c++/14.2.0/iostream" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 62 "/usr/include/c++/14.2.0/iostream" 3
+  extern istream cin;
+  extern ostream cout;
+  extern ostream cerr;
+  extern ostream clog;
+
+
+  extern wistream wcin;
+  extern wostream wcout;
+  extern wostream wcerr;
+  extern wostream wclog;
+# 82 "/usr/include/c++/14.2.0/iostream" 3
+  __extension__ __asm (".globl _ZSt21ios_base_library_initv");
+
+
+
+}
+# 7 "/home/adam/CLionProjects/basic-calculator-sfml/src/App.cpp" 2
+
+
+# 8 "/home/adam/CLionProjects/basic-calculator-sfml/src/App.cpp"
+App::App(): mWindow(sf::VideoMode(config::windowWidth, config::windowHeight),
+        config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
         mDisplay(nullptr)
 {
 
-        mWindow.setFramerateLimit(Config::frameLimit);
+        mWindow.setFramerateLimit(config::frameLimit);
 
 
-        if (!mFont.loadFromFile(Config::fontPath)) {
+        if (!mFont.loadFromFile(config::fontPath)) {
                 throw std::runtime_error("Error loading font");
         }
 
         initButtons();
 
-        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24), sf::Vector2f(472, 152), mFont, Config::DisplayFontSize, 15);
+        mDisplay = std::make_unique<Display>(sf::Vector2f(24,24),
+                sf::Vector2f(472, 152),
+                mFont,
+                config::DisplayFontSize,
+                config::DisplayMaxChars);
 }
 
 void App::run() {
@@ -82683,7 +84285,7 @@ void App::run() {
 void App::processEvents() {
 
         while (mWindow.pollEvent(mEvent)) {
-                if (mEvent.type == sf::Event::Closed or (mEvent.type == sf::Event::KeyPressed and mEvent.key.code == sf::Keyboard::Escape)) {
+                if (mEvent.type == sf::Event::Closed) {
                         mWindow.close();
                 }
 
@@ -82691,7 +84293,8 @@ void App::processEvents() {
                         button->processEvents(mEvent, mWindow);
                 }
 
-                mDisplay->showError();
+                processMouseInput(mEvent);
+                processKeyboardInput(mEvent);
 
         }
 }
@@ -82701,9 +84304,11 @@ void App::update() {
 
 void App::render() {
 
-        mWindow.clear(Config::BackgroundColor);
+        mWindow.clear(config::BackgroundColor);
+
 
         mDisplay->render(mWindow);
+
 
         for (const auto& button: mButtons) {
                 button->render(mWindow);
@@ -82738,29 +84343,120 @@ void App::initButtons() {
 
                         sf::Vector2f size{buttonSize.x * 3 + padding * 2, buttonSize.y};
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), size, mFont, Config::ButtonFontSize);
-                        button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), size, mFont, config::ButtonFontSize);
+                        button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         mButtons.push_back(std::move(button));
                 } else if (labels[i] == "<-") {
                         float x = startingPosition.x + (buttonSize.x * 3 + padding * 3);
                         float y = startingPosition.y + (row * (buttonSize.y + padding));
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, Config::ButtonFontSize);
-                        button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, config::ButtonFontSize);
+                        button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         mButtons.push_back(std::move(button));
 
                 } else {
                         float x = startingPosition.x + (col * (buttonSize.x + padding));
                         float y = startingPosition.y + (row * (buttonSize.y + padding));
 
-                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, Config::ButtonFontSize);
+                        auto button = std::make_unique<Button>(labels[i], sf::Vector2f(x,y), buttonSize, mFont, config::ButtonFontSize);
 
                         if (labels[i] == "/" || labels[i] == "*" || labels[i] == "-" ||
                             labels[i] == "AC" || labels[i] == "." || labels[i] == "+" || labels[i] == "AC") {
-                                button->setColors(Config::GreenNormalColor, Config::GreenHoverColor, Config::GreenActiveColor);
+                                button->setColors(config::GreenNormalColor, config::GreenHoverColor, config::GreenActiveColor);
                         }
 
                         mButtons.push_back(std::move(button));
+                }
+
+
+        }
+}
+
+void App::processMouseInput(const sf::Event &event) const {
+        if (event.type == sf::Event::MouseButtonPressed and event.mouseButton.button == sf::Mouse::Left) {
+                for (auto& button: mButtons) {
+                        if (button->isHovered(mWindow)) {
+                                const std::string& label = button->getLabel();
+
+                                if (label == "AC") {
+                                        mDisplay->clear();
+                                } else if (label == "<-") {
+                                        mDisplay->deleteLastChar();
+                                } else if (label == ".") {
+                                        mDisplay->addChar('.');
+                                } else if (label == "=") {
+
+                                } else if (label == "/" || label == "*" || label == "-" || label == "+") {
+                                        mDisplay->addChar(label[0]);
+                                } else {
+                                        mDisplay->addChar(label[0]);
+                                }
+                        }
+                }
+        }
+}
+
+void App::processKeyboardInput(const sf::Event &event) {
+        if (event.type == sf::Event::KeyPressed) {
+                std::string buttonLabel;
+
+                if (event.key.code >= sf::Keyboard::Num0 && event.key.code <= sf::Keyboard::Num9 && !event.key.shift) {
+                        buttonLabel = std::to_string(event.key.code - sf::Keyboard::Num0);
+                        mDisplay->addChar(buttonLabel[0]);
+                }
+
+
+                if (event.key.shift) {
+                        switch (event.key.code) {
+                                case sf::Keyboard::Num8:
+                                        buttonLabel = "*";
+                                        mDisplay->addChar(buttonLabel[0]);
+                                        break;
+                                case sf::Keyboard::Equal:
+                                        buttonLabel = "+";
+                                        mDisplay->addChar(buttonLabel[0]);
+                                        break;
+                                default:
+                                        break;
+                        }
+                }
+
+
+                if (event.key.code == sf::Keyboard::Divide) {
+                        buttonLabel = "/";
+                        mDisplay->addChar(buttonLabel[0]);
+                } else if (event.key.code == sf::Keyboard::Multiply) {
+                        buttonLabel = "*";
+                        mDisplay->addChar(buttonLabel[0]);
+                } else if (event.key.code == sf::Keyboard::Add) {
+                        buttonLabel = "+";
+                        mDisplay->addChar(buttonLabel[0]);
+                } else if (event.key.code == sf::Keyboard::Hyphen) {
+                        buttonLabel = "-";
+                        mDisplay->addChar(buttonLabel[0]);
+                } else if (event.key.code == sf::Keyboard::Period) {
+                        buttonLabel = ".";
+                        mDisplay->addChar(buttonLabel[0]);
+                }
+
+
+                if (event.key.code == sf::Keyboard::Backspace) {
+                        buttonLabel = "<-";
+                        mDisplay->deleteLastChar();
+                }
+
+
+                if (event.key.code == sf::Keyboard::Escape) {
+                        buttonLabel = "AC";
+                        mDisplay->clear();
+                }
+
+
+                if (event.key.code == sf::Keyboard::Enter || event.key.code == sf::Keyboard::Equal) {
+                        buttonLabel = "=";
+
+
+
                 }
 
 

@@ -3,6 +3,7 @@
 //
 
 #include "../include/Display.h"
+#include <iostream>
 
 Display::Display(const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font, int fontSize, int char_limit)
 : dShape(size), DisplayColor(config::TextColor), DisplayTextColor(config::DisplayTextColor), maxFontSize(fontSize), charLimit(char_limit)
@@ -19,7 +20,7 @@ Display::Display(const sf::Vector2f &position, const sf::Vector2f &size, const s
 
 }
 
-void Display::addChar(char c) {
+void Display::addChar(const char c) {
     if (dText.getString().getSize() < static_cast<size_t>(charLimit)) {
         dText.setString(dText.getString() + c);
         adjustFontSize();
@@ -40,13 +41,13 @@ void Display::setText(const std::string &text) {
     adjustFontSize();
 }
 
-void Display::render(sf::RenderWindow &window) {
+void Display::render(sf::RenderWindow &window) const {
     window.draw(dShape);
     window.draw(dText);
 }
 
 void Display::clear() {
-    dText.setString("0");
+    dText.setString("");
     dText.setCharacterSize(maxFontSize);
 }
 
@@ -54,6 +55,13 @@ void Display::showError() {
     dText.setString(error_message);
     dText.setCharacterSize(maxFontSize);
 }
+
+const std::string & Display::getText() const {
+    static std::string text;
+    text = dText.getString();
+    return text;
+}
+
 
 void Display::adjustFontSize() {
     dText.setCharacterSize(maxFontSize);

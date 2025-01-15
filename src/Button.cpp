@@ -62,7 +62,7 @@ void Button::processEvents(const sf::Event &event, const sf::RenderWindow& windo
 }
 
 
-void Button::render(sf::RenderWindow &window) {
+void Button::render(sf::RenderWindow &window) const {
     window.draw(bShape);
     window.draw(bText);
 }
@@ -75,7 +75,14 @@ void Button::setActive(bool isActive) {
     }
 }
 
+
 bool Button::isHovered(const sf::RenderWindow &window) const {
     sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
     return bShape.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePosition));
+}
+
+const std::string & Button::getLabel() const {
+    static std::string label;
+    label = bText.getString();
+    return label;
 }

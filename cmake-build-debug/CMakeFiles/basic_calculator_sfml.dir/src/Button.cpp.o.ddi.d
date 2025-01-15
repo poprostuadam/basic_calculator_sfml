@@ -2,7 +2,7 @@ CMakeFiles/basic_calculator_sfml.dir/src/Button.cpp.o.ddi: \
  /home/adam/CLionProjects/basic-calculator-sfml/src/Button.cpp \
  /usr/include/stdc-predef.h \
  /home/adam/CLionProjects/basic-calculator-sfml/src/../include/Button.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Config.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/config.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/System.hpp \

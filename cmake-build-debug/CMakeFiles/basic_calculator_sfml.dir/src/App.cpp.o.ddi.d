@@ -217,7 +217,7 @@ CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/ranges_algobase.h \
  /usr/include/c++/14.2.0/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.0/pstl/execution_defs.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Config.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/config.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/System.hpp \
@@ -317,4 +317,6 @@ CMakeFiles/basic_calculator_sfml.dir/src/App.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Text.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Button.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h
+ /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h \
+ /usr/include/c++/14.2.0/iostream /usr/include/c++/14.2.0/istream \
+ /usr/include/c++/14.2.0/bits/istream.tcc

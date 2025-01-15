@@ -17,7 +17,7 @@
 
 
 
-# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 1
+# 1 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 1
 
 
 
@@ -72607,13 +72607,13 @@ private:
 
 }
 # 58 "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp" 2 3 4
-# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h" 2
+# 9 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h" 2
 
 
 
 
-# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/Config.h"
-struct Config {
+# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h"
+struct config {
 
     static constexpr int windowWidth = 520;
     static constexpr int windowHeight = 820;
@@ -72624,6 +72624,7 @@ struct Config {
     static constexpr const char* fontPath = "../assets/fonts/DejaVuSans-Bold.ttf";
     static constexpr int ButtonFontSize = 32;
     static constexpr int DisplayFontSize = 48;
+    static constexpr int DisplayMaxChars = 30;
 
 
     inline static const sf::Color BackgroundColor{110,110,110};
@@ -72651,10 +72652,12 @@ public:
 
     void setColors(const sf::Color& normal, const sf::Color& hover, const sf::Color& active);
     void processEvents(const sf::Event& event, const sf::RenderWindow& window);
-    void render(sf::RenderWindow& window);
-
+    void render(sf::RenderWindow& window) const;
     void setActive(bool isActive);
 
+    bool isHovered(const sf::RenderWindow& window) const;
+
+    const std::string& getLabel() const;
 private:
     sf::RectangleShape bShape;
     sf::Text bText;
@@ -72663,7 +72666,6 @@ private:
     sf::Color bHoverColor;
     sf::Color bActiveColor;
 
-    bool isHovered(const sf::RenderWindow& window) const;
 
     bool isActive;
 };
@@ -72673,9 +72675,9 @@ private:
 Button::Button(const std::string &label, const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font,
     int fontSize) :
     bShape(size),
-    bNormalColor(Config::NormalColor),
-    bHoverColor(Config::HoverColor),
-    bActiveColor(Config::ActiveColor),
+    bNormalColor(config::NormalColor),
+    bHoverColor(config::HoverColor),
+    bActiveColor(config::ActiveColor),
     isActive(false)
 {
 
@@ -72686,7 +72688,7 @@ Button::Button(const std::string &label, const sf::Vector2f &position, const sf:
     bText.setFont(font);
     bText.setString(label);
     bText.setCharacterSize(fontSize);
-    bText.setFillColor(Config::TextColor);
+    bText.setFillColor(config::TextColor);
 
     sf::FloatRect textRect = bText.getLocalBounds();
     bText.setOrigin(
@@ -72727,7 +72729,7 @@ void Button::processEvents(const sf::Event &event, const sf::RenderWindow& windo
 }
 
 
-void Button::render(sf::RenderWindow &window) {
+void Button::render(sf::RenderWindow &window) const {
     window.draw(bShape);
     window.draw(bText);
 }
@@ -72740,7 +72742,14 @@ void Button::setActive(bool isActive) {
     }
 }
 
+
 bool Button::isHovered(const sf::RenderWindow &window) const {
     sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
     return bShape.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePosition));
+}
+
+const std::string & Button::getLabel() const {
+    static std::string label;
+    label = bText.getString();
+    return label;
 }

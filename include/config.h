@@ -20,6 +20,7 @@ struct config {
     static constexpr const char* fontPath = "../assets/fonts/DejaVuSans-Bold.ttf";
     static constexpr int ButtonFontSize = 32;
     static constexpr int DisplayFontSize = 48;
+    static constexpr int DisplayMaxChars = 30;
 
     //Colors
     inline static const sf::Color BackgroundColor{110,110,110};

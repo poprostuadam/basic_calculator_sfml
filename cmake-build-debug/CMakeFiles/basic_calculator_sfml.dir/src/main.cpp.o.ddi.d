@@ -216,7 +216,7 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/ranges_algobase.h \
  /usr/include/c++/14.2.0/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.0/pstl/execution_defs.h \
- /home/adam/CLionProjects/basic-calculator-sfml/include/Config.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/config.h \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Window.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/System.hpp \
