@@ -1,6 +1,8 @@
 CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/CLionProjects/basic-calculator-sfml/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/14.2.0/iostream \
+ /usr/include/stdc-predef.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/App.h \
+ /usr/include/c++/14.2.0/vector \
  /usr/include/c++/14.2.0/bits/requires_hosted.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
@@ -13,17 +15,77 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/14.2.0/pstl/pstl_config.h \
+ /usr/include/c++/14.2.0/bits/stl_algobase.h \
+ /usr/include/c++/14.2.0/bits/functexcept.h \
+ /usr/include/c++/14.2.0/bits/exception_defines.h \
+ /usr/include/c++/14.2.0/bits/cpp_type_traits.h \
+ /usr/include/c++/14.2.0/ext/type_traits.h \
+ /usr/include/c++/14.2.0/ext/numeric_traits.h \
+ /usr/include/c++/14.2.0/bits/stl_pair.h \
+ /usr/include/c++/14.2.0/type_traits \
+ /usr/include/c++/14.2.0/bits/version.h \
+ /usr/include/c++/14.2.0/bits/move.h \
+ /usr/include/c++/14.2.0/bits/utility.h /usr/include/c++/14.2.0/compare \
+ /usr/include/c++/14.2.0/concepts \
+ /usr/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+ /usr/include/c++/14.2.0/bits/iterator_concepts.h \
+ /usr/include/c++/14.2.0/bits/ptr_traits.h \
+ /usr/include/c++/14.2.0/bits/ranges_cmp.h \
+ /usr/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14.2.0/bits/concept_check.h \
+ /usr/include/c++/14.2.0/debug/assertions.h \
+ /usr/include/c++/14.2.0/bits/stl_iterator.h /usr/include/c++/14.2.0/new \
+ /usr/include/c++/14.2.0/bits/exception.h \
+ /usr/include/c++/14.2.0/bits/stl_construct.h \
+ /usr/include/c++/14.2.0/debug/debug.h \
+ /usr/include/c++/14.2.0/bits/predefined_ops.h \
+ /usr/include/c++/14.2.0/bit /usr/include/c++/14.2.0/bits/allocator.h \
+ /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/14.2.0/bits/new_allocator.h \
+ /usr/include/c++/14.2.0/bits/memoryfwd.h \
+ /usr/include/c++/14.2.0/bits/stl_uninitialized.h \
+ /usr/include/c++/14.2.0/ext/alloc_traits.h \
+ /usr/include/c++/14.2.0/bits/alloc_traits.h \
+ /usr/include/c++/14.2.0/bits/stl_vector.h \
+ /usr/include/c++/14.2.0/initializer_list \
+ /usr/include/c++/14.2.0/bits/stl_bvector.h \
+ /usr/include/c++/14.2.0/bits/functional_hash.h \
+ /usr/include/c++/14.2.0/bits/hash_bytes.h \
+ /usr/include/c++/14.2.0/bits/refwrap.h \
+ /usr/include/c++/14.2.0/bits/invoke.h \
+ /usr/include/c++/14.2.0/bits/stl_function.h \
+ /usr/include/c++/14.2.0/backward/binders.h \
+ /usr/include/c++/14.2.0/bits/range_access.h \
+ /usr/include/c++/14.2.0/bits/vector.tcc \
+ /usr/include/c++/14.2.0/bits/memory_resource.h \
+ /usr/include/c++/14.2.0/cstddef \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h \
+ /usr/include/c++/14.2.0/bits/uses_allocator.h \
+ /usr/include/c++/14.2.0/bits/uses_allocator_args.h \
+ /usr/include/c++/14.2.0/tuple /usr/include/c++/14.2.0/bits/ranges_util.h \
+ /usr/include/c++/14.2.0/bits/ranges_base.h \
+ /usr/include/c++/14.2.0/bits/max_size_type.h \
+ /usr/include/c++/14.2.0/numbers /usr/include/c++/14.2.0/memory \
+ /usr/include/c++/14.2.0/bits/stl_tempbuf.h \
+ /usr/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14.2.0/bits/align.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdint.h \
+ /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14.2.0/bits/unique_ptr.h \
  /usr/include/c++/14.2.0/ostream /usr/include/c++/14.2.0/ios \
  /usr/include/c++/14.2.0/iosfwd /usr/include/c++/14.2.0/bits/stringfwd.h \
- /usr/include/c++/14.2.0/bits/memoryfwd.h \
  /usr/include/c++/14.2.0/bits/postypes.h /usr/include/c++/14.2.0/cwchar \
- /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stddef.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -32,33 +94,16 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/14.2.0/exception \
- /usr/include/c++/14.2.0/bits/exception.h \
- /usr/include/c++/14.2.0/bits/version.h \
  /usr/include/c++/14.2.0/bits/exception_ptr.h \
- /usr/include/c++/14.2.0/bits/exception_defines.h \
  /usr/include/c++/14.2.0/bits/cxxabi_init_exception.h \
  /usr/include/c++/14.2.0/typeinfo \
- /usr/include/c++/14.2.0/bits/hash_bytes.h /usr/include/c++/14.2.0/new \
- /usr/include/c++/14.2.0/bits/move.h /usr/include/c++/14.2.0/type_traits \
  /usr/include/c++/14.2.0/bits/nested_exception.h \
  /usr/include/c++/14.2.0/bits/char_traits.h \
- /usr/include/c++/14.2.0/compare /usr/include/c++/14.2.0/concepts \
- /usr/include/c++/14.2.0/bits/stl_construct.h \
- /usr/include/c++/14.2.0/bits/stl_iterator_base_types.h \
- /usr/include/c++/14.2.0/bits/iterator_concepts.h \
- /usr/include/c++/14.2.0/bits/ptr_traits.h \
- /usr/include/c++/14.2.0/bits/ranges_cmp.h \
- /usr/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/14.2.0/bits/concept_check.h \
- /usr/include/c++/14.2.0/debug/assertions.h \
  /usr/include/c++/14.2.0/bits/localefwd.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
  /usr/include/c++/14.2.0/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h \
  /usr/include/c++/14.2.0/cctype /usr/include/ctype.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/c++/14.2.0/bits/ios_base.h \
@@ -92,42 +137,17 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/14.2.0/bits/locale_classes.h \
- /usr/include/c++/14.2.0/string /usr/include/c++/14.2.0/bits/allocator.h \
- /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/14.2.0/bits/new_allocator.h \
- /usr/include/c++/14.2.0/bits/functexcept.h \
- /usr/include/c++/14.2.0/bits/cpp_type_traits.h \
+ /usr/include/c++/14.2.0/string \
  /usr/include/c++/14.2.0/bits/ostream_insert.h \
  /usr/include/c++/14.2.0/bits/cxxabi_forced.h \
- /usr/include/c++/14.2.0/bits/stl_iterator.h \
- /usr/include/c++/14.2.0/ext/type_traits.h \
- /usr/include/c++/14.2.0/bits/stl_function.h \
- /usr/include/c++/14.2.0/backward/binders.h \
- /usr/include/c++/14.2.0/ext/numeric_traits.h \
- /usr/include/c++/14.2.0/bits/stl_algobase.h \
- /usr/include/c++/14.2.0/bits/stl_pair.h \
- /usr/include/c++/14.2.0/bits/utility.h \
- /usr/include/c++/14.2.0/debug/debug.h \
- /usr/include/c++/14.2.0/bits/predefined_ops.h \
- /usr/include/c++/14.2.0/bit /usr/include/c++/14.2.0/bits/refwrap.h \
- /usr/include/c++/14.2.0/bits/invoke.h \
- /usr/include/c++/14.2.0/bits/range_access.h \
- /usr/include/c++/14.2.0/initializer_list \
  /usr/include/c++/14.2.0/bits/basic_string.h \
- /usr/include/c++/14.2.0/ext/alloc_traits.h \
- /usr/include/c++/14.2.0/bits/alloc_traits.h \
  /usr/include/c++/14.2.0/string_view \
- /usr/include/c++/14.2.0/bits/functional_hash.h \
- /usr/include/c++/14.2.0/bits/ranges_base.h \
- /usr/include/c++/14.2.0/bits/max_size_type.h \
- /usr/include/c++/14.2.0/numbers \
  /usr/include/c++/14.2.0/bits/string_view.tcc \
  /usr/include/c++/14.2.0/ext/string_conversions.h \
  /usr/include/c++/14.2.0/cstdlib /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -147,11 +167,6 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14.2.0/bits/charconv.h \
  /usr/include/c++/14.2.0/bits/basic_string.tcc \
- /usr/include/c++/14.2.0/bits/memory_resource.h \
- /usr/include/c++/14.2.0/cstddef \
- /usr/include/c++/14.2.0/bits/uses_allocator.h \
- /usr/include/c++/14.2.0/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.0/tuple /usr/include/c++/14.2.0/bits/ranges_util.h \
  /usr/include/c++/14.2.0/bits/locale_classes.tcc \
  /usr/include/c++/14.2.0/system_error \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/error_constants.h \
@@ -166,21 +181,7 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/14.2.0/bits/locale_facets.tcc \
  /usr/include/c++/14.2.0/bits/basic_ios.tcc \
- /usr/include/c++/14.2.0/bits/ostream.tcc /usr/include/c++/14.2.0/istream \
- /usr/include/c++/14.2.0/bits/istream.tcc \
- /home/adam/CLionProjects/basic-calculator-sfml/include/App.h \
- /usr/include/c++/14.2.0/vector \
- /usr/include/c++/14.2.0/bits/stl_uninitialized.h \
- /usr/include/c++/14.2.0/bits/stl_vector.h \
- /usr/include/c++/14.2.0/bits/stl_bvector.h \
- /usr/include/c++/14.2.0/bits/vector.tcc /usr/include/c++/14.2.0/memory \
- /usr/include/c++/14.2.0/bits/stl_tempbuf.h \
- /usr/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14.2.0/bits/align.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/14.2.0/bits/unique_ptr.h \
+ /usr/include/c++/14.2.0/bits/ostream.tcc \
  /usr/include/c++/14.2.0/bits/shared_ptr.h \
  /usr/include/c++/14.2.0/bits/shared_ptr_base.h \
  /usr/include/c++/14.2.0/bits/allocated_ptr.h \
@@ -317,10 +318,270 @@ CMakeFiles/basic_calculator_sfml.dir/src/main.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Button.h \
  /home/adam/CLionProjects/basic-calculator-sfml/include/Display.h \
- /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmpxx.h \
+ /home/adam/CLionProjects/basic-calculator-sfml/include/Calculator.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/cpp_dec_float.hpp \
+ /usr/include/c++/14.2.0/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/14.2.0/bits/specfun.h /usr/include/c++/14.2.0/limits \
+ /usr/include/c++/14.2.0/tr1/gamma.tcc \
+ /usr/include/c++/14.2.0/tr1/special_function_util.h \
+ /usr/include/c++/14.2.0/tr1/bessel_function.tcc \
+ /usr/include/c++/14.2.0/tr1/beta_function.tcc \
+ /usr/include/c++/14.2.0/tr1/ell_integral.tcc \
+ /usr/include/c++/14.2.0/tr1/exp_integral.tcc \
+ /usr/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ /usr/include/c++/14.2.0/tr1/legendre_function.tcc \
+ /usr/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ /usr/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+ /usr/include/c++/14.2.0/array /usr/include/c++/14.2.0/iomanip \
+ /usr/include/c++/14.2.0/bits/quoted_string.h \
+ /usr/include/c++/14.2.0/sstream /usr/include/c++/14.2.0/istream \
+ /usr/include/c++/14.2.0/bits/istream.tcc \
+ /usr/include/c++/14.2.0/bits/sstream.tcc \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/standalone_config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/user.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/select_compiler_config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/compiler/gcc.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/c++/14.2.0/version \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/stdlib/libstdcpp3.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/select_platform_config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/platform/linux.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/posix_features.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/suffix.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/helper_macros.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/detail/cxx_composite.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/config/workaround.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/integer.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/integer_fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/limits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/cstdint.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/integer_traits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/static_assert.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/detail/workaround.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/number.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/precision.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/is_variable_precision.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/number_base.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/cpp_int/cpp_int_config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/assert.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/assert.hpp \
+ /usr/include/assert.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/transcendental_reduction_type.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/std_integer_traits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/no_exceptions_support.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/no_exceptions_support.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/throw_exception.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/exception/exception.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/assert/source_location.hpp \
  /usr/include/c++/14.2.0/cstring /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/14.2.0/limits \
+ /usr/include/strings.h /usr/include/c++/14.2.0/source_location \
  /usr/include/c++/14.2.0/utility \
- /usr/include/c++/14.2.0/bits/stl_relops.h /usr/include/c++/14.2.0/cfloat \
+ /usr/include/c++/14.2.0/bits/stl_relops.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/buffer_view.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/bad_lexical_cast.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/try_lexical_convert.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/conditional.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_arithmetic.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_integral.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/integral_constant.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_floating_point.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/is_character.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_same.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/converter_numeric.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/cmath.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/enable_if.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/type_identity.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/make_unsigned.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_signed.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/remove_cv.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_enum.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/intrinsics.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/detail/config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/version.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_unsigned.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_const.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_volatile.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/add_const.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/add_volatile.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_float.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/converter_lexical.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/detail/lcast_precision.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/widest_char.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/container/container_fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/container/detail/workaround.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/container/detail/std_fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/move/detail/std_ns_begin.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/move/detail/std_ns_end.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_pointer.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/snprintf.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/noncopyable.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/lcast_basic_unlockedbuf.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/detail/basic_pointerbuf.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/lexical_cast/detail/inf_nan.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_reference.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_lvalue_reference.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/type_traits/is_rvalue_reference.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/nvp.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/core/addressof.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/complex.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/is_detected.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/check_cpp11_config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/digits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/generic_interconvert.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/default_ops.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/is_backend.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/fpclassify.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/float128_functions.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/cstdfloat.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_types.hpp \
+ /usr/include/c++/14.2.0/cfloat \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/float.h \
- /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/gmp.h
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/is_standalone.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/user.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_limits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_cmath.hpp \
+ /usr/include/c++/14.2.0/iostream \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/assert.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/nothrow.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/throw_exception.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_iostream.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_complex.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/cstdfloat/cstdfloat_complex_std.hpp \
+ /usr/include/c++/14.2.0/complex \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/constants/constants.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/cxx03_warn.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/policies/policy.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/mp.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/precision.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/convert_from_string.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/constants/calculate_constants.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/fpclassify.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/real_cast.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/math_fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/round_fwd.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/promotion.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/fp_traits.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/other/endian.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/version_number.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/make.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/detail/test.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/library/c/gnu.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/library/c/_prefix.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/detail/_cassert.h \
+ /usr/include/c++/14.2.0/cassert \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/macos.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/ios.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd/bsdi.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd/dragonfly.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd/free.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd/open.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/os/bsd/net.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/predef/platform/android.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/quadmath.h \
+ /usr/include/c++/14.2.0/stdlib.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/next.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/policies/error_handling.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/sign.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/trunc.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/ccmath/detail/config.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/is_constant_evaluated.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/ccmath/ldexp.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/ccmath/abs.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/ccmath/isnan.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/ccmath/isinf.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/traits.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/include/emmintrin.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/hypot.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/functions/constants.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/functions/pow.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/functions/trig.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/no_et_ops.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/et_ops.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/min_max.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/functions/trunc.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/number_compare.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/is_restricted_conversion.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/explicit_conversion.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/is_complex.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/traits/is_convertible_arithmetic.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/hash.hpp \
+ /usr/include/c++/14.2.0/functional \
+ /usr/include/c++/14.2.0/bits/std_function.h \
+ /usr/include/c++/14.2.0/unordered_map \
+ /usr/include/c++/14.2.0/bits/unordered_map.h \
+ /usr/include/c++/14.2.0/bits/hashtable.h \
+ /usr/include/c++/14.2.0/bits/hashtable_policy.h \
+ /usr/include/c++/14.2.0/bits/enable_special_members.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/ublas_interop.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/dynamic_array.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/rebind.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/itos.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/static_array.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/multiprecision/detail/tables.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/acosh.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/log1p.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/series.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/rational.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/detail/polynomial_horner3_20.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/detail/rational_horner3_20.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/big_constant.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/asinh.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/sqrt1pm1.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/expm1.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/atanh.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/cbrt.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/gamma.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/fraction.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/powm1.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/lanczos.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/lanczos_sse2.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/igamma_large.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/unchecked_factorial.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/lgamma_small.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/bernoulli.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/unchecked_bernoulli.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/bernoulli_details.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/atomic.hpp \
+ /usr/include/c++/14.2.0/atomic \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/toms748_solve.hpp \
+ /usr/include/c++/14.2.0/mutex /usr/include/c++/14.2.0/bits/chrono.h \
+ /usr/include/c++/14.2.0/ratio \
+ /usr/include/c++/14.2.0/bits/parse_numbers.h \
+ /usr/include/c++/14.2.0/bits/unique_lock.h \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/polygamma.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/factorials.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/polygamma.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/zeta.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/sin_pi.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/digamma.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/cos_pi.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/pow.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/trigamma.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/igamma_inverse.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/tuple.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/tools/roots.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/gamma_inva.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/erf.hpp \
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/boost/math/special_functions/detail/erf_inv.hpp

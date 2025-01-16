@@ -8,9 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # SFML
 find_package(SFML COMPONENTS system window graphics audio CONFIG REQUIRED)
 
-#GMP
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(gmpxx REQUIRED IMPORTED_TARGET gmpxx)
+# Boost
+find_package(Boost 1.86.0 COMPONENTS program_options REQUIRED)
+INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
 
 # Source and header files
 file(GLOB SOURCES "src/*.cpp")
@@ -29,7 +29,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         sfml-graphics
         sfml-window
         sfml-audio
-        PkgConfig::gmpxx)
+        ${Boost_LIBRARIES})
 
 # Compiler warnings
 if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")

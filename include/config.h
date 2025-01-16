@@ -6,7 +6,6 @@
 #define CONFIG_H
 
 #include <SFML/Graphics.hpp>
-#include <string>
 
 
 struct config {
@@ -30,10 +29,11 @@ struct config {
     inline static const sf::Color GreenNormalColor{179,242,124};
     inline static const sf::Color GreenHoverColor{222,255,192};
     inline static const sf::Color GreenActiveColor{115, 165, 70};
-
     inline static const sf::Color TextColor{35,35,35};
     inline static const sf::Color DisplayTextColor{179,242,124};
 
+    // Calculator debug
+    static constexpr bool isDebug = false;
 };
 
 

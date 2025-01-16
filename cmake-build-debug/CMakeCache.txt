@@ -35,6 +35,9 @@ BZIP2_LIBRARY_DEBUG:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/d
 //Path to a library.
 BZIP2_LIBRARY_RELEASE:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libbz2.a
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -405,6 +408,114 @@ basic_calculator_sfml_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 basic_calculator_sfml_SOURCE_DIR:STATIC=/home/adam/CLionProjects/basic-calculator-sfml
 
+//The directory containing a CMake configuration file for boost_any.
+boost_any_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_any
+
+//The directory containing a CMake configuration file for boost_assert.
+boost_assert_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_assert
+
+//The directory containing a CMake configuration file for boost_bind.
+boost_bind_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_bind
+
+//The directory containing a CMake configuration file for boost_concept_check.
+boost_concept_check_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_concept_check
+
+//The directory containing a CMake configuration file for boost_config.
+boost_config_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_config
+
+//The directory containing a CMake configuration file for boost_container.
+boost_container_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container
+
+//The directory containing a CMake configuration file for boost_container_hash.
+boost_container_hash_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container_hash
+
+//The directory containing a CMake configuration file for boost_core.
+boost_core_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_core
+
+//The directory containing a CMake configuration file for boost_describe.
+boost_describe_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_describe
+
+//The directory containing a CMake configuration file for boost_detail.
+boost_detail_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_detail
+
+//The directory containing a CMake configuration file for boost_function.
+boost_function_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function
+
+//The directory containing a CMake configuration file for boost_function_types.
+boost_function_types_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function_types
+
+//The directory containing a CMake configuration file for boost_functional.
+boost_functional_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_functional
+
+//The directory containing a CMake configuration file for boost_fusion.
+boost_fusion_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_fusion
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_headers
+
+//The directory containing a CMake configuration file for boost_integer.
+boost_integer_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_integer
+
+//The directory containing a CMake configuration file for boost_intrusive.
+boost_intrusive_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_intrusive
+
+//The directory containing a CMake configuration file for boost_io.
+boost_io_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_io
+
+//The directory containing a CMake configuration file for boost_iterator.
+boost_iterator_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_iterator
+
+//The directory containing a CMake configuration file for boost_lexical_cast.
+boost_lexical_cast_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_lexical_cast
+
+//The directory containing a CMake configuration file for boost_move.
+boost_move_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_move
+
+//The directory containing a CMake configuration file for boost_mp11.
+boost_mp11_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mp11
+
+//The directory containing a CMake configuration file for boost_mpl.
+boost_mpl_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mpl
+
+//The directory containing a CMake configuration file for boost_optional.
+boost_optional_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_optional
+
+//The directory containing a CMake configuration file for boost_predef.
+boost_predef_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_predef
+
+//The directory containing a CMake configuration file for boost_preprocessor.
+boost_preprocessor_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_preprocessor
+
+//The directory containing a CMake configuration file for boost_program_options.
+boost_program_options_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options
+
+//The directory containing a CMake configuration file for boost_smart_ptr.
+boost_smart_ptr_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_smart_ptr
+
+//The directory containing a CMake configuration file for boost_static_assert.
+boost_static_assert_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_static_assert
+
+//The directory containing a CMake configuration file for boost_throw_exception.
+boost_throw_exception_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_throw_exception
+
+//The directory containing a CMake configuration file for boost_tokenizer.
+boost_tokenizer_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tokenizer
+
+//The directory containing a CMake configuration file for boost_tuple.
+boost_tuple_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tuple
+
+//The directory containing a CMake configuration file for boost_type_index.
+boost_type_index_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_index
+
+//The directory containing a CMake configuration file for boost_type_traits.
+boost_type_traits_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_traits
+
+//The directory containing a CMake configuration file for boost_typeof.
+boost_typeof_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_typeof
+
+//The directory containing a CMake configuration file for boost_utility.
+boost_utility_DIR:PATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_utility
+
 //Path to a library.
 pkgcfg_lib_GMPXX_gmp:FILEPATH=/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libgmp.a
 
@@ -514,6 +625,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/adam/CLionProjects/basic-calculator-sfml
@@ -591,6 +704,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenG
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[optimized;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libpng16.a;debug;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libpng16d.a][/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include][v1.6.44()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.3.0()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[optimized;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/lib/libz.a;debug;/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/libz.a][/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include][c ][v1.3.1()]
 //ADVANCED property for variable: FLAC_LIB

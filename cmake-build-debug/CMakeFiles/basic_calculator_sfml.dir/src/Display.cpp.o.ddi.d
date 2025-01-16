@@ -278,6 +278,4 @@ CMakeFiles/basic_calculator_sfml.dir/src/Display.cpp.o.ddi: \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Glsl.inl \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Sprite.hpp \
  /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/Text.hpp \
- /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp \
- /usr/include/c++/14.2.0/iostream /usr/include/c++/14.2.0/istream \
- /usr/include/c++/14.2.0/bits/istream.tcc
+ /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include/SFML/Graphics/VertexBuffer.hpp

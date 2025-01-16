@@ -72611,8 +72611,7 @@ private:
 
 
 
-
-# 12 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h"
+# 11 "/home/adam/CLionProjects/basic-calculator-sfml/include/config.h"
 struct config {
 
     static constexpr int windowWidth = 520;
@@ -72634,10 +72633,11 @@ struct config {
     inline static const sf::Color GreenNormalColor{179,242,124};
     inline static const sf::Color GreenHoverColor{222,255,192};
     inline static const sf::Color GreenActiveColor{115, 165, 70};
-
     inline static const sf::Color TextColor{35,35,35};
     inline static const sf::Color DisplayTextColor{179,242,124};
 
+
+    static constexpr bool isDebug = false;
 };
 # 9 "/home/adam/CLionProjects/basic-calculator-sfml/src/../include/Button.h" 2
 

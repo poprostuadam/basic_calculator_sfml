@@ -14,8 +14,7 @@
 	"include-dirs" : 
 	[
 		"/home/adam/CLionProjects/basic-calculator-sfml/include",
-		"/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include",
-		"/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/debug/lib/pkgconfig/../../../include"
+		"/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],

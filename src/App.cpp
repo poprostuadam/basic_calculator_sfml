@@ -3,7 +3,6 @@
 //
 
 #include "../include/App.h"
-#include <iostream>
 
 App::App(): mWindow(sf::VideoMode(config::windowWidth, config::windowHeight),
         config::windowTitle, sf::Style::Close | sf::Style::Titlebar),
@@ -124,7 +123,7 @@ void App::initButtons() {
         }
 }
 
-void App::processMouseInput(const sf::Event &event) const {
+void App::processMouseInput(const sf::Event &event) {
         if (event.type == sf::Event::MouseButtonPressed and event.mouseButton.button == sf::Mouse::Left) {
                 for (auto& button: mButtons) {
                         if (button->isHovered(mWindow)) {
@@ -137,6 +136,14 @@ void App::processMouseInput(const sf::Event &event) const {
                                 } else if (label == ".") {
                                         mDisplay->addChar('.');
                                 } else if (label == "=") {
+                                        std::string expression = mDisplay->getText();
+                                        mCalculator.calculate(expression);
+
+                                        if (!mCalculator.hasError()) {
+                                                mDisplay->setText(mCalculator.getResult());
+                                        } else {
+                                                mDisplay->showError();
+                                        }
 
                                 } else if (label == "/" || label == "*" || label == "-" || label == "+") {
                                         mDisplay->addChar(label[0]);
@@ -149,71 +156,77 @@ void App::processMouseInput(const sf::Event &event) const {
 }
 
 void App::processKeyboardInput(const sf::Event &event) {
-        if (event.type == sf::Event::KeyPressed) {
-                std::string buttonLabel;
-                // Numbers
-                if (event.key.code >= sf::Keyboard::Num0 && event.key.code <= sf::Keyboard::Num9 && !event.key.shift) {
-                        buttonLabel = std::to_string(event.key.code - sf::Keyboard::Num0);
-                        mDisplay->addChar(buttonLabel[0]);
-                }
+    if (event.type == sf::Event::KeyPressed) {
+        std::string buttonLabel;
 
-                // Operators with Shift
-                if (event.key.shift) { // Jeśli Shift jest wciśnięty
-                        switch (event.key.code) {
-                                case sf::Keyboard::Num8: // Shift + 8 -> '*'
-                                        buttonLabel = "*";
-                                        mDisplay->addChar(buttonLabel[0]);
-                                        break;
-                                case sf::Keyboard::Equal:
-                                        buttonLabel = "+";
-                                        mDisplay->addChar(buttonLabel[0]);
-                                        break;
-                                default:
-                                        break;
-                        }
-                }
-
-                // Operators
-                if (event.key.code == sf::Keyboard::Divide) {
-                        buttonLabel = "/";
-                        mDisplay->addChar(buttonLabel[0]);
-                } else if (event.key.code == sf::Keyboard::Multiply) {
-                        buttonLabel = "*";
-                        mDisplay->addChar(buttonLabel[0]);
-                } else if (event.key.code == sf::Keyboard::Add) {
-                        buttonLabel = "+";
-                        mDisplay->addChar(buttonLabel[0]);
-                } else if (event.key.code == sf::Keyboard::Hyphen) {
-                        buttonLabel = "-";
-                        mDisplay->addChar(buttonLabel[0]);
-                } else if (event.key.code == sf::Keyboard::Period) {
-                        buttonLabel = ".";
-                        mDisplay->addChar(buttonLabel[0]);
-                }
-
-                // Backspace
-                if (event.key.code == sf::Keyboard::Backspace) {
-                        buttonLabel = "<-";
-                        mDisplay->deleteLastChar();
-                }
-
-                // Clear
-                if (event.key.code == sf::Keyboard::Escape) {
-                        buttonLabel = "AC";
-                        mDisplay->clear();
-                }
-
-                // Enter
-                if (event.key.code == sf::Keyboard::Enter || event.key.code == sf::Keyboard::Equal) {
-                        buttonLabel = "=";
-
-                        // std::string text = mDisplay->getText();
-                        // std::cout << "text: " << text << std::endl;
-                }
-
-
+        // Numbers
+        if (event.key.code >= sf::Keyboard::Num0 && event.key.code <= sf::Keyboard::Num9 && !event.key.shift) {
+            buttonLabel = std::to_string(event.key.code - sf::Keyboard::Num0);
+            mDisplay->addChar(buttonLabel[0]);
+            return;
         }
+
+        // Operators with Shift
+        if (event.key.shift) {
+            switch (event.key.code) {
+                case sf::Keyboard::Num8: // Shift + 8 -> '*'
+                    buttonLabel = "*";
+                    mDisplay->addChar(buttonLabel[0]);
+                    return;
+                case sf::Keyboard::Equal: // Shift + = -> '+'
+                    buttonLabel = "+";
+                    mDisplay->addChar(buttonLabel[0]);
+                    return;
+                default:
+                    break;
+            }
+        }
+
+        // Operators without Shift
+        if (event.key.code == sf::Keyboard::Slash) {
+            buttonLabel = "/";
+            mDisplay->addChar(buttonLabel[0]);
+        } else if (event.key.code == sf::Keyboard::Hyphen) {
+            buttonLabel = "-";
+            mDisplay->addChar(buttonLabel[0]);
+        } else if (event.key.code == sf::Keyboard::Period) {
+            buttonLabel = ".";
+            mDisplay->addChar(buttonLabel[0]);
+        } else if (event.key.code == sf::Keyboard::Equal) { // Plain "=" key
+            buttonLabel = "=";
+            std::string expression = mDisplay->getText();
+            return;
+        }
+
+        // Backspace
+        if (event.key.code == sf::Keyboard::Backspace) {
+            buttonLabel = "<-";
+            mDisplay->deleteLastChar();
+            return;
+        }
+
+        // Clear
+        if (event.key.code == sf::Keyboard::Escape) {
+            buttonLabel = "AC";
+            mDisplay->clear();
+            return;
+        }
+
+        // Enter
+        if (event.key.code == sf::Keyboard::Enter) {
+                buttonLabel = "=";
+                std::string expression = mDisplay->getText();
+                mCalculator.calculate(expression);
+
+                if (!mCalculator.hasError()) {
+                        mDisplay->setText(mCalculator.getResult());
+                } else {
+                        mDisplay->showError();
+                }
+        }
+    }
 }
+
 
 
 

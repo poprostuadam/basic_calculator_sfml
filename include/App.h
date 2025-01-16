@@ -11,6 +11,7 @@
 #include <config.h>
 #include <Button.h>
 #include <Display.h>
+#include <Calculator.h>
 
 class App {
 public:
@@ -33,7 +34,9 @@ private:
 
     std::unique_ptr<Display> mDisplay;
 
-    void processMouseInput(const sf::Event& event) const;
+    Calculator mCalculator;
+
+    void processMouseInput(const sf::Event& event);
     void processKeyboardInput(const sf::Event& event);
 
 };

@@ -3,7 +3,6 @@
 //
 
 #include "../include/Display.h"
-#include <iostream>
 
 Display::Display(const sf::Vector2f &position, const sf::Vector2f &size, const sf::Font &font, int fontSize, int char_limit)
 : dShape(size), DisplayColor(config::TextColor), DisplayTextColor(config::DisplayTextColor), maxFontSize(fontSize), charLimit(char_limit)
