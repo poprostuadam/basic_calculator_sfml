@@ -1,0 +1,990 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLStaticTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLStaticTargets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLStaticTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml/SFMLConfigDependencies.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindZLIB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindBZip2.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckSymbolExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakePushCheckState.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPNG.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindZLIB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenAL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost/BoostConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost/BoostConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_headers/boost_headers-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_headers/boost_headers-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_headers/boost_headers-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options/boost_program_options-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options/boost_program_options-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_any/boost_any-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_any/boost_any-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_config/boost_config-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_config/boost_config-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_config/boost_config-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_throw_exception/boost_throw_exception-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_throw_exception/boost_throw_exception-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_assert/boost_assert-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_assert/boost_assert-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_assert/boost_assert-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_throw_exception/boost_throw_exception-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_index/boost_type_index-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_index/boost_type_index-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container_hash/boost_container_hash-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container_hash/boost_container_hash-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_describe/boost_describe-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_describe/boost_describe-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mp11/boost_mp11-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mp11/boost_mp11-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mp11/boost_mp11-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_describe/boost_describe-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container_hash/boost_container_hash-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_core/boost_core-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_core/boost_core-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_static_assert/boost_static_assert-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_static_assert/boost_static_assert-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_static_assert/boost_static_assert-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_core/boost_core-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_index/boost_type_index-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_any/boost_any-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_detail/boost_detail-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_detail/boost_detail-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_preprocessor/boost_preprocessor-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_preprocessor/boost_preprocessor-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_preprocessor/boost_preprocessor-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_traits/boost_type_traits-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_traits/boost_type_traits-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_type_traits/boost_type_traits-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_detail/boost_detail-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function/boost_function-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function/boost_function-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_bind/boost_bind-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_bind/boost_bind-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_bind/boost_bind-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function/boost_function-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_iterator/boost_iterator-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_iterator/boost_iterator-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_concept_check/boost_concept_check-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_concept_check/boost_concept_check-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_concept_check/boost_concept_check-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function_types/boost_function_types-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function_types/boost_function_types-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mpl/boost_mpl-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mpl/boost_mpl-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_predef/boost_predef-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_predef/boost_predef-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_predef/boost_predef-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_utility/boost_utility-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_utility/boost_utility-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_io/boost_io-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_io/boost_io-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_io/boost_io-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_utility/boost_utility-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_mpl/boost_mpl-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_function_types/boost_function_types-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_fusion/boost_fusion-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_fusion/boost_fusion-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tuple/boost_tuple-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tuple/boost_tuple-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tuple/boost_tuple-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_typeof/boost_typeof-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_typeof/boost_typeof-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_typeof/boost_typeof-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_functional/boost_functional-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_functional/boost_functional-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_functional/boost_functional-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_fusion/boost_fusion-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_optional/boost_optional-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_optional/boost_optional-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_move/boost_move-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_move/boost_move-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_move/boost_move-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_optional/boost_optional-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_smart_ptr/boost_smart_ptr-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_smart_ptr/boost_smart_ptr-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_smart_ptr/boost_smart_ptr-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_iterator/boost_iterator-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_lexical_cast/boost_lexical_cast-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_lexical_cast/boost_lexical_cast-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container/boost_container-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container/boost_container-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_intrusive/boost_intrusive-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_intrusive/boost_intrusive-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_intrusive/boost_intrusive-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container/boost_container-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container/boost_container-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_container/boost_container-targets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_integer/boost_integer-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_integer/boost_integer-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_integer/boost_integer-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_lexical_cast/boost_lexical_cast-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tokenizer/boost_tokenizer-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tokenizer/boost_tokenizer-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_tokenizer/boost_tokenizer-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options/boost_program_options-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options/boost_program_options-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/boost_program_options/boost_program_options-targets-release.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug",
+		"source" : "/home/adam/CLionProjects/basic-calculator-sfml"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}
