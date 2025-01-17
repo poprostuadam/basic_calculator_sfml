@@ -94,9 +94,9 @@ basic-calculator-sfml/
 └── README.md                # Project documentation
 ```
 
-## :six: **Instalation**
+## :six: **Instalation** :hammer_and_wrench:
 
-### **Prerequisites** :hammer_and_wrench:
+### **Prerequisites**  :hammer:
 1. **C++20**.
 2. **CMake** (minimum version 3.30).
 3. **SFML** library.
@@ -112,9 +112,9 @@ basic-calculator-sfml/
    cd cmake-build-debug
    ./basic_calculator_sfml
 
-## :seven: **Usage**
+## :seven: **Usage** :desktop_computer:
 
-### **Running the Calculator** :desktop_computer:
+### **Running the Calculator** 
 
 - **Mouse Support**:
     - Click on the GUI buttons for input.
@@ -124,10 +124,40 @@ basic-calculator-sfml/
     - Use `Backspace` to delete the last character.
     - Press `Esc` to clear the input or exit the application.
 
-### **High Precision Mode** :microscope:
+## :eight: **Debugging Mode** :mag:
 
-- The calculator uses Boost Multiprecision for high-precision arithmetic, ensuring accurate results for operations with very large or small numbers.
+Enable debugging by setting `isDebug` to `true` in `Config.h`:
+
+```c++
+static constexpr bool isDebug = true;
+```
+
+This will log:
+
+- Tokenized expression.
+- Converted RPN.
+- Step-by-step operations during evaluation.
+- 
+
+## :nine: **Contributing** :handshake:
+
+This project is primarily for self-learning, but feel free to fork the repository and experiment. If you'd like to contribute, follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch:
+
+   ```bash
+   git checkout -b feature-name
 
 
-## :one::one: **License** 
+## :one::zero: **Acknowledgments** :trophy:
+
+- [SFML](https://www.sfml-dev.org/) for providing a powerful and easy-to-use multimedia library.
+
+- [Boost Multiprecision](https://www.boost.org/) for enabling high-precision arithmetic operations.
+
+- DejaVu Fonts for the clean and elegant font used in the application.
+
+
+## :one::one: **License** :scroll:
 This project is licensed under the MIT License. See the LICENSE file for details.
