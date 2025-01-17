@@ -16,7 +16,7 @@ This project is a **simple calculator** built using C++ and the **SFML** (Simple
 11. [License](#license)
 
 
-## :one: **Purpose**
+## :one: **Purpose** :smiley:
 
 The main purpose of this project is to:
 - Revisit and practice **core C++ concepts**.
@@ -25,7 +25,7 @@ The main purpose of this project is to:
 - Reinforce problem-solving techniques through tasks like parsing expressions, converting to RPN, and evaluating mathematical operations.
 
 
-## :two: **Features**
+## :two: **Features** :star2:
 
 - **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division.
 - **High Precision Calculations**: Utilizes Boost Multiprecision for accuracy beyond standard `double` types.
@@ -39,7 +39,7 @@ The main purpose of this project is to:
     - Logs tokenization, RPN conversion, and evaluation steps to the console.
 
 
-## :three: **Learning Outcomes**
+## :three: **Learning Outcomes** :books:
 
 Through this project, you can practice and learn:
 1. **C++ Basics**:
@@ -55,7 +55,7 @@ Through this project, you can practice and learn:
     - Adding debug logs to understand internal program states.
 
 
-## :four: **Technology Stack**
+## :four: **Technology Stack** :toolbox:
 
 - **Language**: C++17
 - **Graphics Framework**: [SFML](https://www.sfml-dev.org/)
@@ -65,9 +65,9 @@ Through this project, you can practice and learn:
 - **IDE**: CLion
 
 
-## :five: **Project Structure**
+## :five: **Project Structure** :open_file_folder:
 
-```
+```bash
 basic-calculator-sfml/
 │
 ├── include/                 # Header files
@@ -96,12 +96,38 @@ basic-calculator-sfml/
 
 ## :six: **Instalation**
 
-### **Prerequisites**
+### **Prerequisites** :hammer_and_wrench:
 1. **C++20**.
 2. **CMake** (minimum version 3.30).
 3. **SFML** library.
 4. **Boost** library.
 5. An IDE like **CLion** for easy setup and debugging.
+
+### **Build Instructions** :gear:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/poprostuadam/basic_calculator_sfml.git
+   cd basic-calculator-sfml
+   cd cmake-build-debug
+   ./basic_calculator_sfml
+
+## :seven: **Usage**
+
+### **Running the Calculator** :desktop_computer:
+
+- **Mouse Support**:
+    - Click on the GUI buttons for input.
+
+- **Keyboard Shortcuts**:
+    - Use the number keys, `+`, `-`, `*`, `/`, and `Enter` to perform calculations.
+    - Use `Backspace` to delete the last character.
+    - Press `Esc` to clear the input or exit the application.
+
+### **High Precision Mode** :microscope:
+
+- The calculator uses Boost Multiprecision for high-precision arithmetic, ensuring accurate results for operations with very large or small numbers.
+
 
 ## :one::one: **License** 
 This project is licensed under the MIT License. See the LICENSE file for details.
