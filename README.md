@@ -2,9 +2,9 @@
 
 This project is a **simple calculator** built using C++ and the **SFML** (Simple and Fast Multimedia Library). It serves as a way to **refresh the fundamentals of C++**, including object-oriented programming, event handling, GUI design, and high-precision arithmetic using **Boost Multiprecision**.
 
-<div style="text-align:center">
+<div align="center">
   <a href="https://github.com/poprostuadam/basic_calculator_sfml">
-    <img src="assets/calculator.png" alt="Demonstration" width="300px">
+    <img src="assets/calculator.png" alt="FinalLook" width="350px">
   </a>
 </div>
 
