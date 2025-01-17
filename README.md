@@ -3,17 +3,30 @@
 This project is a **simple calculator** built using C++ and the **SFML** (Simple and Fast Multimedia Library). It serves as a way to **refresh the fundamentals of C++**, including object-oriented programming, event handling, GUI design, and high-precision arithmetic using **Boost Multiprecision**.
 
 ## **Table of Contents**
-1. [Purpose](#purpose)
-2. [Features](#features)
-3. [Learning Outcomes](#learning-outcomes)
-4. [Technology Stack](#technology-stack)
-5. [Project Structure](#project-structure)
-6. [Installation](#installation)
-7. [Usage](#usage)
-8. [Debugging Mode](#debugging-mode)
-9. [Contributing](#contributing)
-10. [Acknowledgments](#acknowledgments)
-11. [License](#license)
+
+<details>
+<summary>Click to expand</summary>
+
+1. [Purpose](#one-purpose-smiley)
+2. [Features](#two-features-star2)
+3. [Learning Outcomes](#three-learning-outcomes-books)
+4. [Technology Stack](#four-technology-stack-toolbox)
+5. [Project Structure](#five-project-structure-open_file_folder)
+6. [Installation](#six-installation-hammer_and_wrench)
+7. [Usage](#seven-usage-desktop_computer)
+8. [Debugging Mode](#eight-debugging-mode-mag)
+9. [Contributing](#nine-contributing-handshake)
+10. [Acknowledgments](#onezero-acknowledgments-trophy)
+11. [License](#oneone-license-scroll)
+
+</details>
+
+
+<div style="text-align:center">
+  <a href="https://github.com/poprostuadam/basic_calculator_sfml">
+    <img src="assets/calculator.png" alt="Demonstration" width="300px">
+  </a>
+</div>
 
 
 ## :one: **Purpose** :smiley:
@@ -94,7 +107,7 @@ basic-calculator-sfml/
 └── README.md                # Project documentation
 ```
 
-## :six: **Instalation** :hammer_and_wrench:
+## :six: **Installation** :hammer_and_wrench:
 
 ### **Prerequisites**  :hammer:
 1. **C++20**.
