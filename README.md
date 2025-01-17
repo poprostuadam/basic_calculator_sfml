@@ -78,6 +78,7 @@ Through this project, you can practice and learn:
 - **IDE**: CLion
 
 
+
 ## :five: **Project Structure** :open_file_folder:
 
 ```bash
@@ -122,7 +123,14 @@ basic-calculator-sfml/
    ```bash
    git clone https://github.com/poprostuadam/basic_calculator_sfml.git
    cd basic-calculator-sfml
-   cd cmake-build-debug
+2. **Configure and build the project:**    
+   ```bash
+   mkdir build
+   cd build
+   cmake ..
+   make 
+3. **Run the application:** 
+   ```bash
    ./basic_calculator_sfml
 
 ## :seven: **Usage** :desktop_computer:
