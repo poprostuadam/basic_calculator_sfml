@@ -1,8 +1,6 @@
-# :fire: **Basic Calculator with SFML** :fire:
+# :fire: :point_right: **Basic Calculator with SFML** :point_left: :fire:
 
 This project is a **simple calculator** built using C++ and the **SFML** (Simple and Fast Multimedia Library). It serves as a way to **refresh the fundamentals of C++**, including object-oriented programming, event handling, GUI design, and high-precision arithmetic using **Boost Multiprecision**.
-
----
 
 ## **Table of Contents**
 1. [Purpose](#purpose)
@@ -17,9 +15,8 @@ This project is a **simple calculator** built using C++ and the **SFML** (Simple
 10. [Acknowledgments](#acknowledgments)
 11. [License](#license)
 
----
 
-## **Purpose**
+## :one: **Purpose**
 
 The main purpose of this project is to:
 - Revisit and practice **core C++ concepts**.
@@ -27,9 +24,8 @@ The main purpose of this project is to:
 - Explore **Boost Multiprecision** for handling high-precision arithmetic.
 - Reinforce problem-solving techniques through tasks like parsing expressions, converting to RPN, and evaluating mathematical operations.
 
----
 
-## **Features**
+## :two: **Features**
 
 - **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division.
 - **High Precision Calculations**: Utilizes Boost Multiprecision for accuracy beyond standard `double` types.
@@ -42,9 +38,8 @@ The main purpose of this project is to:
 - **Debug Mode**:
     - Logs tokenization, RPN conversion, and evaluation steps to the console.
 
----
 
-## **Learning Outcomes**
+## :three: **Learning Outcomes**
 
 Through this project, you can practice and learn:
 1. **C++ Basics**:
@@ -59,9 +54,8 @@ Through this project, you can practice and learn:
 5. **Debugging and Testing**:
     - Adding debug logs to understand internal program states.
 
----
 
-## **Technology Stack**
+## :four: **Technology Stack**
 
 - **Language**: C++17
 - **Graphics Framework**: [SFML](https://www.sfml-dev.org/)
@@ -70,10 +64,10 @@ Through this project, you can practice and learn:
 - **Platform**: Cross-platform (Linux (Manjaro))
 - **IDE**: CLion
 
----
 
-## **Project Structure**
+## :five: **Project Structure**
 
+```
 basic-calculator-sfml/
 │
 ├── include/                 # Header files
@@ -90,10 +84,24 @@ basic-calculator-sfml/
 │   ├── Display.cpp          # Implements Display rendering
 │   └── main.cpp             # Entry point for the application
 │
-├── assets/                  # Assets (e.g., fonts, images)
-│   └── fonts/
-│       └── DejaVuSans.ttf   # Font used in the application
+├── assets/                  
+│   └── fonts/               # Fonts used in the application
+│       ├── DejaVuSans.ttf  
+│       └── DejaVuSans-Bold.ttf   
 │
 ├── CMakeLists.txt           # CMake build script
+├── LICENSE.txt              # License
 └── README.md                # Project documentation
+```
 
+## :six: **Instalation**
+
+### **Prerequisites**
+1. **C++20**.
+2. **CMake** (minimum version 3.30).
+3. **SFML** library.
+4. **Boost** library.
+5. An IDE like **CLion** for easy setup and debugging.
+
+## :one::one: **License** 
+This project is licensed under the MIT License. See the LICENSE file for details.

@@ -1,5 +1,5 @@
 /app/extra/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/adam/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/adam/CLionProjects/basic-calculator-sfml -B /home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug
 -- Found SFML 2.6.2 in /home/adam/.vcpkg-clion/vcpkg/installed/x64-linux/share/sfml
--- Configuring done (0.2s)
--- Generating done (0.0s)
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/adam/CLionProjects/basic-calculator-sfml/cmake-build-debug
