@@ -1,184 +1,132 @@
-# :fire: :point_right: **Basic Calculator with SFML** :point_left: :fire:
+# Basic Calculator with SFML
 
-This project is a **simple calculator** built using C++ and the **SFML** (Simple and Fast Multimedia Library). It serves as a way to **refresh the fundamentals of C++**, including object-oriented programming, event handling, GUI design, and high-precision arithmetic using **Boost Multiprecision**.
+[![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![SFML](https://img.shields.io/badge/SFML-2.5%2B-8CC445?logo=sfml&logoColor=white)](https://www.sfml-dev.org/)
+[![CMake](https://img.shields.io/badge/CMake-3.20%2B-064F8C?logo=cmake&logoColor=white)](https://cmake.org/)
+[![C++ CI](https://github.com/poprostuadam/basic_calculator_sfml/actions/workflows/cpp-ci.yml/badge.svg)](https://github.com/poprostuadam/basic_calculator_sfml/actions/workflows/cpp-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
 
-<div align="center">
-  <a href="https://github.com/poprostuadam/basic_calculator_sfml">
-    <img src="assets/calculator.png" alt="FinalLook" width="350px">
-  </a>
-</div>
+A desktop calculator written in C++20 with an SFML graphical interface. The project combines event-driven GUI programming with expression tokenization, infix-to-RPN conversion, and high-precision calculations powered by Boost Multiprecision.
 
-## **Table of Contents**
+<p align="center">
+  <img src="assets/calculator.png" alt="Basic Calculator with SFML application window" width="350">
+</p>
 
-<details>
-<summary>Click to expand</summary>
+## Features
 
-1. [Purpose](#one-purpose-smiley)
-2. [Features](#two-features-star2)
-3. [Learning Outcomes](#three-learning-outcomes-books)
-4. [Technology Stack](#four-technology-stack-toolbox)
-5. [Project Structure](#five-project-structure-open_file_folder)
-6. [Installation](#six-installation-hammer_and_wrench)
-7. [Usage](#seven-usage-desktop_computer)
-8. [Debugging Mode](#eight-debugging-mode-mag)
-9. [Contributing](#nine-contributing-handshake)
-10. [Acknowledgments](#onezero-acknowledgments-trophy)
-11. [License](#oneone-license-scroll)
+- addition, subtraction, multiplication, and division,
+- decimal-number input,
+- 50-digit decimal arithmetic with `boost::multiprecision::cpp_dec_float_50`,
+- operator precedence implemented through Reverse Polish Notation,
+- mouse-operated calculator buttons,
+- keyboard input for numbers and operators,
+- clear, backspace, and error states,
+- optional console logs for tokenization, RPN conversion, and evaluation,
+- responsive button hover and active states.
 
-</details>
+## How it works
 
+The application is split into four main components:
 
+| Component | Responsibility |
+| --- | --- |
+| `App` | Owns the window, event loop, input handling, and UI composition. |
+| `Button` | Renders a calculator button and handles its interaction states. |
+| `Display` | Stores and renders the current expression or result. |
+| `Calculator` | Tokenizes expressions, converts them to RPN, and evaluates them. |
 
-## :one: **Purpose** :smiley:
+The calculator evaluates multiplication and division before addition and subtraction. Invalid expressions and division by zero are displayed as `ERROR`.
 
-The main purpose of this project is to:
-- Revisit and practice **core C++ concepts**.
-- Work with **SFML** for creating graphical user interfaces.
-- Explore **Boost Multiprecision** for handling high-precision arithmetic.
-- Reinforce problem-solving techniques through tasks like parsing expressions, converting to RPN, and evaluating mathematical operations.
+## Requirements
 
+- a C++20-compatible compiler,
+- CMake 3.20 or newer,
+- SFML 2.5 or newer,
+- Boost headers.
 
-## :two: **Features** :star2:
-
-- **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division.
-- **High Precision Calculations**: Utilizes Boost Multiprecision for accuracy beyond standard `double` types.
-- **Interactive GUI**:
-    - Buttons for numbers and operations (`+`, `-`, `*`, `/`).
-    - Real-time display updates for user input and results.
-- **Keyboard and Mouse Support**:
-    - Use the GUI buttons or keyboard shortcuts for input.
-    - Supports special keys like `Backspace`, `Enter`, and `Escape`.
-- **Debug Mode**:
-    - Logs tokenization, RPN conversion, and evaluation steps to the console.
-
-
-## :three: **Learning Outcomes** :books:
-
-Through this project, you can practice and learn:
-1. **C++ Basics**:
-    - Object-oriented design with classes like `App`, `Button`, `Calculator`, and `Display`.
-    - Memory management (e.g., smart pointers with `std::unique_ptr`).
-2. **Event-Driven Programming**:
-    - Handling mouse and keyboard inputs with SFML.
-3. **Algorithm Design**:
-    - Implementing and using algorithms like **Shunting-Yard** and **RPN Evaluation**.
-4. **Precision Arithmetic**:
-    - Using Boost Multiprecision to perform high-accuracy floating-point operations.
-5. **Debugging and Testing**:
-    - Adding debug logs to understand internal program states.
-
-
-## :four: **Technology Stack** :toolbox:
-
-- **Language**: C++17
-- **Graphics Framework**: [SFML](https://www.sfml-dev.org/)
-- **Precision Library**: [Boost Multiprecision](https://www.boost.org/doc/libs/release/libs/multiprecision/)
-- **Build System**: CMake
-- **Platform**: Cross-platform (Linux (Manjaro))
-- **IDE**: CLion
-
-
-
-## :five: **Project Structure** :open_file_folder:
+On Ubuntu or Debian, install the dependencies with:
 
 ```bash
-basic-calculator-sfml/
-│
-├── include/                 # Header files
-│   ├── App.h                # Main application class
-│   ├── Button.h             # Button component for UI
-│   ├── Calculator.h         # Core calculator logic
-│   ├── Display.h            # Display component for results
-│   └── Config.h             # Configuration settings (colors, sizes, etc.)
-│
-├── src/                     # Source files
-│   ├── App.cpp              # Implements App class
-│   ├── Button.cpp           # Implements Button class
-│   ├── Calculator.cpp       # Implements Calculator logic
-│   ├── Display.cpp          # Implements Display rendering
-│   └── main.cpp             # Entry point for the application
-│
-├── assets/                  
-│   └── fonts/               # Fonts used in the application
-│       ├── DejaVuSans.ttf  
-│       └── DejaVuSans-Bold.ttf   
-│
-├── CMakeLists.txt           # CMake build script
-├── LICENSE.txt              # License
-└── README.md                # Project documentation
+sudo apt update
+sudo apt install build-essential cmake libsfml-dev libboost-dev
 ```
 
-## :six: **Installation** :hammer_and_wrench:
+Package names differ between operating systems. SFML 3 is not currently supported because the application uses the SFML 2 event API.
 
-### **Prerequisites**  :hammer:
-1. **C++20**.
-2. **CMake** (minimum version 3.30).
-3. **SFML** library.
-4. **Boost** library.
-5. An IDE like **CLion** for easy setup and debugging.
+## Build and run
 
-### **Build Instructions** :gear:
+Clone and configure the project:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/poprostuadam/basic_calculator_sfml.git
-   cd basic-calculator-sfml
-2. **Configure and build the project:**    
-   ```bash
-   mkdir build
-   cd build
-   cmake ..
-   make 
-3. **Run the application:** 
-   ```bash
-   ./basic_calculator_sfml
+```bash
+git clone https://github.com/poprostuadam/basic_calculator_sfml.git
+cd basic_calculator_sfml
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --parallel
+```
 
-## :seven: **Usage** :desktop_computer:
+Run the executable from the build directory so the bundled font path resolves correctly:
 
-### **Running the Calculator** 
+```bash
+cd build
+./basic_calculator_sfml
+```
 
-- **Mouse Support**:
-    - Click on the GUI buttons for input.
+For multi-configuration generators such as Visual Studio, build with `--config Release` and run the executable from the generated configuration directory while keeping the working directory set to `build`.
 
-- **Keyboard Shortcuts**:
-    - Use the number keys, `+`, `-`, `*`, `/`, and `Enter` to perform calculations.
-    - Use `Backspace` to delete the last character.
-    - Press `Esc` to clear the input or exit the application.
+## Controls
 
-## :eight: **Debugging Mode** :mag:
+| Action | Mouse | Keyboard |
+| --- | --- | --- |
+| Enter digits | Number buttons | `0`–`9` |
+| Enter an operator | `+`, `-`, `*`, `/` buttons | Corresponding operator key |
+| Decimal point | `.` button | `.` |
+| Calculate | `=` button | `Enter` |
+| Delete last character | `<-` button | `Backspace` |
+| Clear display | `AC` button | `Escape` |
+| Close application | Window close button | — |
 
-Enable debugging by setting `isDebug` to `true` in `Config.h`:
+## Debug mode
 
-```c++
+Set `config::isDebug` to `true` in `include/config.h`:
+
+```cpp
 static constexpr bool isDebug = true;
 ```
 
-This will log:
+The application will print generated tokens, the RPN expression, stack operations, and intermediate results to the console.
 
-- Tokenized expression.
-- Converted RPN.
-- Step-by-step operations during evaluation.
-- 
+## Project structure
 
-## :nine: **Contributing** :handshake:
+```text
+.
+├── .github/workflows/cpp-ci.yml
+├── assets/
+│   ├── calculator.png
+│   └── fonts/
+├── include/
+│   ├── App.h
+│   ├── Button.h
+│   ├── Calculator.h
+│   ├── Display.h
+│   └── config.h
+├── src/
+│   ├── App.cpp
+│   ├── Button.cpp
+│   ├── Calculator.cpp
+│   ├── Display.cpp
+│   └── main.cpp
+├── CMakeLists.txt
+├── LICENSE.txt
+└── README.md
+```
 
-This project is primarily for self-learning, but feel free to fork the repository and experiment. If you'd like to contribute, follow these steps:
+## Current limitations
 
-1. Fork the repository.
-2. Create a feature branch:
+- Parentheses and unary operators are not supported.
+- The GUI layout uses fixed dimensions.
+- The bundled font path assumes that the program is launched from the build directory.
+- Automated tests are not yet included; CI currently verifies configuration and compilation.
 
-   ```bash
-   git checkout -b feature-name
+## License
 
-
-## :one::zero: **Acknowledgments** :trophy:
-
-- [SFML](https://www.sfml-dev.org/) for providing a powerful and easy-to-use multimedia library.
-
-- [Boost Multiprecision](https://www.boost.org/) for enabling high-precision arithmetic operations.
-
-- DejaVu Fonts for the clean and elegant font used in the application.
-
-
-## :one::one: **License** :scroll:
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is available under the [MIT License](LICENSE.txt). The bundled DejaVu fonts retain their own applicable font licensing terms.
