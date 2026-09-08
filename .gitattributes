@@ -1,0 +1,4 @@
+# Treat project headers as C++ and exclude generated build output from language statistics.
+*.h linguist-language=C++
+cmake-build-*/** linguist-generated=true
+build/** linguist-generated=true
